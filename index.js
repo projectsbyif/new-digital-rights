@@ -6,6 +6,7 @@ let path = require('path');
 let app = express();
 let http = require('http').Server(app);
 let config = require('./config/config.js');
+let pages = require('./config/pages.js');
 
 // CONFIG
 app.set('port', process.env.PORT || 3000);
