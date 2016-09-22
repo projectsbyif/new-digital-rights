@@ -14,6 +14,7 @@
   "dependencies": {
     "express": "^4.13.4",
     "jade": "^1.11.0",
+    "jade-dynamic-includes": "^0.2.5",
     "node-sass": "^3.7.0",
     "nodemon": "^1.9.2"
   }
