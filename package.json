@@ -1,0 +1,20 @@
+{
+  "name": "node-express-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "./bin/build-css",
+    "watch": "./bin/watch-css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2"
+  }
+}
