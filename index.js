@@ -13,6 +13,13 @@ app.set('port', process.env.PORT || 3000);
 app.set('view engine', 'jade');
 app.use('/public', express.static(path.join(__dirname, 'public')));
 
+// Sort pages alphabetically
+pages.sort(function(a, b) {
+    let titleA = a.title.toUpperCase();
+    let titleB = b.title.toUpperCase();
+    return (titleA < titleB) ? -1 : (titleA > titleB) ? 1 : 0
+});
+
 // ROUTES
 // Render the app view
 app.get('/', function(req, res) {
