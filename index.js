@@ -19,6 +19,15 @@ app.get('/', function(req, res) {
 	res.render('index', { config });
 });
 
+// Render routes for each page
+for (let page in pages) {
+	page = pages[page];
+
+	app.get('/' + page.permalink, function(req, res) {
+		res.render('prototype', { page });
+	});
+}
+
 // SERVER
 http.listen(app.get('port'), function() {
 	console.log("Server started on :" + app.get('port'));
