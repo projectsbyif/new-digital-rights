@@ -1,0 +1,27 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  font-family: $default-fonts-regular;
+  color: $color-dark;
+}
+
+a {
+  color: $color-dark;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-family: $default-fonts-bold;
+  margin-bottom: $default-spacing;
+}
+
+h2 {
+  font-size:1.2em;
+  font-family: $default-fonts-bold;
+  margin-bottom: $default-spacing;
+}
+
+p {
+  margin-bottom: $default-spacing;
+}
