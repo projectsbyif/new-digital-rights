@@ -7,3 +7,9 @@ $color-if-blue: #2341c1;
 $color-if-orange: #ff5e23;
 
 $default-spacing: 1em;
+
+@mixin background-button($size) {
+  background-size: $size;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
