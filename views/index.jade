@@ -14,4 +14,7 @@ html(lang="en")
     link(rel="apple-touch-icon-precomposed", href="")
     link(type="text/css", rel="stylesheet", href="/public/stylesheets/app.css")
   body
-    p Hello world
+    h1 GDPR microsite
+    each page in pages
+      p
+        a(href="/#{page.permalink}") #{page.title}
