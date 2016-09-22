@@ -1,3 +1,21 @@
-p This is a prototype page
-p For: #{page.title}
-p #{page.description}
+doctype html
+html(lang="en")
+  head
+    title #{config.site_name}
+    meta(name="viewport", charset="utf-8", content="width=device-width", initial-scale="1.0")
+    meta(name="description", content="#{config.site_description}")
+    meta(property="og:url", content="")
+    meta(property="og:title", content="")
+    meta(property="og:description", content="")
+    meta(property="og:image", content="")
+    script(type="text/javascript", src="/public/javascripts/jquery.js")
+    script(type="text/javascript", src="/public/javascripts/app.js")
+    link(rel="icon", id="favicon", href="")
+    link(rel="apple-touch-icon-precomposed", href="")
+    link(type="text/css", rel="stylesheet", href="/public/stylesheets/app.css")
+  body
+    div(class="prototype_canvas")
+      
+    div(class="prototype_description")
+      h1 #{page.title}
+      p #{page.description}
