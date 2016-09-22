@@ -2,7 +2,7 @@
   "tesco": [
     {
       "name": "Apples - Royal Gala (6 pack)",
-      "tag": "Apple",
+      "tag": "Apples",
       "price": 150,
       "url": "http://www.tesco.com/groceries/product/details/?id=284475550"
     },
@@ -34,7 +34,7 @@
   "asda": [
     {
       "name": "Apples - Royal Gala (6 pack)",
-      "tag": "Apple",
+      "tag": "Apples",
       "price": 134,
       "url": "https://groceries.asda.com/product/apples/asda-growers-selection-gala-apples/910000899638"
     },
@@ -66,7 +66,7 @@
   "morrisons": [
     {
       "name": "Apples - Royal Gala (6 pack)",
-      "tag": "Apple",
+      "tag": "Apples",
       "price": 155,
       "url": "https://groceries.morrisons.com/webshop/product/Morrisons-Royal-Gala-Apples-Min-5-fruit/217953011?from=search&tags=%7C105651&param=apples&parentContainer=SEARCHapples_SHELFVIEW"
     },
