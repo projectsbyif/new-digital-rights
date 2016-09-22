@@ -17,11 +17,15 @@ h1 {
 }
 
 h2 {
-  font-size:1.2em;
+  font-size: 1.2em;
   font-family: $default-fonts-bold;
   margin-bottom: $default-spacing;
 }
 
 p {
   margin-bottom: $default-spacing;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
