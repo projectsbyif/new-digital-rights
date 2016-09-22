@@ -11,6 +11,7 @@
   color: #FFF;
 }
 
+/* Generic interface items */
 .vertical_list {
   width: 100%;
 
@@ -28,29 +29,6 @@
     &:last-child {
       border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
     }
-  }
-}
-
-.retailer_results {
-  padding:0.5em;
-  border-bottom:#FFF 1px solid;
-
-  .name,
-  .total_cost,
-  .button_fill_basket {
-    margin-bottom: 0.25em;
-  }
-
-  .name {
-    margin-bottom: 0.5em;
-  }
-
-  .total_cost {
-    font-size:1.4em;
-  }
-
-  .button_fill_basket {
-    color: #FFF;
   }
 }
 
@@ -112,6 +90,7 @@
 }
 
 @media screen and (min-width: 720px) {
+  /* Prototype pages */
   .prototype_canvas {
     height: 80vh;
     display: flex;
@@ -131,19 +110,14 @@
     border-radius: 5px;
   }
 
+  /* Generic interface items */
   .vertical_list {
     input {
       font-size: 1.2em;
     }
   }
 
-  .retailer_results {
-    padding-top:0.5em;
-    width: calc(33.333% - 1em);
-    border-bottom: none;
-    float:left;
-  }
-
+  /* Prototype nav */
   .prototype_nav {
     position: absolute;
     top: 0;
