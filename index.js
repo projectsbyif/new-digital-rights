@@ -5,7 +5,7 @@ let express = require('express');
 let path = require('path');
 let app = express();
 let http = require('http').Server(app);
-let config = require('./config.js');
+let config = require('./config/config.js');
 
 // CONFIG
 app.set('port', process.env.PORT || 3000);
