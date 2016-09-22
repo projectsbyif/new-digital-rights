@@ -34,7 +34,7 @@ for (let page in pages) {
 	page = pages[page];
 
 	app.get('/' + page.permalink, function(req, res) {
-		res.render('prototype', { config, page });
+		res.render('prototype', { config, page, pages });
 	});
 }
 
