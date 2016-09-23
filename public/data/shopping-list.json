@@ -20,7 +20,7 @@
     },
     {
       "name": "Chopped Tomatoes - Napolina (400g)",
-      "tag": "Chopped tomatoes",
+      "tag": "Tomatoes",
       "price": 50,
       "url": "http://www.tesco.com/groceries/product/details/?id=254874209"
     },
@@ -28,6 +28,12 @@
       "name": "Tea - Yorkshire tea (160 pack)",
       "tag": "Tea bags",
       "price": 450,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
+    },
+    {
+      "name": "Bananas",
+      "tag": "Bananas",
+      "price": 100,
       "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
     }
   ],
@@ -52,7 +58,7 @@
     },
     {
       "name": "Chopped Tomatoes - Napolina (400g)",
-      "tag": "Chopped tomatoes",
+      "tag": "Tomatoes",
       "price": 50,
       "url": "https://groceries.asda.com/product/tinned-tomatoes/napolina-chopped-tomatoes-in-a-rich-tomato-juice/19537"
     },
@@ -61,6 +67,12 @@
       "tag": "Tea bags",
       "price": 350,
       "url": "https://groceries.asda.com/product/regular-tea/yorkshire-tea-160-tea-bags/19840"
+    },
+    {
+      "name": "Bananas",
+      "tag": "Bananas",
+      "price": 100,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
     }
   ],
   "morrisons": [
@@ -83,7 +95,7 @@
       "url": "https://groceries.morrisons.com/webshop/product/Morrisons-Free-Range-Eggs-Medium/216918011?from=search&tags=%7C105651&param=eggs+freerange&parentContainer=SEARCHeggs+freerange_SHELFVIEW"
     },
     {
-      "name": "Chopped Tomatoes - Napolina (400g)",
+      "name": "Tomatoes - Napolina (400g)",
       "tag": "Chopped tomatoes",
       "price": 50,
       "url": "https://groceries.morrisons.com/webshop/product/Napolina-Chopped-Tomatoes/110560011?from=search&tags=%7C105651&param=chpped+toamtoes&parentContainer=SEARCHchpped+toamtoes_SHELFVIEW"
@@ -93,6 +105,12 @@
       "tag": "Tea bags",
       "price": 445,
       "url": "https://groceries.morrisons.com/webshop/product/Yorkshire-Tea-Bags/113685011?from=search&tags=%7C105651&param=yorkshire+tea&parentContainer=SEARCHyorkshire+tea_SHELFVIEW"
+    },
+    {
+      "name": "Bananas",
+      "tag": "Bananas",
+      "price": 100,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
     }
   ]
 }
