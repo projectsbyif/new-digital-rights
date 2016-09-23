@@ -29,4 +29,14 @@ $(function() {
     create(4500, 5000, 4, "month");
     create(20000, 24000, 12, "year");
     create(20000, 24000, 5, "5 years");
+
+  let timerIncrementTime;
+  let now = moment().hour(0).minute(0).second(0);
+
+  timerIncrementTime = setInterval(function() {
+    now.add(1, 'h');
+
+    $('#present_date').text(now.format("dddd, D MMMM YYYY"));
+    $('#present_time').text(now.format("HH:mm"));
+  }, 25);
 });
