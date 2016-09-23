@@ -15,8 +15,16 @@ html(lang="en")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
   body
+    div(class="prototype_nav")
+      a(href="/" class="back") Back to home page
+      a(href="#" id="show_prototype_menu" class="menu") Show prototypes list
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
       h1 #{page.title}
       p #{page.description}
+    div(class="prototype_menu")
+      a(href="#" id="hide_prototype_menu") Close
+      each page in pages
+        p
+          a(href="/#{page.permalink}") #{page.title}
