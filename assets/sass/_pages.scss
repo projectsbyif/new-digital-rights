@@ -131,4 +131,27 @@
       height: 37vw;
     }
   }
+
+  .permissions_dialog {
+    width: calc(37vw - 2em);
+    height: calc(37vw - 2em);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    p {
+      width: calc(100% - 3em);
+    }
+
+    .hide {
+      position: relative;
+      top: 0;
+      right: 0;
+      float: right;
+    }
+
+    .ad_thumbnail {
+      display: none;
+    }
+  }
 }
