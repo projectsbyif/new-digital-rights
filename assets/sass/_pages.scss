@@ -22,6 +22,15 @@
   }
 }
 
+/* Dynamic data minimisation */
+#electricity_usage_window {
+  padding: 1em;
+
+  h1 {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 720px) {
   /* Shopping list */
   .retailer_results {
