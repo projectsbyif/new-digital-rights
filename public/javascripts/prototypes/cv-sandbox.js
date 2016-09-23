@@ -1,3 +1,17 @@
 $(function() {
-  console.log("cv sandbox prototype js");
+  $('.cv_thumbnail a').click(function(e) {
+    e.preventDefault();
+
+    console.log($(this).parent().index());
+
+    $('.cv_modal').fadeIn(250).css({
+      'display': 'flex'
+    });
+  });
+
+  $('#close_cv').click(function(e) {
+    e.preventDefault();
+
+    $('.cv_modal').fadeOut(250);
+  });
 });
