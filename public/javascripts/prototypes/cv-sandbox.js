@@ -53,7 +53,6 @@ $(function() {
     e.preventDefault();
     e.stopPropagation();
 
-
     $('.cv_modal').fadeIn(250).css({
       'display': 'flex'
     });

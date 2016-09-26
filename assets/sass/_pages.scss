@@ -22,6 +22,22 @@
   }
 }
 
+/* Dynamic data minimisation */
+#electricity_usage_window_confirmation {
+  display: none;
+}
+
+#electricity_usage_window {
+  padding: 1em;
+
+#energy_no {
+  display:none;
+}
+
+#energy_yes {
+  display:none;
+}
+
 /* Activity log */
 .activity_log_receipt,
 .activity_log_timeline {
@@ -394,7 +410,6 @@ width: 100vw;
     }
   }
 }
-
 
 @media screen and (min-width: 720px) {
   /* Shopping list */
