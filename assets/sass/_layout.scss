@@ -72,8 +72,17 @@ header {
 
 .prototype_description {
   min-height: 10vh;
-  background-color: $color-if-grey;
+  background-color: $color-if-blue;
   color: #FFF;
+
+  h1, p {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  p {
+    line-height: 1.2em;
+  }
 }
 
 /* Generic interface items */
