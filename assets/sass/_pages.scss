@@ -185,6 +185,7 @@
     @include ad-example();
     position: relative;
     overflow: hidden;
+    border: #FFF 1px solid;
 
     .confirmation {
       background: rgba(0, 0, 0, 0.5);
@@ -217,14 +218,16 @@
     }
 
     #show_permissions_dialog {
-      width: 1.5em;
       height: 1.5em;
       display: block;
-      background: red;
-      text-indent: -9999px;
+      background: #FFF;
       position: absolute;
       bottom: 0;
       right: 0;
+      color: $color-if-blue;
+      line-height: 1.8em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
     }
   }
 }
@@ -235,15 +238,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: red;
+  background: $color-if-blue;
   display: none;
   padding: 1em;
+
+  a {
+    color: #FFF;
+  }
 
   .ad_thumbnail {
     @include ad-example();
     width: 5em;
     height: 5em;
     margin: 2.5em auto 1em auto;
+    border: #FFF 1px solid;
   }
 
   .hide {

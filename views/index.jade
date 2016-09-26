@@ -14,8 +14,16 @@ html(lang="en")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
   body
-    h1 GDPR microsite
-    each page in pages
-      p
-        a(href="/#{page.permalink}") #{page.title}
+    header
+      a(id="logo" href="https://projectsbyif.com") Projects By IF
+    div(id="homepage" class="content")
+      h1 #{config.homepage_headline}
+      p #{config.homepage_subheading}
+      a(href="/why" class="why_we_did_this") Why we did this
+      div(id="sections")
+        each page in pages
+          div(class="section")
+            h2
+              a(href="/#{page.permalink}") #{page.title}
+            p #{page.rights}
     include footer.jade
