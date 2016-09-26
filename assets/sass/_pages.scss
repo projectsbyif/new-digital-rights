@@ -439,13 +439,9 @@ width: 100vw;
   /* Activity log */
   .activity_log_receipt,
   .activity_log_timeline {
-    width: 20vw;
-  }
-
-  /* Activity log */
-  .activity_log_receipt,
-  .activity_log_timeline {
-    width: 20vw;
+    width: 35vw;
+    max-height: 60vh;
+    overflow-x: scroll;
   }
 
   /* CV sandbox */
