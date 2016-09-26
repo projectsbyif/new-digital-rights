@@ -22,6 +22,76 @@
   }
 }
 
+/* Digital identity will */
+#digital_will {
+  position: relative;
+
+  .allow_access_to {
+    width: calc(100% - 2em);
+    margin-left: 1.5em;
+  }
+
+  select {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  input {
+    color: #FFF;
+    border: 0;
+    background: none;
+    font-family: $default-fonts-regular;
+    font-size: 1em;
+    border-bottom: #FFF 1px solid;
+
+    &::-webkit-input-placeholder {
+      color: #CCC;
+    }
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5em;
+  }
+
+  a {
+    color: #FFF;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: #FFF 2px solid;
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    margin: 0.5em 0.5em 1em 0.5em;
+    font-size: 1.1em;
+  }
+
+  p {
+    margin: 0.5em;
+  }
+
+  #button_save {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border-top: #FFF 2px solid;
+    display: block;
+    width: calc(100% - 1em);
+    padding:0.5em;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+#digital_will_confirmation {
+  display: none;
+}
+
 @media screen and (min-width: 720px) {
   /* Shopping list */
   .retailer_results {
