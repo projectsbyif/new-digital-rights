@@ -2,11 +2,8 @@ header {
   width:100vw;
   height:72px;
   border-bottom:1px solid #f1f0ee;
-  position:fixed;
-  top:0;
-  left:0;
   background:#FFF;
-  z-index:1001;
+  margin-bottom: 2em;
 
   #logo {
     display:block;
@@ -21,6 +18,48 @@ header {
     position:absolute;
     top:10px;
     left:calc(50% - 20px);
+  }
+}
+
+#homepage,
+#why {
+  h1 {
+    padding:0 1em;
+  }
+
+  p {
+    font-family: $default-fonts-regular;
+    padding:0 1em;
+    margin-bottom: 1em;
+  }
+}
+
+#homepage {
+  h1, p {
+    text-align: center;
+  }
+
+  .why_we_did_this {
+    margin: 2em 0;
+    display: block;
+    text-align: center;
+    font-family: $default-fonts-bold;
+    font-size: 1em;
+  }
+
+  .section {
+    margin: 1em 0.5em;
+
+    h2, p {
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1em;
+      margin-bottom: 0.5em;
+    }
   }
 }
 
@@ -127,6 +166,57 @@ header {
 }
 
 @media screen and (min-width: 720px) {
+  /*
+  #footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  */
+
+  #homepage,
+  #why {
+    h1 {
+      font-size: 3em;
+      padding: 0;
+    }
+
+    p {
+      font-size: 1em;
+      padding: 0;
+    }
+  }
+
+  #why {
+    margin:0 20vw 4em 20vw;
+
+    p {
+      line-height: 1.2;
+    }
+  }
+
+  #homepage {
+    .why_we_did_this {
+      margin: 2em 0 4em 0;
+    }
+
+    #sections {
+      overflow: auto;
+      margin:0 20vw;
+
+      .section {
+        margin: 0;
+        margin-bottom: 2em;
+        float: left;
+        width: 50%;
+
+        a {
+          color: $color-if-blue;
+        }
+      }
+    }
+  }
+
   /* Prototype pages */
   .prototype_canvas {
     height: 80vh;
