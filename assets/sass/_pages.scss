@@ -168,18 +168,18 @@
 
 /* Insight permissions */
 @mixin ad-example() {
-  background-image: url('/public/images/ad.svg');
+  background-image: url('/public/images/sample.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.ad_container {
+.sample_container {
   @include absolute-center();
   height: 90vh;
   width: 100vw;
 
-  .ad {
+  .sample {
     width: calc(100vw - 2em);
     height: calc(100vw - 2em);
     @include ad-example();
@@ -269,8 +269,8 @@
   }
 
   /* Insight permissions */
-  .ad_container {
-    .ad {
+  .sample_container {
+    .sample {
       width: 37vw;
       height: 37vw;
     }
