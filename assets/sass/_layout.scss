@@ -89,6 +89,17 @@
   }
 }
 
+.footer {
+  background: #222;
+  color: #FFF;
+  width: calc(100vw - 2em);
+  padding: 1em;
+
+  a {
+    color: #FFF;
+  }
+}
+
 @media screen and (min-width: 720px) {
   /* Prototype pages */
   .prototype_canvas {
