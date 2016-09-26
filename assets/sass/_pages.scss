@@ -118,6 +118,58 @@
   display: none;
 }
 
+/* Digital blinds */
+#digital_blinds {
+  position: relative;
+
+  .header {
+    width: calc(100% - 1em);
+    border-bottom: #FFF 2px solid;
+    overflow: auto;
+    padding: 0.5em;
+
+    img, p {
+      float:left;
+    }
+
+    img {
+      height: 2em;
+      margin-right: 0.75em;
+    }
+
+    p {
+      font-family: $default-fonts-bold;
+      font-size: 1.2em;
+      margin-top: 0.4em;
+    }
+  }
+
+  .content {
+    .section {
+      border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
+      padding: 0.5em;
+
+      input[type='radio'] {
+        margin-right: 1em;
+      }
+    }
+  }
+
+  .footer {
+    #save_settings {
+      display: block;
+      color: #FFF;
+      width: calc(100% - 1em);
+      border-top: #FFF 2px solid;
+      padding: 0.5em;
+      text-decoration: none;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
 /* Insight permissions */
 @mixin ad-example() {
   background-image: url('/public/images/ad.svg');
@@ -258,5 +310,11 @@
     width: 20vw;
 =======
 >>>>>>> master
+  }
+
+  /* Activity log */
+  .activity_log_receipt,
+  .activity_log_timeline {
+    width: 20vw;
   }
 }
