@@ -1,4 +1,4 @@
-div(class="activity_log_receipt")
+div(class="activity_log_receipt" style="display:none;")
   h1 Receipt
   h2 What data has been shared?
   p 12 months of bank transactions from #[a(href="#") J. Smith] in a PDF file
@@ -11,12 +11,14 @@ div(class="activity_log_receipt")
   p Until an affordability check has been completed. This may take up to 48 hours
   h2 What happens after?
   p Original and all copies of shared data
+  p
+    a(href="#" id="show_activity_log") Show activity log
 
 div(class="activity_log_timeline")
   h1 Activity log
 
   p(class="timestamp") 12/09/2016 12:31
-  p Bank transactions uploaded as #[a(href="#") J-Smith-Statements.pdf]
+  p Bank transactions uploaded as J-Smith-Statements.pdf. #[a(href="#" id="show_receipt") Show receipt]
   
   p(class="timestamp") 12/09/2016 15:46
   p File viewed by #[a(href="#") M. Jones]
