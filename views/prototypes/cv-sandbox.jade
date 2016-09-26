@@ -1,18 +1,32 @@
-div(class="cv_thumbnails")
-  p(style="text-align:center;") Tap a CV to zoom in
-  div(class="container")
-    div
-      div(class="cv_thumbnail")
-        a(href="#")
-      div(class="cv_thumbnail")
-        a(href="#")
-      div(class="cv_thumbnail")
-        a(href="#")
+div
+  p(style="text-align:center") Select a cover letter to check
+  div(class="cv_thumbnails")
+    div(class="container")
+      div
+        div(class="cv_thumbnail" data-cv-id="1")
+          a(href="#" class="zoom" data-cv-id="1") Zoom
+          include cvs/cv1.jade
+        div(class="cv_thumbnail" data-cv-id="2")
+          a(href="#" class="zoom" data-cv-id="2") Zoom
+          include cvs/cv2.jade
+        div(class="cv_thumbnail"  data-cv-id="3")
+          a(href="#" class="zoom" data-cv-id="3") Zoom
+          include cvs/cv3.jade
 
-a(href="#") View rules
-a(href="#") Start again
+  div(id="cv_check")
+    a(href="#" id="cv_check_button" class="off") Check
 
-div(class="cv_modal")
-  div(class="cv_single")
-    p this is a cv
-  a(href="#" id="close_cv") Close
+  div(id="cv_results")
+    p(class="result neutral") Covers required job skills
+    p(class="result neutral") Uses job-specific language
+    p(class="result neutral") Positive tone
+    p(class="result neutral") Quality of writing
+
+  div(class="cv_modal")
+    div(id="cv_1" class="cv_single")
+      include cvs/cv1.jade
+    div(id="cv_2" class="cv_single")
+      include cvs/cv2.jade
+    div(id="cv_3" class="cv_single")
+      include cvs/cv3.jade
+    a(href="#" id="close_cv") Close

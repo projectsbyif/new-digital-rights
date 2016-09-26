@@ -1,1 +1,33 @@
-p activity log prototype placeholder
+div(class="activity_log_receipt" style="display:none;")
+  h1 Receipt
+  h2 What data has been shared?
+  p 12 months of bank transactions from #[a(href="#") J. Smith] in a PDF file
+  h2 Why is it needed?
+  p To check if prospective tenant is able to afford rent payments
+  h2 Who has access?
+  p All staff at SimpleRent Ltd. 123 Kings Cross Road, London, N1 2AR.
+  p #[a(href="#") Website] #[a(href="#") Contact]
+  h2 How long will it be held?
+  p Until an affordability check has been completed. This may take up to 48 hours
+  h2 What happens after?
+  p Original and all copies of shared data
+  p
+    a(href="#" id="show_activity_log") Show activity log
+
+div(class="activity_log_timeline")
+  h1 Activity log
+
+  p(class="timestamp") 12/09/2016 12:31
+  p Bank transactions uploaded as J-Smith-Statements.pdf. #[a(href="#" id="show_receipt") Show receipt]
+  
+  p(class="timestamp") 12/09/2016 15:46
+  p File viewed by #[a(href="#") M. Jones]
+  
+  p(class="timestamp") 12/09/2016 15:51
+  p Copy of file made by #[a(href="#") M. Jones]
+  
+  p(class="timestamp") 13/09/2016 09:16
+  p Affordability check completed
+  
+  p(class="timestamp") 13/09/2016 12:54
+  p All copies of data have been deleted

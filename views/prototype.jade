@@ -11,15 +11,21 @@ html(lang="en")
     script(type="text/javascript" src="/public/javascripts/moment.min.js")
     script(type="text/javascript" src="/public/javascripts/chart.min.js")
     script(type="text/javascript" src="/public/javascripts/jquery.js")
+    script(type="text/javascript" src="/public/javascripts/jquery-ui.js")
     script(type="text/javascript" src="/public/javascripts/app.js")
     script(type="text/javascript" src="/public/javascripts/prototypes/#{page.permalink}.js")
     link(rel="icon" id="favicon" href="")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
   body
-    div(class="prototype_nav")
-      a(href="/" class="back") Back to home page
-      a(href="#" id="show_prototype_menu" class="menu") Show prototypes list
+    div(class="prototype_header")
+      a(href="/" id="logo-light")
+      a(href="#" id="show_prototype_menu_mobile" class="prototype_menu_link") Show menu
+      div(class="left")
+        a(href="/") GDPR
+        a(href="/why") Why?
+      div(class="right")
+        a(href="#" class="prototype_menu_link") Prototypes
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
@@ -27,6 +33,15 @@ html(lang="en")
       p #{page.description}
     div(class="prototype_menu")
       a(href="#" id="hide_prototype_menu") Close
-      each page in pages
+      div(class="item" class="mobile_only_item")
         p
-          a(href="/#{page.permalink}") #{page.title}
+          a(href="/") Home
+      div(class="item" class="mobile_only_item")
+        p
+          a(href="/why") About
+      each page in pages
+        div(class="item")
+          p
+            a(href="/#{page.permalink}") #{page.title}
+          p #{page.rights}
+    include footer.jade

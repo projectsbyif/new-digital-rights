@@ -1,1 +1,26 @@
-p insight permissions placeholder
+div(class="sample_container")
+  div(class="sample")
+    div(id="allow_ad_confirmation" class="confirmation")
+      div
+        img(src="/public/images/icon_tick_light.svg")
+        p Thank you for your feedback
+    div(id="deny_ad_confirmation" class="confirmation")
+      div
+        img(src="/public/images/icon_tick_light.svg")
+        p You won't see more ads that are relevant to this insight
+    a(href="#" id="show_permissions_dialog") Why am I seeing this?
+
+    div(class="permissions_dialog")
+      a(href="#" class="hide") Hide permissions dialog
+      div(class="ad_thumbnail")
+      p You are seeing this advert because we think you might be interested in buying a car.
+      p We think this because:
+      ul
+        li You liked an image with a car in it 
+        li You searched for Audi A6
+        li You recently made a purchase at a petrol station
+        li Your home address is 5 miles away from your work address
+      p(style="margin-bottom:0.5em")
+        a(href="#" id="allow_ad") Continue using this insight
+      p
+        a(href="#" id="deny_ad") Stop using this insight to show me adverts

@@ -12,6 +12,8 @@ $(function() {
     listAsda.fill(null);
     listMorrisons.fill(null);
 
+    $('#shopping_list input').first().focus();
+
     $('#shopping_list input').keyup(function() {
         let val = $(this).val();
         let index = $(this).index();
