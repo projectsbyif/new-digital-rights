@@ -1,6 +1,6 @@
 $(function() {
   // Prototype menu toggle
-  $('#show_prototype_menu').click(function(e) {
+  $('.prototype_menu_link').click(function(e) {
     e.preventDefault();
 
     $('.prototype_menu').show().css({
