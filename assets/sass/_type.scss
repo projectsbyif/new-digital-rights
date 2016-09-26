@@ -29,3 +29,13 @@ p {
     margin-bottom: 0;
   }
 }
+
+ul {
+  list-style-type: disc;
+  margin-bottom: $default-spacing;
+
+  li {
+    margin-left: $default-spacing;
+    margin-bottom: 0.15em;
+  }
+}
