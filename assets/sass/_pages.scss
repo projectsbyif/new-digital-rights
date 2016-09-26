@@ -29,13 +29,14 @@
 
 #electricity_usage_window {
   padding: 1em;
+}
 
 #energy_no {
-  display:none;
+  display: none;
 }
 
 #energy_yes {
-  display:none;
+  display: none;
 }
 
 /* Activity log */
@@ -410,6 +411,7 @@ width: 100vw;
     }
   }
 }
+
 
 @media screen and (min-width: 720px) {
   /* Shopping list */
