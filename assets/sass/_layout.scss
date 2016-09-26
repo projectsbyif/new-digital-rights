@@ -74,11 +74,9 @@ header {
   min-height: 10vh;
   background-color: $color-if-blue;
   color: #FFF;
-
-  h1, p {
-    margin-left: 20vw;
-    margin-right: 20vw;
-  }
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 
   p {
     line-height: 1.2em;
@@ -237,6 +235,9 @@ header {
 
   .prototype_description {
     min-height: 20vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-bottom: 1em;
   }
 
   .window_container {
