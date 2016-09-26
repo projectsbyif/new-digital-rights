@@ -1,5 +1,28 @@
+
 $(function() {
-  let timerIncrementTime;
+  $('#button_save').click(function(e) {
+    e.preventDefault();
+
+    $('#electricity_usage_window').fadeOut(250, function() {
+      $('#electricity_usage_window_confirmation').fadeIn(250);
+    });
+  });
+
+  $("#energy_appear").click(function(){
+    $('#energy_blank').hide(function() {
+      $('#energy_no').hide();
+      $('#energy_yes').fadeIn();
+    });
+  });
+
+  $("#energy_disappear").click(function(){
+    $('#energy_blank').hide(function() {
+      $('#energy_yes').hide();
+      $('#energy_no').fadeIn();
+    });
+  });
+});
+  /*let timerIncrementTime;
   let now = moment().hour(0).minute(0).second(0).subtract(1, 'h');
 
   let dayData = new Array(24);
@@ -12,21 +35,21 @@ $(function() {
 
   timerIncrementTime = setInterval(function() {
     foo();
-  }, 1000);
+  }, 50);
 
   function foo() {
     now.add(1, 'h');
 
-    pushDataPoint(now.day(), now.hour());
-
+    pushDataPoint(now.day(), now.hour(), now.week());
     $('#present_date').text(now.format("dddd, D MMMM YYYY"));
     $('#present_time').text(now.format("HH:mm"));
   }
 
-
+//DAILY DATA
+//Building the daily array
   function generateDataPoint(day, hour) {
-    let randomPeak = randomIntInc(40, 100);
-    let randomOffPeak = randomIntInc(10, 80);;
+    let randomPeak = randomIntInc(7, 12);
+    let randomOffPeak = randomIntInc(1, 3);;
 
     if (day >= 1 && day <= 5) {
       // Weekday rules
@@ -55,33 +78,28 @@ $(function() {
     }
   }
 
-
-
+//CREATING WEEKLY, MONTHLY & ANNUAL ARRAYS
   function pushDataPoint(day, hour) {
 
     if (hour == 0) {
       // Average day Array
-
-      weekData[0] = sumArray(dayData) / 24;
-
-      console.log(weekData[0]);
-
-      // Erase
+      weekData.push(sumArray(dayData) / 24);
+      //console.log(weekData);
       dayData = new Array(24);
+
     }
 
     dayData[hour] = generateDataPoint(day, hour);
-
     //console.log(dayData);
-
-
-
-  //    let kwh = new Array(period);
-  //    for (var i = 0; i < kwh.length; i++) {
-  //        kwh[i] = generateDataPoint(min, max);
-  //    }
-  //    console.log(kwh);
   }
+
+  function pushMonthData() {
+    if (day == 0) {
+      monthData.push(sunArray(weekData));
+      console.log(monthData);
+    }
+  }
+
 
   // GENERIC FUNCTIONS
   // randomIntInc(low, high): Generates a random number between range,
@@ -90,7 +108,6 @@ $(function() {
     return Math.floor(Math.random() * (high - low + 1) + low);
   }
 
-  //
   function add(a, b) {
     return a + b;
   }
@@ -98,4 +115,4 @@ $(function() {
   function sumArray(arr) {
     return arr.reduce(add, 0);
   }
-});
+  */

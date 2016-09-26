@@ -23,12 +23,44 @@
 }
 
 /* Dynamic data minimisation */
+
+#electricity_usage_window_confirmation {
+  display: none;
+}
+
 #electricity_usage_window {
   padding: 1em;
 
+#energy_no {
+  display:none;
+}
+
+#energy_yes {
+  display:none;
+}
+
   .container {
     overflow: auto;
-    @include absolute-center();
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #FFF;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: #FFF 2px solid;
+    margin-bottom: em;
+  }
+
+  img {
+    max-width: 100%;
   }
 
   .cv_thumbnail {
@@ -41,12 +73,6 @@
     &:last-child {
       margin-right: 0;
     }
-
-    a {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
   }
 }
 
@@ -57,7 +83,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  @include absolute-center();
   display: none;
 
   #close_cv {
