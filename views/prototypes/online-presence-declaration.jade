@@ -1,1 +1,32 @@
-p online presence declaration prototype placeholder
+div(id="digital_will" class="window_container")
+  h1 Digital presence will for Gmail
+
+  div(style="margin-bottom:2em;")
+    h2 After I die
+    form(action="")
+      p
+        input(type="radio" id="delete_all" name="after_i_die")
+        label(for="delete all") Delete all my messages
+      p
+        input(type="radio" id="archive_and_allow_access_to" name="after_i_die")
+        label(for="archive_and_allow_access_to") Archive and allow access to:
+      p
+        input(type="text" class="allow_access_to" placeholder="yourname@domain")
+
+  h2 Exceptions
+  form(action="")
+    p
+      input(type="checkbox" name="exception" id="delete_folder")
+      label(for="delete_folder") Delete #[select(name="folders") #[option ———] #[option Personal] #[option Banking] #[option Holidays] #[option Newsletters]] folder
+    p
+      input(type="checkbox" name="exception" id="share_folder")
+      label(for="share_folder") Share folder with person
+  p
+    input(type="text" class="allow_access_to" placeholder="yourname@domain")
+  p(style="margin-top:2em;")
+    a(href="#") Add new exception...
+
+  a(href="#" id="button_save") Save
+
+div(id="digital_will_confirmation" class="window_container")
+  p Confirmed
