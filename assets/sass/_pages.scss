@@ -28,7 +28,34 @@
 }
 
 #electricity_usage_window {
-  padding: 1em;
+  position: relative;
+
+  #button_save {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    border-top: #FFF 2px solid;
+    display: block;
+    width: calc(100% - 1em);
+    padding:0.5em;
+    padding-left: -1em;
+    position: absolute;
+    bottom: 0;
+  }
+
+  img {
+    max-width:100%;
+    padding-top: 2em;
+  }
+
+  h1{
+    padding: 0.5em 0.5em 0em 0.5em;
+  }
+
+  p{
+    padding: 0em 1em 0em 0.5em;
+  }
+
 }
 
 #energy_no {
@@ -38,6 +65,8 @@
 #energy_yes {
   display: none;
 }
+
+
 
 /* Activity log */
 .activity_log_receipt,
@@ -121,7 +150,7 @@
     border-top: #FFF 2px solid;
     display: block;
     width: calc(100% - 1em);
-    padding:0.5em;
+    padding: 0.5em;
     position: absolute;
     bottom: 0;
   }
@@ -146,8 +175,9 @@
     }
 
     img {
-      height: 2em;
+      height: 3em;
       margin-right: 0.75em;
+      padding-bottom: 3em;
     }
 
     p {
