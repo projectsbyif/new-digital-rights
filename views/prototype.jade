@@ -30,7 +30,7 @@ html(lang="en")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
       h1 #{page.title}
-      p #{page.description}
+      p !{page.description}
     div(class="prototype_menu")
       a(href="#" id="hide_prototype_menu") Close
       div(class="item" class="mobile_only_item")
@@ -43,5 +43,5 @@ html(lang="en")
         div(class="item")
           p
             a(href="/#{page.permalink}") #{page.title}
-          p #{page.rights}
+          p #{page.tagline}
     include footer.jade
