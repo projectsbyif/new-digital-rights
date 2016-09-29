@@ -1,9 +1,9 @@
 var config = {};
 
-config.site_name = "GDPR microsite";
-config.site_description = "Prototypes that show the possibilities created by GDPR";
+config.site_name = "New Digital Rights";
+config.site_description = "As our rights as digital citizens change, we explore the kind of services that might emerge.";
 
 config.homepage_headline = "Designing for new digital rights";
-config.homepage_subheading = "As our rights as digital citizens change, we explore the new kind of services that might emerge.";
+config.homepage_subheading = config.site_description;
 
 module.exports = config;
