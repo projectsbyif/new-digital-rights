@@ -1,6 +1,11 @@
-div(class="window_container")
+div(id="shopping_list" class="window_container")
+  div(class="header")
+    // img(src="/public/images/wifi_symbol.svg")
+    h1 Shopping list 
+    a(href="#" id="favourites") Import favourites
   div(id="shopping_list" class="vertical_list")
-    input(type="text" placeholder="Add item...")
+  div(id="top_list")
+    input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")

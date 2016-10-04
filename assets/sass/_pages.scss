@@ -1,4 +1,40 @@
 /* Shopping list */
+#shopping_list {
+  position: relative;
+
+  .header {
+    width: calc(100% - 1em);
+    border-bottom: #FFF 2px solid;
+    overflow: auto;
+    padding: 0.5em;
+    padding-bottom: 1em;
+
+    img, p {
+      float:left;
+    }
+
+    img {
+      height: 3em;
+      margin-right: 0.75em;
+      padding-bottom: 3em;
+    }
+
+    p {
+      font-family: $default-fonts-bold;
+      font-size: 1.2em;
+      margin-top: 0.4em;
+    }
+
+    a {
+      border: #FFF 2px solid;
+      margin: 5px;
+      padding: 0.4em 1em 0.4em 1em;
+      color: $color-if-blue;
+      background: #FFF;
+      margin-bottom: 2em;
+    }
+  }
+}
 .retailer_results {
   padding:0.5em;
   border-bottom:#FFF 1px solid;
@@ -18,6 +54,21 @@
   }
 
   .button_fill_basket {
+    color: #FFF;
+  }
+}
+
+#top_list {
+
+  input {
+    display: block;
+    width: calc(100% - 1em);
+    background: none;
+    border: 0;
+    border-top: rgba(255, 255, 255, 0.8) 1px solid;
+    font-family: $default-fonts-regular;
+    font-size: 1em;
+    padding: 0.5em;
     color: #FFF;
   }
 }
@@ -66,8 +117,6 @@
 #energy_yes {
   display: none;
 }
-
-
 
 /* Activity log */
 .activity_log_receipt,
