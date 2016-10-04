@@ -39,10 +39,7 @@ $(function() {
       });
     }
 
-    //Jquery onClick to add favourites to the input field
-    $( "#favourites" ).click(function() {
-      getFavourites();
-    });
+getFavourites();
 
     //Getting shopping list data and comparing user entered text to match and sum costs
     function checkListItem(searchQuery, index) {
@@ -68,7 +65,7 @@ $(function() {
               }
           }
 
-          $('#results_tesco .total_cost').text(convertToCurrency(totalTesco));
+
 
           // Loop through Morrisons
           for (let product in data.morrisons) {
@@ -91,7 +88,6 @@ $(function() {
               }
           }
 
-          $('#results_morrisons .total_cost').text(convertToCurrency(totalMorrisons));
 
           // Loop throuh Asda
           for (let product in data.asda) {
@@ -114,13 +110,12 @@ $(function() {
               }
           }
 
+          $('#results_tesco .total_cost').text(convertToCurrency(totalTesco));
+          $('#results_morrisons .total_cost').text(convertToCurrency(totalMorrisons));
           $('#results_asda .total_cost').text(convertToCurrency(totalAsda));
         });
     }
 
-    function foo(searchQuery, index) {
-
-    }
     //Summing values
     function convertToCurrency(value) {
         if (!value) {
