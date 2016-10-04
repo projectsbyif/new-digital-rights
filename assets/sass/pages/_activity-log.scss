@@ -1,0 +1,30 @@
+.activity_log_receipt,
+.activity_log_timeline {
+  color: #222;
+  background: #FFF;
+  padding: 1em;
+  margin: 0 1em 1em 1em;
+
+  h1 {
+    border-bottom: #000 2px solid;
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+
+  p {
+    &.timestamp {
+      margin-bottom: 0.25em;
+      color: #999;
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .activity_log_receipt,
+  .activity_log_timeline {
+    width: 35vw;
+    max-height: 60vh;
+    overflow-x: scroll;
+  }
+
+}
