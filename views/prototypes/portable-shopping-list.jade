@@ -1,22 +1,28 @@
-div(class="window_container")
+div(id="shopping_list" class="window_container")
+  div(class="header")
+    img(src="/public/images/shopping_trolley.svg")
+    h2 Your online Tesco favourites shopping list
+    p Recently purchased items
+    //a(href="#" id="favourites") Get your data
   div(id="shopping_list" class="vertical_list")
-    input(type="text" placeholder="Add item...")
+  div(id="top_list")
     input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")
-    input(type="text")
+  div
+    h2(class="compare_prices") Compare prices
   div(id="results_tesco" class="retailer_results")
     p(class="name") Tesco
     p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Fill basket
+    a(href="#" class="button_fill_basket") Basket
   div(id="results_asda" class="retailer_results")
     p(class="name") Asda
     p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Fill basket
+    a(href="#" class="button_fill_basket") Basket
   div(id="results_morrisons" class="retailer_results")
     p(class="name") Morrisons
     p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Fill basket
+    a(href="#" class="button_fill_basket") Basket

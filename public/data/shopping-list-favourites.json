@@ -1,0 +1,104 @@
+{
+  "tesco": [
+    {
+      "name": "Apples - Royal Gala (6 pack)",
+      "tag": "Apples",
+      "price": 150,
+      "url": "http://www.tesco.com/groceries/product/details/?id=284475550"
+    },
+    {
+      "name": "Eggs - Free range (6)",
+      "tag": "Eggs",
+      "price": 89,
+      "url": "http://www.tesco.com/groceries/product/details/?id=250802613"
+    },
+    {
+      "name": "Tea - Yorkshire tea (160 pack)",
+      "tag": "Tea bags",
+      "price": 450,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
+    },
+    {
+      "name": "Bananas",
+      "tag": "Bananas",
+      "price": 100,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
+    }
+  ],
+  "asda": [
+    {
+      "name": "Apples - Royal Gala (6 pack)",
+      "tag": "Apples",
+      "price": 134,
+      "url": "https://groceries.asda.com/product/apples/asda-growers-selection-gala-apples/910000899638"
+    },
+    {
+      "name": "Toilet paper (16 pack)",
+      "tag": "Toilet paper",
+      "price": 500,
+      "url": "https://groceries.asda.com/product/large-toilet-roll-16-rolls/velvet-comfort-toilet-roll/910002049048"
+    },
+    {
+      "name": "Eggs - Free range (6)",
+      "tag": "Eggs",
+      "price": 100,
+      "url": "https://groceries.asda.com/product/free-range/asda-6-large-free-range-eggs/20510"
+    },
+    {
+      "name": "Chopped Tomatoes - Napolina (400g)",
+      "tag": "Tomatoes",
+      "price": 50,
+      "url": "https://groceries.asda.com/product/tinned-tomatoes/napolina-chopped-tomatoes-in-a-rich-tomato-juice/19537"
+    },
+    {
+      "name": "Tea - Yorkshire tea (160 pack)",
+      "tag": "Tea bags",
+      "price": 350,
+      "url": "https://groceries.asda.com/product/regular-tea/yorkshire-tea-160-tea-bags/19840"
+    },
+    {
+      "name": "Bananas",
+      "tag": "Bananas",
+      "price": 100,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
+    }
+  ],
+  "morrisons": [
+    {
+      "name": "Apples - Royal Gala (6 pack)",
+      "tag": "Apples",
+      "price": 155,
+      "url": "https://groceries.morrisons.com/webshop/product/Morrisons-Royal-Gala-Apples-Min-5-fruit/217953011?from=search&tags=%7C105651&param=apples&parentContainer=SEARCHapples_SHELFVIEW"
+    },
+    {
+      "name": "Toilet paper (16 pack)",
+      "tag": "Toilet paper",
+      "price": 500,
+      "url": "https://groceries.morrisons.com/webshop/product/Cushelle-Toilet-Tissue-White/211312011?from=search&tags=%7C105651&param=toilet+paper&parentContainer=SEARCHtoilet+paper_SHELFVIEW"
+    },
+    {
+      "name": "Eggs - Free range (6)",
+      "tag": "Eggs",
+      "price": 93,
+      "url": "https://groceries.morrisons.com/webshop/product/Morrisons-Free-Range-Eggs-Medium/216918011?from=search&tags=%7C105651&param=eggs+freerange&parentContainer=SEARCHeggs+freerange_SHELFVIEW"
+    },
+    {
+      "name": "Tomatoes - Napolina (400g)",
+      "tag": "Chopped tomatoes",
+      "price": 50,
+      "url": "https://groceries.morrisons.com/webshop/product/Napolina-Chopped-Tomatoes/110560011?from=search&tags=%7C105651&param=chpped+toamtoes&parentContainer=SEARCHchpped+toamtoes_SHELFVIEW"
+    },
+    {
+      "name": "Tea - Yorkshire tea (160 pack)",
+      "tag": "Tea bags",
+      "price": 445,
+      "url": "https://groceries.morrisons.com/webshop/product/Yorkshire-Tea-Bags/113685011?from=search&tags=%7C105651&param=yorkshire+tea&parentContainer=SEARCHyorkshire+tea_SHELFVIEW"
+    },
+    {
+      "name": "Bananas",
+      "tag": "Bananas",
+      "price": 100,
+      "url": "http://www.tesco.com/groceries/product/details/?id=254888470"
+    }
+  ]
+}

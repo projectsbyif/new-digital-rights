@@ -1,4 +1,32 @@
 /* Shopping list */
+#shopping_list {
+  position: relative;
+
+  .header {
+    width: calc(100% - 1em);
+    border-bottom: #FFF 2px solid;
+    overflow: auto;
+    padding: 0.5em;
+    padding-bottom: 1em;
+
+    h2 {
+      margin: 0em 0em 1.5em 0em;
+    }
+
+    img {
+      height: 2em;
+      margin: 0.2em 1em 0em 0.1em;
+      float: left;
+    }
+
+    p {
+      font-family: $default-fonts-bold;
+      font-size: 1em;
+      margin-top: 0.4em;
+    }
+
+  }
+}
 .retailer_results {
   padding:0.5em;
   border-bottom:#FFF 1px solid;
@@ -20,6 +48,25 @@
   .button_fill_basket {
     color: #FFF;
   }
+}
+
+#top_list {
+
+  input {
+    display: block;
+    width: calc(100% - 1em);
+    background: none;
+    border: 0;
+    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
+    font-family: $default-fonts-regular;
+    font-size: 1em;
+    padding: 0.5em;
+    color: #FFF;
+  }
+}
+
+.compare_prices {
+    padding: 1em 0em 0em 0.5em;
 }
 
 /* Dynamic data minimisation */
@@ -66,8 +113,6 @@
 #energy_yes {
   display: none;
 }
-
-
 
 /* Activity log */
 .activity_log_receipt,
