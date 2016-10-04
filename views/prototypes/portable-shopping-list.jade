@@ -1,18 +1,18 @@
 div(id="shopping_list" class="window_container")
   div(class="header")
-    // img(src="/public/images/wifi_symbol.svg")
-    h1 Shopping list 
-    a(href="#" id="favourites") Import favourites
+    h2 Import your favourite items from Tesco
+    a(href="#" id="favourites") Get your data
+    //img(src="/public/images/shopping_trolley.svg")
   div(id="shopping_list" class="vertical_list")
-  div(id="top_list")
+  div(class="top_list" id="top_list")
     input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")
     input(type="text")
-    input(type="text")
-    input(type="text")
+  div
+    h2(class="compare_prices") Compare prices
   div(id="results_tesco" class="retailer_results")
     p(class="name") Tesco
     p(class="total_cost") £0.00

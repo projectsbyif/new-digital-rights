@@ -40,7 +40,9 @@ $(function() {
     }
 
     //Jquery onClick to add favourites to the input field
-    getFavourites();
+    $( "#favourites" ).click(function() {
+      getFavourites();
+    });
 
     //Getting shopping list data and comparing user entered text to match and sum costs
     function checkListItem(searchQuery, index) {

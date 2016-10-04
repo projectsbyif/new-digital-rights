@@ -9,14 +9,14 @@
     padding: 0.5em;
     padding-bottom: 1em;
 
-    img, p {
-      float:left;
+    h2 {
+      margin: 0em 0em 1.5em 0em;
     }
 
     img {
-      height: 3em;
+      height: 2em;
       margin-right: 0.75em;
-      padding-bottom: 3em;
+      float:right;
     }
 
     p {
@@ -26,12 +26,12 @@
     }
 
     a {
-      border: #FFF 2px solid;
-      margin: 5px;
-      padding: 0.4em 1em 0.4em 1em;
+      border: #FFF 1px solid;
+      border-radius: 5px;
+      padding: 0.6em 1em 0.4em 1em;
       color: $color-if-blue;
       background: #FFF;
-      margin-bottom: 2em;
+      text-decoration: none;
     }
   }
 }
@@ -58,19 +58,23 @@
   }
 }
 
-#top_list {
+.top_list {
 
   input {
     display: block;
     width: calc(100% - 1em);
     background: none;
     border: 0;
-    border-top: rgba(255, 255, 255, 0.8) 1px solid;
+    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
     font-family: $default-fonts-regular;
     font-size: 1em;
     padding: 0.5em;
     color: #FFF;
   }
+}
+
+.compare_prices {
+    padding: 1em 0em 0em 0.5em;
 }
 
 /* Dynamic data minimisation */
