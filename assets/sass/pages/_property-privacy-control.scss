@@ -1,4 +1,8 @@
-#digital_blinds {
+#blinds_two{
+  display: none;
+}
+
+.digital_blinds {
   position: relative;
 
   .header {
@@ -12,9 +16,8 @@
     }
 
     img {
-      height: 3em;
+      height: 2em;
       margin-right: 0.75em;
-      padding-bottom: 3em;
     }
 
     p {
@@ -26,12 +29,27 @@
 
   .content {
     .section {
-      border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
+      //border-bottom: rgba(255, 255, 255, 0.4) 1px solid;
       padding: 0.5em;
 
       input[type='radio'] {
         margin-right: 1em;
       }
+    }
+
+    img {
+      width:100%;
+    }
+
+    a {
+      color: white;
+      float: right;
+      padding-right: 1em;
+      border:#FFF 1px solid;
+      text-decoration:none;
+      padding:0.5em;
+      text-align: center;
+      border-radius: 0.5em
     }
   }
 
