@@ -5,12 +5,23 @@ $(function() {
     let listTesco = new Array(10);
     let listAsda = new Array(10);
     let listMorrisons = new Array(10);
-
     let listTimer = new Array(10);
 
     listTesco.fill(null);
     listAsda.fill(null);
     listMorrisons.fill(null);
+
+    //Finding the first empty input
+    //$("input:empty,input:text[value='']").first().focus();
+
+    //Click through to confirmation page
+    $('.button_fill_basket').click(function(e) {
+      e.preventDefault();
+
+      $('#shopping_list').fadeOut(250, function() {
+        $('#shopping_list_checkout').fadeIn(250);
+      });
+    });
 
     //Typing Elements
     $('#shopping_list input').first().focus();

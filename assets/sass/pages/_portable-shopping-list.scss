@@ -1,3 +1,22 @@
+#shopping_list_checkout {
+  display: none;
+
+  p,
+  h1,
+  h2, {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
+    padding: 4em 0.7em 3em 0em;
+  }
+
+  .confirm {
+    margin-top: 3em;
+  }
+}
+
 #shopping_list {
   position: relative;
 
@@ -7,6 +26,10 @@
     overflow: auto;
     padding: 0.5em;
     padding-bottom: 1em;
+
+    h1 {
+      margin: 0.3em 0em 0.9em 0em;
+    }
 
     h2 {
       margin: 0em 0em 1.5em 0em;
@@ -21,12 +44,12 @@
     p {
       font-family: $default-fonts-bold;
       font-size: 1em;
-      margin-top: 0.4em;
+      margin: 0.4em 0em 0em 0.4em;
     }
   }
 }
 .retailer_results {
-  padding:0.5em;
+  padding:0.5em 0em 1em 1em;
   border-bottom:#FFF 1px solid;
 
   .name,
@@ -64,7 +87,7 @@
 }
 
 .compare_prices {
-    padding: 1em 0em 0em 0.5em;
+    padding: 0.5em 0em 0em 0.5em;
 }
 
 @media screen and (min-width: 720px) {
