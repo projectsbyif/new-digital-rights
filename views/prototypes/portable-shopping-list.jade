@@ -1,8 +1,8 @@
 div(id="shopping_list" class="window_container")
   div(class="header")
     img(src="/public/images/shopping_trolley.svg")
-    h2 Your online Tesco favourites shopping list
-    p Recently purchased items
+    h1 Tesco Online
+    p Hi Sally. Here is your shopping basket from last time.
     //a(href="#" id="favourites") Get your data
   div(id="shopping_list" class="vertical_list")
   div(id="top_list")
@@ -12,8 +12,9 @@ div(id="shopping_list" class="window_container")
     input(type="text")
     input(type="text")
     input(type="text")
+    input(type="text")
   div
-    h2(class="compare_prices") Compare prices
+    h2(class="compare_prices") Select your supermarket
   div(id="results_tesco" class="retailer_results")
     p(class="name") Tesco
     p(class="total_cost") £0.00
@@ -26,3 +27,13 @@ div(id="shopping_list" class="window_container")
     p(class="name") Morrisons
     p(class="total_cost") £0.00
     a(href="#" class="button_fill_basket") Basket
+  p(style="margin-left: 0.6em;") *Delivery details included
+div(id="shopping_list_checkout" class="window_container")
+  div(style="text-align: center;")
+    img(src="/public/images/shopping_trolley.svg")
+  div
+    h1(style="text-decoration:underline;") Sally Singer
+    p 76 Saint Sarto Lane
+    p Shelbyville, W19 8RE
+  div(class="confirm")
+    h2 Confirm your order
