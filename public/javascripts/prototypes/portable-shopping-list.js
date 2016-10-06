@@ -72,7 +72,7 @@ getFavourites();
 
           for (let product in listTesco) {
               if (listTesco[product]) {
-                  totalTesco += listTesco[product].price;
+                  totalTesco += listTesco[product].calories;
               }
           }
 
@@ -95,7 +95,7 @@ getFavourites();
 
           for (let product in listMorrisons) {
               if (listMorrisons[product]) {
-                  totalMorrisons += listMorrisons[product].price;
+                  totalMorrisons += listMorrisons[product].calories;
               }
           }
 
@@ -117,13 +117,13 @@ getFavourites();
 
           for (let product in listAsda) {
               if (listAsda[product]) {
-                  totalAsda += listAsda[product].price;
+                  totalAsda += listAsda[product].calories;
               }
           }
 
-          $('#results_tesco .total_cost').text(convertToCurrency(totalTesco));
-          $('#results_morrisons .total_cost').text(convertToCurrency(totalMorrisons));
-          $('#results_asda .total_cost').text(convertToCurrency(totalAsda));
+          $('#results_tesco .total_cost').text((totalTesco + " Kcal"));
+          $('#results_morrisons .total_cost').text((totalMorrisons + " Kcal"));
+          $('#results_asda .total_cost').text((totalAsda)+ " Kcal");
         });
     }
 
