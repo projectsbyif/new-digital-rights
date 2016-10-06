@@ -66,23 +66,24 @@ header {
 /* Prototype pages */
 .prototype_canvas {
   height: 80vh;
-  background-color: $color-if-blue;
+  background-color: $color-if-teal;
   color: #FFF;
 }
 
 .prototype_description {
   min-height: 20vh;
-  background-color: $color-if-blue;
-  color: #FFF;
+  background-color: #FFF;
+  color: #000;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
+  padding-top: 2em;
 
   p {
     line-height: 1.2em;
 
     a {
-      color: #FFF;
+      color: $color-if-blue;
     }
   }
 }
@@ -119,7 +120,7 @@ header {
 .prototype_header {
   width: 100vw;
   height: 3.5em;
-  background: $color-if-blue;
+  background: #FFF;
 
   .left, .right {
     display: none;
@@ -128,7 +129,7 @@ header {
   #logo-light {
     display:block;
     text-indent:-9999px;
-    background-image:url('/public/images/if-logo-light.svg');
+    background-image:url('/public/images/if-logo.svg');
     background-repeat:no-repeat;
     background-size:contain;
     margin:0 auto;
@@ -281,7 +282,7 @@ header {
     }
 
     a {
-      color: #FFF;
+      color: #000;
       text-decoration: none;
     }
 

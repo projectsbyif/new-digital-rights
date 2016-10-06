@@ -26,11 +26,14 @@ html(lang="en")
         a(href="/why") Why?
       div(class="right")
         a(href="#" class="prototype_menu_link") Prototypes
-    div(class="prototype_canvas")
-      != renderTemplate(page.permalink)
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.description}
+    div(class="prototype_canvas")
+      != renderTemplate(page.permalink)
+    div(class="prototype_description")
+      p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+      a(href="#") Next
     div(class="prototype_menu")
       a(href="#" id="hide_prototype_menu") Close
       div(class="item" class="mobile_only_item")
