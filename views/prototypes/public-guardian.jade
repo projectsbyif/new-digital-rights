@@ -1,31 +1,32 @@
 div(id="digital_will" class="window_container")
-  h1 Digital presence will for Gmail
-
-  div(style="margin-bottom:2em;")
-    h2 After I die
+  div(style="text-align: center;")
+    img(src="/public/images/lion_head.svg")
+  h2 Appoint your legacy friend
+  p(class="intro") A legacy friend is an individual who can manage your social media accounts after you have died. They can maintain your accounts, close them or rectify any inaccurate information about you or others.
+  p
+    input(type="text" class="allow_access_to" placeholder="theirname@domain")
+  p  
+    input(type="checkbox" name="exception" id="share_folder")
+    label(for="share_folder") Grant then to power to delete accounts
+  p(class="intro") Select items to restrict access
+  div(class="social_media_list")
+    h2 Facebook
     form(action="")
       p
-        input(type="radio" id="delete_all" name="after_i_die")
-        label(for="delete all") Delete all my messages
+        input(type="checkbox" name="exception" id="delete_folder")
+        label(for="delete_folder") Private messages
       p
-        input(type="radio" id="archive_and_allow_access_to" name="after_i_die")
-        label(for="archive_and_allow_access_to") Archive and allow access to:
+        input(type="checkbox" name="exception" id="delete_folder")
+        label(for="delete_folder") Private photo albums
+  div(class="social_media_list")
+    h2 Tinder
+    form(action="")
       p
-        input(type="text" class="allow_access_to" placeholder="yourname@domain")
-
-  h2 Exceptions
-  form(action="")
-    p
-      input(type="checkbox" name="exception" id="delete_folder")
-      label(for="delete_folder") Delete #[select(name="folders") #[option ———] #[option Personal] #[option Banking] #[option Holidays] #[option Newsletters]] folder
-    p
-      input(type="checkbox" name="exception" id="share_folder")
-      label(for="share_folder") Share folder with person
-  p
-    input(type="text" class="allow_access_to" placeholder="yourname@domain")
-  p(style="margin-top:2em;")
-    a(href="#") Add new exception...
-    a(href="#" id="button_save") Save
-
-div(id="digital_will_confirmation" class="window_container")
-  p Confirmed
+        input(type="checkbox" name="exception" id="delete_folder")
+        label(for="delete_folder") Private messages
+  div(class="social_media_list")
+      h2 Gmail
+      form(action="")
+        p
+          input(type="checkbox" name="exception" id="delete_folder")
+          label(for="delete_folder") Selected folders #[select(name="folders") #[option ———] #[option Personal] #[option Banking] #[option Holidays] #[option Newsletters]] Delete

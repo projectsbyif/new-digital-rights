@@ -1,0 +1,100 @@
+#shopping_list_checkout {
+  display: none;
+
+  p,
+  h1,
+  h2, {
+    text-align: center;
+  }
+
+  img {
+    margin: 0 auto;
+    padding: 4em 0.7em 3em 0em;
+  }
+
+  .confirm {
+    margin-top: 3em;
+  }
+}
+
+#shopping_list {
+  position: relative;
+
+  .header {
+    width: calc(100% - 1em);
+    border-bottom: #FFF 2px solid;
+    overflow: auto;
+    padding: 0.5em;
+    padding-bottom: 1em;
+
+    h1 {
+      margin: 0.3em 0em 0.9em 0em;
+    }
+
+    h2 {
+      margin: 0em 0em 1.5em 0em;
+    }
+
+    img {
+      height: 2em;
+      margin: 0.2em 1em 0em 0.1em;
+      float: left;
+    }
+
+    p {
+      font-family: $default-fonts-bold;
+      font-size: 1em;
+      margin: 0.4em 0em 0em 0.4em;
+    }
+  }
+}
+.retailer_results {
+  padding:0.5em 0em 1em 1em;
+  border-bottom:#FFF 1px solid;
+
+  .name,
+  .total_cost,
+  .button_fill_basket {
+    margin-bottom: 0.25em;
+  }
+
+  .name {
+    margin-bottom: 0.5em;
+  }
+
+  .total_cost {
+    font-size:1.4em;
+  }
+
+  .button_fill_basket {
+    color: #FFF;
+  }
+}
+
+#top_list {
+
+  input {
+    display: block;
+    width: calc(100% - 1em);
+    background: none;
+    border: 0;
+    border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
+    font-family: $default-fonts-regular;
+    font-size: 1em;
+    padding: 0.5em;
+    color: #FFF;
+  }
+}
+
+.compare_prices {
+    padding: 0.5em 0em 0em 0.5em;
+}
+
+@media screen and (min-width: 720px) {
+  .retailer_results {
+    padding-top: 0.75em;
+    width: calc(33.333% - 1em);
+    border-bottom: none;
+    float: left;
+  }
+}

@@ -1,35 +1,40 @@
-div(id="digital_blinds" class="window_container")
+div(id="blinds_one" class="window_container digital_blinds")
   div(class="header")
     img(src="/public/images/wifi_symbol.svg")
-    p Router settings ›
-  div(class="content" style="overflow-x: scroll; height:56vh;")    
+    p Draw your digital boundaries
+  div(class="content")    
     div(class="section")
-      h2 Street-level photography
-      p
-        input(type="radio" id="show_my_building" name="street_photo")
-        label(for="show_my_building") Show my building
-      p(style="margin-left: 1.5em") Retake photos every #[select(name="retake_street_photos") #[option every 6 months] #[option every year] #[option every 2 years]]
-      p
-        input(type="radio" id="hide_my_building" name="street_photo")
-        label(for="hide_my_building") Hide my building
-    
+      //img(id="target" src="/public/images/placeholder.svg")
+      img(src="/public/images/placeholder_no.svg")
     div(class="section")
-      h2 Aerial photography
+      p Some organisations (Google, Uber, Amazon) regularly take automatic photographic imagery of properties in your neighbourhood from street level.
+      h2 Allow or deny street level photography of your property
       p
-        input(type="radio" id="show_my_building_aerial" name="aerial_photo")
-        label(for="show_my_building_aerial") Show my building
-      p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
-      p(style="margin-left: 1.5em") Retake photos every #[select(name="retake_aerial_photos") #[option every 6 months] #[option every year] #[option every 2 years]]
+        input(type="radio" id="show_my_building_aerial" name="aerial_photo")  
+        label(for="show_my_building_aerial") Allow
+        //p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
       p
         input(type="radio" id="hide_my_building_aerial" name="aerial_photo")
-        label(for="hide_my_building_aerial") Hide my building
+        label(for="hide_my_building_aerial") Deny
+      div(class="section")
+        a(href"#" class="next_button") Next
+        
+div(id="blinds_two" class="window_container digital_blinds")
+  div(class="header")
+    img(src="/public/images/wifi_symbol.svg")
+    p Draw your digital boundaries
+  div(class="content")    
     div(class="section")
-      h2 Wi-Fi name
+      //img(id="target" src="/public/images/placeholder.svg")
+      img(src="/public/images/placeholder_no.svg")
+    div(class="section")
+      p Copy here
+      h2 Allow or deny satellite photography of your property
       p
-        input(type="radio" id="allow_wifi_name" name="wifi_name")
-        label(for="allow_wifi_name") Allow access to my Wi-Fi name
+        input(type="radio" id="show_my_building_aerial" name="aerial_photo")  
+        label(for="show_my_building_aerial") Allow
+        //p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
       p
-        input(type="radio" id="hide_wifi_name" name="wifi_name")
-        label(for="hide_wifi_name") Hide my Wi-Fi name
-  div(class="footer")
-    a(href="#" id="save_settings") Save
+        input(type="radio" id="hide_my_building_aerial" name="aerial_photo")
+        label(for="hide_my_building_aerial") Deny
+    div(class="section")

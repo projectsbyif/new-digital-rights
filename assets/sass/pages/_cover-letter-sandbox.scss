@@ -1,0 +1,140 @@
+.cv_thumbnails {
+overflow: auto;
+width: 100vw;
+
+  .container {
+    overflow: auto;
+    @include absolute-center();
+
+    div {
+      width: 100%;
+
+      .cv_thumbnail {
+        width: calc((100% / 3) - 1em);
+        height: calc(10em - 0.5em);
+        background: #FFF;
+        float: left;
+        padding: 0.25em;
+        margin-right: 0.75em;
+        overflow: hidden;
+        position:relative;
+        color: #222;
+        font-size: 0.8em;
+
+        &.unselected {
+          opacity: 0.4;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          width: 2em;
+          height: 2em;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          text-indent: -9999px;
+          background-color: #eee;
+          @include background-button(70% 70%);
+          background-image: url('/public/images/icon_zoom.svg');
+        }
+      }
+    }
+  }
+}
+
+.cv_modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include absolute-center();
+  display: none;
+
+  #close_cv {
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+    color: #FFF;
+  }
+
+  .cv_single {
+    display: none;
+    width: calc(100% - 1em);
+    margin: 2em;
+    height: calc(50vh - 1em);
+    background: #FFF;
+    color: #222;
+    padding: 0.5em;
+    font-size: 1.2em;
+  }
+}
+
+#cv_check {
+  width:100%;
+  margin-top:3em;
+  text-align:center;
+
+  #cv_check_button {
+    border:#FFF 1px solid;
+    text-decoration:none;
+    padding:0.5em;
+    color: #FFF;
+    font-family:$default-fonts-bold;
+
+    &.off {
+      color: rgba(255, 255, 255, 0.5);
+      border: rgba(255, 255, 255, 0.5) 1px solid;
+    }
+  }
+}
+
+#cv_results {
+  margin-top: 3em;
+
+  .result {
+    margin-bottom:0.5em;
+
+    &.neutral,
+    &.true,
+    &.false {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 1.5em;
+    }
+
+    &.neutral {
+      background-image: url('/public/images/icon_neutral.svg');
+    }
+
+    &.true {
+      background-image: url('/public/images/icon_true.svg');
+    }
+
+    &.false {
+      background-image: url('/public/images/icon_false.svg');
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cv_thumbnails {
+    width: 24vw;
+  }
+
+  .cv_modal {
+    .cv_single {
+      display: none;
+      width: 30vw;
+      height: calc(100vh - 6em);
+    }
+  }
+}
