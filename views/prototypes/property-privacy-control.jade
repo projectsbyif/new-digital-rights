@@ -4,17 +4,17 @@ div(id="blinds_one" class="window_container digital_blinds")
     p Draw your digital boundaries
   div(class="content")    
     div(class="section")
-      //img(id="target" src="/public/images/placeholder.svg")
-      img(src="/public/images/placeholder_no.svg")
+      img(class="house_yes" src="/public/images/placeholder.svg")
+      img(class="house_no" src="/public/images/placeholder_no.svg")
     div(class="section")
-      p Some organisations (Google, Uber, Amazon) regularly take automatic photographic imagery of properties in your neighbourhood from street level.
+      p Some organisations (Google, Uber) regularly take automatic photographic imagery of properties in your neighbourhood from street level.
       h2 Allow or deny street level photography of your property
       p
-        input(type="radio" id="show_my_building_aerial" name="aerial_photo")  
+        input(type="radio" id="show_my_building_street" name="aerial_photo")  
         label(for="show_my_building_aerial") Allow
         //p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
       p
-        input(type="radio" id="hide_my_building_aerial" name="aerial_photo")
+        input(type="radio" id="hide_my_building_street" name="aerial_photo")
         label(for="hide_my_building_aerial") Deny
       div(class="section")
         a(href"#" class="next_button") Next
@@ -25,16 +25,17 @@ div(id="blinds_two" class="window_container digital_blinds")
     p Draw your digital boundaries
   div(class="content")    
     div(class="section")
-      //img(id="target" src="/public/images/placeholder.svg")
-      img(src="/public/images/placeholder_no.svg")
+      img(class="house_yes_map" src="/public/images/placeholder.svg")
+      img(class="house_no_map" src="/public/images/placeholder_no.svg")
     div(class="section")
       p Copy here
       h2 Allow or deny satellite photography of your property
       p
-        input(type="radio" id="show_my_building_aerial" name="aerial_photo")  
-        label(for="show_my_building_aerial") Allow
+        input(type="radio" id="show_my_building_satellite" name="aerial_photo")  
+        label(for="show_my_building_satellite") Allow
         //p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
       p
-        input(type="radio" id="hide_my_building_aerial" name="aerial_photo")
-        label(for="hide_my_building_aerial") Deny
-    div(class="section")
+        input(type="radio" id="hide_my_building_satellite" name="aerial_photo")
+        label(for="hide_my_building_aerial") Deny    
+      div(class="section")
+        a(href"#" class="next_button") Save
