@@ -22,10 +22,9 @@ html(lang="en")
       a(href="/" id="logo-light")
       a(href="#" id="show_prototype_menu_mobile" class="prototype_menu_link") Show menu
       div(class="left")
-        a(href="/") GDPR
-        a(href="/why") Why?
+        a(href="/") Digital Rights
       div(class="right")
-        a(href="#" class="prototype_menu_link") Prototypes
+        a(href="#" class="prototype_menu_link") Menu
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.description}
@@ -33,7 +32,7 @@ html(lang="en")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
       p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
-      a(href="#") Next
+      a(style="float: right;" href="#") Next
     div(class="prototype_menu")
       a(href="#" id="hide_prototype_menu") Close
       div(class="item" class="mobile_only_item")
