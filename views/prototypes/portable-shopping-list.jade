@@ -14,20 +14,19 @@ div(id="shopping_list" class="window_container")
     input(type="text")
     input(type="text")
   div
-    h2(class="compare_prices") Select your supermarket
+    h2(class="compare_prices") Your basket has the following calorie count
   div(id="results_tesco" class="retailer_results")
     p(class="name") Tesco
     p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Basket
+    a(href="#" class="button_fill_basket") Checkout
   div(id="results_asda" class="retailer_results")
     p(class="name") Asda
     p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Basket
+    a(href="#" class="button_fill_basket") Checkout
   div(id="results_morrisons" class="retailer_results")
     p(class="name") Morrisons
     p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Basket
-  p(style="margin-left: 0.6em;") *Delivery details included
+    a(href="#" class="button_fill_basket") Checkout
 div(id="shopping_list_checkout" class="window_container")
   div(style="text-align: center;")
     img(src="/public/images/shopping_trolley.svg")
@@ -35,5 +34,6 @@ div(id="shopping_list_checkout" class="window_container")
     h1(style="text-decoration:underline;") Sally Singer
     p 76 Saint Sarto Lane
     p Shelbyville, W19 8RE
+    h2 £X.XX
   div(class="confirm")
     h2 Confirm your order
