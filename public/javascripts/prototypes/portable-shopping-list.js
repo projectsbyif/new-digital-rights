@@ -11,9 +11,6 @@ $(function() {
   listAsda.fill(null);
   listMorrisons.fill(null);
 
-  // Finding the first empty input
-  // $("input:empty,input:text[value='']").first().focus();
-
   // Click through to confirmation page
   $('.button_fill_basket').click(function(e) {
     e.preventDefault();
@@ -24,8 +21,6 @@ $(function() {
   });
 
   // Typing Elements
-  $('#shopping_list input').first().focus();
-
   $('#shopping_list input').keyup(function() {
     let val = $(this).val();
     let index = $(this).index();
@@ -55,6 +50,8 @@ $(function() {
   // Getting shopping list data and comparing user entered text to match and sum costs
   function checkListItem(searchQuery, index) {
     $.getJSON("/public/data/shopping-list.json", function(data) {
+
+      $("#top_list input")[4].focus(index);
       // Loop through Tesco
       for (let product in data.tesco) {
         let query = searchQuery.toLowerCase();
@@ -118,9 +115,9 @@ $(function() {
         }
       }
 
-      $('#results_tesco .total_cost').text((totalTesco + " Kcal"));
-      $('#results_morrisons .total_cost').text((totalMorrisons + " Kcal"));
-      $('#results_asda .total_cost').text((totalAsda)+ " Kcal");
+      $('#results_tesco .total_cost').text((totalTesco));
+      $('#results_morrisons .total_cost').text((totalMorrisons));
+      $('#results_asda .total_cost').text((totalAsda));
     });
   }
 
