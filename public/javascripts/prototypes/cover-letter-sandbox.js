@@ -1,69 +1,127 @@
 $(function() {
-  let cvToCheck;
-  let cvCheckTimer;
+  /*
+    Fast + major : 0
+    Fast + minor : 1
+    Slow + major : 2
+    Slow + minor : 3
+  */
+  
+  let predefinedRoutes = [
+    {
+      "identifier": "(0) Via A57",
+      "distance": "38 miles",
+      "time": "1 hr 11 mins"
+    },
+    {
+      "identifier": "(1) Via M1 and M62",
+      "distance": "72.4 miles",
+      "time": "1 hr 29 mins"
+    },
+    {
+      "identifier": "(2) Via M1 and M62",
+      "distance": "72.4 miles",
+      "time": "1 hr 29 mins"
+    },
+    {
+      "identifier": "(3) Via M1 and M62",
+      "distance": "72.4 miles",
+      "time": "1 hr 29 mins"
+    }
+  ];
 
-  $('.cv_thumbnail').not('.cv_thumbnail a').click(function(e) {
+  let useRoute = 0;
+
+  recalculate();
+
+  $('.option a').click(function(e) {
     e.preventDefault();
 
-    $(this).parent().children().attr('class', 'cv_thumbnail');
+    $(this).siblings().removeClass('selected');
     $(this).addClass('selected');
-    $(this).siblings().not('.selected').addClass('unselected');
 
-    $('#cv_check_button').removeClass('off');
-
-    cvToCheck = $(this).attr('data-cv-id');
+    recalculate();
   });
 
-  $('#cv_check_button').click(function(e) {
-    let t = $(this);
+  function recalculate() {
+    let quoteAmount = 1000;
+    let roadSpeed = $('.section #road_speed .selected').text();
+    let roadType = $('.section #road_type .selected').text();
+    let passengers = $('.section #passengers .selected').text();
+    let time = $('.section #time .selected').text();
 
-    e.preventDefault();
+    if (roadSpeed === "Slow") {
+      quoteAmount += 500;
+    } else if (roadSpeed === "Fast") {
+      quoteAmount += 750;
+    }
 
-    clearInterval(cvCheckTimer);
+    if (roadType === "Minor roads") {
+      quoteAmount += 550;
+    } else if (roadType === "Major roads") {
+      quoteAmount += 300;
+    }
 
-    t.text("Checking...");
+    if (passengers === "Driver only") {
+      quoteAmount += 100;
+    } else if (passengers === "Driver + Passengers") {
+      quoteAmount += 500;
+    }
 
-    cvCheckTimer = setTimeout(function() {
-      t.text("Check");
+    // Choose best route
+    if (roadSpeed === "Fast" && roadType === "Major roads") {
+      useRoute = 0;
+    } else if (roadSpeed === "Fast" && roadType === "Minor roads") {
+      useRoute = 1;
+    } else if (roadSpeed === "Slow" && roadType === "Major roads") {
+      useRoute = 2;
+    } else if (roadSpeed === "Slow" && roadType === "Minor roads") {
+      useRoute = 3;
+    }
 
-      switch (cvToCheck) {
-        case "1":
-          $('#cv_results p').eq(0).attr('class', 'result true');
-          $('#cv_results p').eq(1).attr('class', 'result false');
-          $('#cv_results p').eq(2).attr('class', 'result false');
-          $('#cv_results p').eq(3).attr('class', 'result false');
-          break;
-        case "2":
-          $('#cv_results p').eq(0).attr('class', 'result true');
-          $('#cv_results p').eq(1).attr('class', 'result true');
-          $('#cv_results p').eq(2).attr('class', 'result false');
-          $('#cv_results p').eq(3).attr('class', 'result false');
-          break;
-        case "3":
-          $('#cv_results p').eq(0).attr('class', 'result true');
-          $('#cv_results p').eq(1).attr('class', 'result true');
-          $('#cv_results p').eq(2).attr('class', 'result true');
-          $('#cv_results p').eq(3).attr('class', 'result true');
-          break;
-      }
-    }, 1000);
-  });
+    populateMeta(
+      predefinedRoutes[useRoute].identifier,
+      predefinedRoutes[useRoute].distance,
+      predefinedRoutes[useRoute].time);
 
-  $('.cv_thumbnail a').click(function(e) {
-    e.preventDefault();
-    e.stopPropagation();
 
-    $('.cv_modal').fadeIn(250).css({
-      'display': 'flex'
-    });
+    if (time === "Day") {
+      quoteAmount += 100;
+      $('#route_depart').text("Leave between 08:00 and 18:59.");
+    } else if (time === "Night") {
+      quoteAmount += 450;
+      $('#route_depart').text("Leave between 19:00 and 07:59.");
+    }
 
-    $('.cv_single').hide();
-    $('#cv_' + $(this).attr('data-cv-id')).fadeIn(250);
-  });
+    $('#quote_amount').text(convertToCurrency(quoteAmount));
+  }
 
-  $('#close_cv').click(function(e) {
-    e.preventDefault();
+  function populateMeta(identifier, distance, time) {
+    $('#route_identifier').text(identifier);
+    $('#route_distance').text(distance);
+    $('#route_time').text(time);
+  }
 
-    $('.cv_modal').fadeOut(250);
-  });
+  function convertToCurrency(value) {
+    const CURRENCY_SYMBOL = "£";
+    const SEPERATOR = ".";
+
+    if (!value) {
+      return CURRENCY_SYMBOL + "0" + SEPERATOR + "00";
+    }
+
+    // Ensure value is a string
+    value = value.toString();
+
+    // Pad out values when needed
+    if (value.length == 2) {
+      value = "0" + value;
+    } else if (value.length == 1) {
+      value = "00" + value;
+    }
+
+    // Construct string
+    value = CURRENCY_SYMBOL + value.slice(0, value.length - 2) + SEPERATOR + value.slice(-2);
+
+    return value
+  }
 });
