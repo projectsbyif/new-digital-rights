@@ -1,24 +1,24 @@
-div(id="electricity_usage_window" class="window_container")
+div(id="data_minimisation" class="window_container")
   div(class="header")
-    h1 Electricity usage in the Smith's household
-
-  div(class="content")
-    div(class="section")
-      p Allow the archiving of detailed historic energy usage data?
-      p
-        input(type="radio" id="energy_appear" name="energy_data")
-        label(for="no_minimise_my_data") Yes
-      p
-        input(type="radio" id="energy_disappear" name="energy_data")
-        label(for="minimise_my_data") No
-
-    div(class="section")
-      img(id="energy_blank" src="/public/images/box.svg")
-      img(id="energy_no" src="/public/images/energy_n.svg")
-      img(id="energy_yes" src="/public/images/energy_y.svg")
-    
-  div(class="footer")   
-    a(href="#" id="button_save") Save
-
-div(id="electricity_usage_window_confirmation" class="window_container")
-  p Confirmed
+    p Your trip to Brighton
+  div(class="date")
+    p August 12 - August 19
+  div(class="section")
+    img(class="brighton_yes" src="/public/images/brighton-unfiltered.png")
+    img(class="brighton_no" src="/public/images/brighton-filtered.png")
+  div(class="section")
+    h3 Recent locations
+  div(class="holiday_locations")
+    div(class="location")
+      p Hotel Ibis - 09:46, August 19
+      i 12 vists
+    div(class="location")
+      p Jane's Cafe - 13:16, August 19
+      i 4 vists
+    div(class="location")
+      p Brighton Railway Station - 17:42, August 19
+      i 2 vists
+  div(class="section")
+    p(class="decision_text") Would you like to remove detailed location data from your recent trip to Brighton?
+    a(href="#" id="list_click_yes") Yes
+    a(href="#" id="list_click_no") No
