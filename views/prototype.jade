@@ -27,11 +27,11 @@ html(lang="en")
         a(href="#" class="prototype_menu_link") Menu
     div(class="prototype_description")
       h1 #{page.title}
-      p !{page.description}
+      p !{page.top_text}
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
-      p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+      p !{page.bottom_text}
       if nextPage
         a(href="/#{nextPage.permalink}") Next: #{nextPage.title}
       else
