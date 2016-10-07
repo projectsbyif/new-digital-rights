@@ -38,10 +38,6 @@ for (let page in pages) {
 	});
 }
 
-app.get('/why', function(req, res) {
-  res.render('why', { config, pages });
-});
-
 // SERVER
 http.listen(app.get('port'), function() {
 	console.log("Server started on :" + app.get('port'));
