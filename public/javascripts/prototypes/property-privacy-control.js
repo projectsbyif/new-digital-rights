@@ -8,6 +8,14 @@ $(function() {
     });
   });
 
+  $('.next_button_two').click(function(e) {
+    e.preventDefault();
+
+    $('#blinds_two').fadeOut(250, function() {
+      $('#blinds_three').fadeIn(250);
+    });
+  });
+
   $('#show_my_building_street').click(function(e) {
     e.preventDefault();
 
@@ -39,4 +47,5 @@ $(function() {
       $('.house_no_map').fadeIn();
     });
   });
+
 });
