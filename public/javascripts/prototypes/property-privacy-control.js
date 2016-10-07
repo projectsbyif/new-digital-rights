@@ -1,51 +1,51 @@
 $(function() {
+  let currentStep = 0;
 
-  $('.next_button').click(function(e) {
+  $('.selector a').click(function(e) {
     e.preventDefault();
 
-    $('#blinds_one').fadeOut(250, function() {
-      $('#blinds_two').fadeIn(250);
-    });
+    $(this).siblings().removeClass('selected');
+    $(this).addClass('selected');
+
+    if ($(this).parent().attr('id') === "blinds_one_selector") {
+      if ($(this).text() === "Yes") {
+        $('#blinds_one .preview_area').css({
+          'background-image': "url('/public/images/house.jpg')"
+        });
+      } else if ($(this).text() === "No") {
+        $('#blinds_one .preview_area').css({
+          'background-image': "url('/public/images/house_blur.jpg')"
+        });
+      }
+    } else if ($(this).parent().attr('id') === "blinds_two_selector") {
+      if ($(this).text() === "Yes") {
+        $('#blinds_two .preview_area').css({
+          'background-image': "url('/public/images/house_satellite.svg')"
+        });
+      } else if ($(this).text() === "No") {
+        $('#blinds_two .preview_area').css({
+          'background-image': "url('/public/images/house_satellite_blur.svg')"
+        });
+      }
+    }
   });
 
-  $('.next_button_two').click(function(e) {
+  $('.next').click(function(e) {
     e.preventDefault();
 
-    $('#blinds_two').fadeOut(250, function() {
-      $('#blinds_three').fadeIn(250);
-    });
+    if (currentStep == 0) {
+      // Show 1
+      $('#blinds_one').fadeOut(250, function() {
+        $('#blinds_two').fadeIn(250);
+      });
+      currentStep++;
+    } else if (currentStep == 1) {
+      // Show confirmation
+      $('#blinds_two').fadeOut(250, function() {
+        $('#blinds_three').fadeIn(250).css({
+          'display': 'flex'
+        });
+      });
+    }
   });
-
-  $('#show_my_building_street').click(function(e) {
-    e.preventDefault();
-
-    $('.house_no').fadeOut(function() {
-      $('.house_yes').fadeIn();
-    });
-  });
-
-  $('#hide_my_building_street').click(function(e) {
-    e.preventDefault();
-
-    $('.house_yes').fadeOut(function() {
-      $('.house_no').fadeIn();
-    });
-  });
-
-  $('#show_my_building_satellite').click(function(e) {
-    e.preventDefault();
-
-    $('.house_no_map').fadeOut(function() {
-      $('.house_yes_map').fadeIn();
-    });
-  });
-
-  $('#hide_my_building_satellite').click(function(e) {
-    e.preventDefault();
-
-    $('.house_yes_map').fadeOut(function() {
-      $('.house_no_map').fadeIn();
-    });
-  });
-
 });
