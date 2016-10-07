@@ -2,18 +2,6 @@ var content = {};
 
 content = [
   {
-    "title": "temp mobile",
-    "description": "<p>Temp mobile</p>",
-    "permalink": "temp-mobile",
-    "tagline": "Temp mobile"
-  },
-  {
-    "title": "temp desktop",
-    "description": "<p>Temp desktop</p>",
-    "permalink": "temp-desktop",
-    "tagline": "temp-desktop"
-  },
-  {
     "title": "Dynamic data minimisation",
     "description": "<p>Devices can store more information about a greater number of things over time. But while some data gets more useful over time, other data potentially our privacy and security.</p><p>Dynamic data minimisation is a design pattern that takes detailed, real-time data and averages out historic data over time. The result balances long term use with the privacy implications of storing data over time. This is especially useful for things like smart meters in rented houses, where tenants would be able to see the general trends of a property with knowing detailed information about previous tenants habits.</p><p>See the ICO website to read more about the <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-erasure/\">right to erasure</a> in the General Data Protection Regulation.</p>",
     "permalink": "dynamic-data-minimisation",
