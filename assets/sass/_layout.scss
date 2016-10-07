@@ -104,6 +104,39 @@ header {
   border-radius: 5px;
 }
 
+.mobile_container {
+  .header {
+    border-bottom: #FFF 1px solid;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    h1 {
+      font-size: 1em;
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      margin-bottom: 0.25em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.chunky_button {
+  background: #FFF;
+  color: $color-if-orange !important;
+  padding: 0.75em 0.75em 0.45em 0.75em;
+  margin-right: 0.25em;
+  margin-bottom: 0.25em;
+  display: block;
+  float: left;
+  text-decoration: none;
+}
 
 /* Prototype nav */
 .prototype_header {
