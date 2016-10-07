@@ -1,44 +1,27 @@
-div(id="blinds_one" class="window_container digital_blinds")
-  div(class="header")
-    img(src="/public/images/wifi_symbol.svg")
-    p Drawing digital boundaries around your home
-  div(class="content")    
-    div(class="section")
-      img(class="house_yes" src="/public/images/house.jpg")
-      img(class="house_no" src="/public/images/house_blur.jpg")
-    div(class="section")
-      p(style="border-bottom: #FFF 2px solid; padding-bottom: 1em;") Organisations (Google, Uber) regularly take automatic photographic imagery of properties in your neighbourhood from street level. You have the right to object to photographs being taken of your home. 
-      h2 Allow or deny street level photography of your property
-      p
-        fieldset
-        input(type="radio" id="show_my_building_street" name="aerial_photo")  
-        label(for="show_my_building_aerial") Allow
-        //p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
-      p
-        input(type="radio" id="hide_my_building_street" name="aerial_photo")
-        label(for="hide_my_building_aerial") Deny
-        a(style="float: right; padding-right: 1em;" href"#" class="next_button") Next
-      div(class="section")    
-div(id="blinds_two" class="window_container digital_blinds")
-  div(class="header")
-    img(src="/public/images/wifi_symbol.svg")
-    p Drawing digital boundaries around your home
-  div(class="content")    
-    div(class="section")
-      img(class="house_yes_map" src="/public/images/house_satellite.svg")
-      img(class="house_no_map" src="/public/images/house_satellite_blur.svg")
-    div(class="section")
-      p(style="border-bottom: #FFF 2px solid; padding-bottom: 1em;") Organisations (Google, Uber) regularly take automatic photographic imagery of properties in your neighbourhood from street level. You have the right to object to photographs being taken of your home. 
-      h2 Allow or deny satellite photography of your property
-      p
-        input(type="radio" id="show_my_building_satellite" name="aerial_photo")  
-        label(for="show_my_building_satellite") Allow
-        //p(style="margin-left: 1.5em") Capture #[select(name="aerial_quality") #[option high] #[option medium] #[option low]] quality photos
-      p
-        input(type="radio" id="hide_my_building_satellite" name="aerial_photo")
-        label(for="hide_my_building_aerial") Deny    
-        a(style="float: right; padding-right: 1em;" href"#" class="next_button_two") Save
-div(id="blinds_three" class="window_container digital_blinds")
-  div(class="content")    
-    div(class="section")
-      h1 Saved 
+div(class="window_container")
+  div(class="window_title")
+    h1 Home Broadband Setup
+  div(id="property_privacy_control" class="window_content")
+    div(class="header")
+      img(src="/public/images/wifi_symbol.svg")
+      p Property Privacy Control
+    div(id="blinds_one" class="screen")
+      div(class="preview_area")
+      div(class="config_area")
+        h2 Can street level photos of your property be taken?
+        div(id="blinds_one_selector" class="selector")
+          a(href="#" class="selected") Yes
+          a(href="#") No
+        p(class="description") Organisations like Google and Uber regularly take photos of properties in your neighbourhood from street level. You have the right to object to photographs being taken of your home. 
+        a(href="#" class="next") Next
+    div(id="blinds_two" class="screen")
+      div(class="preview_area")
+      div(class="config_area")
+        h2 Can satellite photos of your property be taken?
+        div(id="blinds_two_selector" class="selector")
+          a(href="#" class="selected") Yes
+          a(href="#") No
+        p(class="description") Organisations like Google and Uber regularly take photos of properties in your neighbourhood from space. You have the right to object to photographs being taken of your home. 
+        a(href="#" class="next") Next
+    div(id="blinds_three" class="screen")
+      p Settings saved
