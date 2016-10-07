@@ -22,12 +22,11 @@ header {
 }
 
 #homepage {
-  h1, p {
-    text-align: center;
-  }
+  padding-bottom: 2em;
 
   h1 {
     padding:0 1em;
+    text-align: center;
   }
 
   p {
@@ -36,19 +35,27 @@ header {
     margin-bottom: 1em;
   }
 
-  .section {
-    margin: 1em 0.5em;
+  #contents {
+    clear: left;
+    border-top: $color-if-grey 1px solid;
+    padding-top: 1.5em;
 
-    h2, p {
-      text-align: left;
-      padding: 0;
-      margin: 0;
+    .item {
+      h2 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+      }
     }
+  }
 
-    h2 {
-      font-size: 1em;
-      margin-bottom: 0.5em;
-    }
+  #call_to_action {
+    font-family: $default-fonts-bold;
+    border: $color-if-grey 2px solid;
+    text-decoration: none;
+    padding: 0.5em 0.5em 0.4em 0.5em;
+    display: block;
+    float:left;
+    margin-bottom: 2em;
   }
 }
 
@@ -211,6 +218,8 @@ header {
 
 @media screen and (min-width: 720px) {
   #homepage {
+    margin: 0 20vw;
+
     h1 {
       font-size: 3em;
       padding: 0;
@@ -221,19 +230,13 @@ header {
       padding: 0;
     }
 
-    #sections {
-      overflow: auto;
-      margin:0 20vw;
+    #intro {
+      h2, p {
+        line-height: 1.2em;
+      }
 
-      .section {
-        margin: 0;
-        margin-bottom: 2em;
-        float: left;
-        width: 50%;
-
-        a {
-          color: $color-if-blue;
-        }
+      p {
+        font-size: 1.2em;
       }
     }
   }
