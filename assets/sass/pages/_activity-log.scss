@@ -1,3 +1,84 @@
+/* Generic stuff */
+.section {
+  padding: 0.5em;
+  border-bottom: #FFF 1px solid;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  a {
+    color: #FFF;
+  }
+
+  h2 {
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 0.5em;
+
+    &.bold {
+      font-family: $default-fonts-bold;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    &.underline {
+      border-bottom: #FFF 1px solid;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom:0.5em;
+  }
+}
+
+.option {
+  overflow: auto;
+  margin-bottom: 1em;
+
+  h3 {
+    margin-bottom: 0.25em;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: block;
+    float: left;
+    width: calc(50% - 4px);
+    height: 2em;
+    line-height: 2.2em;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    border: #FFF 2px solid;
+
+    &:first-of-type {
+      border-right: #FFF 1px solid;
+    }
+
+    &:last-child {
+      border-left: #FFF 1px solid;
+    }
+
+    &.selected {
+      background: #FFF;
+      color: $color-if-orange;
+    }
+  }
+}
+
+
 .email_header {
   border-bottom: #FFF 1px solid;
   padding: 0.5em;
@@ -50,44 +131,6 @@
       &:last-child {
         margin-bottom: 0;
       }
-    }
-  }
-
-  /* Generic stuff */
-  .section {
-    padding: 0.5em;
-    border-bottom: #FFF 1px solid;
-
-    &:last-child {
-      border-bottom: 0;
-    }
-
-    h2 {
-      font-size: 1em;
-      margin-bottom: 1em;
-    }
-
-    p {
-      margin-bottom: 0.5em;
-
-      &.bold {
-        font-family: $default-fonts-bold;
-      }
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    span {
-      &.underline {
-        border-bottom: #FFF 1px solid;
-      }
-    }
-
-    img {
-      width: 100%;
-      margin-bottom:0.5em;
     }
   }
 }
