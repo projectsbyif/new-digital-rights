@@ -22,26 +22,27 @@ html(lang="en")
       a(href="/" id="logo-light")
       a(href="#" id="show_prototype_menu_mobile" class="prototype_menu_link") Show menu
       div(class="left")
-        a(href="/") GDPR
-        a(href="/why") Why?
+        a(href="/") Digital Rights
       div(class="right")
-        a(href="#" class="prototype_menu_link") Prototypes
-    div(class="prototype_canvas")
-      != renderTemplate(page.permalink)
+        a(href="#" class="prototype_menu_link") Menu
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.description}
+    div(class="prototype_canvas")
+      != renderTemplate(page.permalink)
+    div(class="prototype_description")
+      p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+      if nextPage
+        a(href="/#{nextPage.permalink}") Next: #{nextPage.title}
+      else
+        a(href="/") Back to homepage
     div(class="prototype_menu")
       a(href="#" id="hide_prototype_menu") Close
       div(class="item" class="mobile_only_item")
         p
           a(href="/") Home
-      div(class="item" class="mobile_only_item")
-        p
-          a(href="/why") About
       each page in pages
         div(class="item")
           p
             a(href="/#{page.permalink}") #{page.title}
           p #{page.tagline}
-    include footer.jade

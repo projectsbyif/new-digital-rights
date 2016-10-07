@@ -1,30 +1,145 @@
-.activity_log_receipt,
-.activity_log_timeline {
-  color: #222;
-  background: #FFF;
-  padding: 1em;
-  margin: 0 1em 1em 1em;
+/* Generic stuff */
+.section {
+  padding: 0.5em;
+  border-bottom: #FFF 1px solid;
 
-  h1 {
-    border-bottom: #000 2px solid;
-    display: inline-block;
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  a {
+    color: #FFF;
+  }
+
+  h2 {
+    font-size: 1em;
     margin-bottom: 1em;
   }
 
   p {
-    &.timestamp {
+    margin-bottom: 0.5em;
+
+    &.bold {
+      font-family: $default-fonts-bold;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    &.underline {
+      border-bottom: #FFF 1px solid;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-bottom:0.5em;
+  }
+}
+
+.option {
+  overflow: auto;
+  margin-bottom: 1em;
+
+  h3 {
+    margin-bottom: 0.25em;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: block;
+    float: left;
+    width: calc(50% - 4px);
+    height: 2em;
+    line-height: 2.2em;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    border: #FFF 2px solid;
+
+    &:first-of-type {
+      border-right: #FFF 1px solid;
+    }
+
+    &:last-child {
+      border-left: #FFF 1px solid;
+    }
+
+    &.selected {
+      background: #FFF;
+      color: $color-if-orange;
+    }
+  }
+}
+
+
+.email_header {
+  border-bottom: #FFF 1px solid;
+  padding: 0.5em;
+  overflow: auto;
+
+  p {
+    margin-bottom: 0.25em;
+    clear: both;
+    overflow: auto;
+
+    .label, .value {
+      float: left;
+    }
+
+    .label {
+      width: 4em;
+      display: block;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#activity_log {
+  #header {
+    img {
+      width: 4em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  #latest {
+    .action {
+      font-size: 1.5em;
+    }
+  }
+
+  #summary {
+    h3 {
       margin-bottom: 0.25em;
-      color: #999;
+      font-family: $default-fonts-bold;
+    }
+
+    p {
+      margin-bottom: 1em;
+      line-height: 1.3;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 @media screen and (min-width: 720px) {
-  .activity_log_receipt,
-  .activity_log_timeline {
-    width: 35vw;
-    max-height: 60vh;
-    overflow-x: scroll;
+  #activity_log {
+    width: 25em;
+    margin: 2em auto;
+    border: #FFF 2px solid;
+    border-radius: 4px;
   }
-
 }

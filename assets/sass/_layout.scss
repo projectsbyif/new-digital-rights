@@ -21,10 +21,12 @@ header {
   }
 }
 
-#homepage,
-#why {
+#homepage {
+  padding-bottom: 2em;
+
   h1 {
     padding:0 1em;
+    text-align: center;
   }
 
   p {
@@ -32,82 +34,56 @@ header {
     padding:0 1em;
     margin-bottom: 1em;
   }
-}
 
-#homepage {
-  h1, p {
-    text-align: center;
+  #contents {
+    clear: left;
+    border-top: $color-if-grey 1px solid;
+    padding-top: 1.5em;
+
+    .item {
+      h2 {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+      }
+    }
   }
 
-  .why_we_did_this {
-    margin: 2em 0;
-    display: block;
-    text-align: center;
+  #call_to_action {
     font-family: $default-fonts-bold;
-    font-size: 1em;
-  }
-
-  .section {
-    margin: 1em 0.5em;
-
-    h2, p {
-      text-align: left;
-      padding: 0;
-      margin: 0;
-    }
-
-    h2 {
-      font-size: 1em;
-      margin-bottom: 0.5em;
-    }
+    border: $color-if-grey 2px solid;
+    text-decoration: none;
+    padding: 0.5em 0.5em 0.4em 0.5em;
+    display: block;
+    float:left;
+    margin-bottom: 2em;
   }
 }
 
 /* Prototype pages */
 .prototype_canvas {
-  height: 80vh;
-  background-color: $color-if-blue;
+  background-color: $color-if-orange;
   color: #FFF;
 }
 
 .prototype_description {
   min-height: 20vh;
-  background-color: $color-if-blue;
-  color: #FFF;
+  background-color: #FFF;
+  color: #000;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 1em;
+  padding-top: 2em;
 
   p {
     line-height: 1.2em;
 
     a {
-      color: #FFF;
+      color: $color-if-blue;
     }
   }
 }
 
 /* Generic interface items */
-.vertical_list {
-  width: 100%;
-
-  input {
-    display: block;
-    width: calc(100% - 1em);
-    background: none;
-    border: 0;
-    border-top: rgba(255, 255, 255, 0.8) 1px solid;
-    font-family: $default-fonts-regular;
-    font-size: 1em;
-    padding: 0.5em;
-    color: #FFF;
-
-    &:last-child {
-      border-bottom: rgba(255, 255, 255, 0.8) 1px solid;
-    }
-  }
-}
-
 .window {
   width: 80vw;
   height: 70vh;
@@ -115,11 +91,51 @@ header {
   border-radius: 5px;
 }
 
+.window_container {
+  .window_title {
+    display: none;
+  }
+}
+
+.mobile_container {
+  .header {
+    border-bottom: #FFF 1px solid;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+    h1 {
+      font-size: 1em;
+      margin-bottom: 0.25em;
+    }
+
+    p {
+      margin-bottom: 0.25em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.chunky_button {
+  background: #FFF;
+  color: $color-if-orange !important;
+  padding: 0.75em 0.75em 0.45em 0.75em;
+  margin-right: 0.25em;
+  margin-bottom: 0.25em;
+  display: block;
+  float: left;
+  text-decoration: none;
+}
+
 /* Prototype nav */
 .prototype_header {
   width: 100vw;
-  height: 3.5em;
-  background: $color-if-blue;
+  height: 69px;
+  background: #FFF;
 
   .left, .right {
     display: none;
@@ -128,13 +144,13 @@ header {
   #logo-light {
     display:block;
     text-indent:-9999px;
-    background-image:url('/public/images/if-logo-light.svg');
+    background-image:url('/public/images/if-logo.svg');
     background-repeat:no-repeat;
     background-size:contain;
     margin:0 auto;
     border-bottom:0;
-    height:54px;
-    width:40px;
+    height:69px;
+    width:51.11111px;
     position:absolute;
     top:10px;
     left:calc(50% - 20px);
@@ -163,6 +179,7 @@ header {
   display: none;
   overflow-x: scroll;
   padding:1em;
+  margin-top: 36px;
 
   .item {
     margin-bottom: 1em;
@@ -192,28 +209,17 @@ header {
   }
 }
 
-#footer {
-  background: #222;
-  color: #FFF;
-  width: calc(100vw - 2em);
-  padding: 1em;
-
-  a {
-    color: #FFF;
+.window_container,
+.mobile_container {
+  h1, h2, h3, p {
+    margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 720px) {
-  /*
-  #footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  */
+  #homepage {
+    margin: 0 20vw;
 
-  #homepage,
-  #why {
     h1 {
       font-size: 3em;
       padding: 0;
@@ -223,34 +229,14 @@ header {
       font-size: 1em;
       padding: 0;
     }
-  }
 
-  #why {
-    margin:0 20vw 4em 20vw;
+    #intro {
+      h2, p {
+        line-height: 1.2em;
+      }
 
-    p {
-      line-height: 1.2;
-    }
-  }
-
-  #homepage {
-    .why_we_did_this {
-      margin: 2em 0 4em 0;
-    }
-
-    #sections {
-      overflow: auto;
-      margin:0 20vw;
-
-      .section {
-        margin: 0;
-        margin-bottom: 2em;
-        float: left;
-        width: 50%;
-
-        a {
-          color: $color-if-blue;
-        }
+      p {
+        font-size: 1.2em;
       }
     }
   }
@@ -281,7 +267,7 @@ header {
     }
 
     a {
-      color: #FFF;
+      color: #000;
       text-decoration: none;
     }
 
@@ -302,22 +288,58 @@ header {
     }
   }
 
-  .window_container {
-    width: 30vw;
-    border: #FFF 2px solid;
-    height: 70vh;
-    border-radius: 5px;
-  }
-
-  /* Generic interface items */
-  .vertical_list {
-    input {
-      font-size: 1.2em;
-    }
-  }
-
   /* Prototype nav */
   .prototype_menu {
     width: 20em;
+  }
+
+  /* Generic device containers */
+  .window_container {
+    width: 42em;
+    border: #FFF 2px solid;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    .window_title {
+      height: 1.5em;
+      width: 100%;
+      border-bottom: #FFF 2px solid;
+      background-image: url('/public/images/window_container_buttons.svg');
+      background-repeat: no-repeat;
+      background-position: center left;
+      display: block;
+
+      h1 {
+        font-family: $default-fonts-regular;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.8em;
+      }
+    }
+
+    .window_content {
+      height: calc(100% - 1.5em - 2px);
+      overflow-x: scroll;
+    }
+  }
+
+  .mobile_container {
+    width: 18em;
+    height: 34em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #FFF 2px solid;
+    border-radius: 35px;
+    @include absolute-center();
+
+    .mobile_content {
+      width: 16em;
+      height: 28em;
+      border: #FFF 2px solid;
+      overflow-x: scroll;
+    }
   }
 }

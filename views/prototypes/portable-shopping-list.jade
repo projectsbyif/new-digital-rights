@@ -1,39 +1,36 @@
-div(id="shopping_list" class="window_container")
-  div(class="header")
-    img(src="/public/images/shopping_trolley.svg")
+div(class="window_container")
+  div(class="window_title")
     h1 Tesco Online
-    p Hi Sally. Here is your shopping basket from last time.
-    //a(href="#" id="favourites") Get your data
-  div(id="shopping_list" class="vertical_list")
-  div(id="top_list")
-    input(type="text")
-    input(type="text")
-    input(type="text")
-    input(type="text")
-    input(type="text")
-    input(type="text")
-    input(type="text")
-  div
-    h2(class="compare_prices") Your basket has the following calorie count
-  div(id="results_tesco" class="retailer_results")
-    p(class="name") Tesco
-    p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Checkout
-  div(id="results_asda" class="retailer_results")
-    p(class="name") Asda
-    p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Checkout
-  div(id="results_morrisons" class="retailer_results")
-    p(class="name") Morrisons
-    p(class="total_cost") £0.00
-    a(href="#" class="button_fill_basket") Checkout
-div(id="shopping_list_checkout" class="window_container")
-  div(style="text-align: center;")
-    img(src="/public/images/shopping_trolley.svg")
-  div
-    h1(style="text-decoration:underline;") Sally Singer
-    p 76 Saint Sarto Lane
-    p Shelbyville, W19 8RE
-    h2 £X.XX
-  div(class="confirm")
-    h2 Confirm your order
+  div(id="portable_shopping_list" class="window_content")
+    div(class="header")
+      img(src="/public/images/shopping_trolley.svg")
+    div(id="list_view" class="section")
+      p Hi Sally. Here is your shopping basket from last time.
+      div(id="top_list")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+        input(type="text")
+      div(id="results")
+        h2 Your basket has the following calorie count
+        div(id="results_tesco" class="retailer_results")
+          p Tesco
+          p(class="total_cost") £0.00
+          a(href="#" class="button_fill_basket") Checkout
+        div(id="results_asda" class="retailer_results")
+          p Asda
+          p(class="total_cost") £0.00
+          a(href="#" class="button_fill_basket") Checkout
+        div(id="results_morrisons" class="retailer_results")
+          p Morrisons
+          p(class="total_cost") £0.00
+          a(href="#" class="button_fill_basket") Checkout
+    div(id="confirm_view" class="section")
+      p Basket filled.

@@ -30,17 +30,19 @@ app.get('/', function(req, res) {
 });
 
 // Render routes for each page
-for (let page in pages) {
-	page = pages[page];
+for (let index in pages) {
+	let page = pages[index];
+  let nextPage = null;
+  index = parseInt(index);
+
+  if ((index + 1) < pages.length) {
+    nextPage = pages[index + 1];
+  }
 
 	app.get('/' + page.permalink, function(req, res) {
-		res.render('prototype', { config, page, pages });
+		res.render('prototype', { config, page, pages, nextPage });
 	});
 }
-
-app.get('/why', function(req, res) {
-  res.render('why', { config, pages });
-});
 
 // SERVER
 http.listen(app.get('port'), function() {
