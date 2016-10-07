@@ -115,6 +115,7 @@ header {
   border-radius: 5px;
 }
 
+
 /* Prototype nav */
 .prototype_header {
   width: 100vw;
@@ -302,13 +303,6 @@ header {
     }
   }
 
-  .window_container {
-    width: 30vw;
-    border: #FFF 2px solid;
-    height: 70vh;
-    border-radius: 5px;
-  }
-
   /* Generic interface items */
   .vertical_list {
     input {
@@ -319,5 +313,52 @@ header {
   /* Prototype nav */
   .prototype_menu {
     width: 20em;
+  }
+
+  /* Generic device containers */
+  .window_container {
+    width: 42em;
+    height: 27em;
+    border: #FFF 2px solid;
+    border-radius: 5px;
+
+    .window_title {
+      height: 1.5em;
+      width: 100%;
+      border-bottom: #FFF 2px solid;
+      background-image: url('/public/images/window_container_buttons.svg');
+      background-repeat: no-repeat;
+      background-position: center left;
+
+
+      h1 {
+        font-family: $default-fonts-regular;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.8em;
+      }
+    }
+
+    .window_content {
+      height: calc(100% - 1.5em - 2px);
+      overflow-x: scroll;
+    }
+  }
+
+  .mobile_container {
+    width: 18em;
+    height: 34em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #FFF 2px solid;
+    border-radius: 35px;
+    @include absolute-center();
+
+    .mobile_content {
+      width: 16em;
+      height: 28em;
+      border: #FFF 2px solid;
+      overflow-x: scroll;
+    }
   }
 }
