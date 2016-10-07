@@ -54,8 +54,7 @@ header {
 
 /* Prototype pages */
 .prototype_canvas {
-  height: 80vh;
-  background-color: $color-if-teal;
+  background-color: $color-if-orange;
   color: #FFF;
 }
 
@@ -195,6 +194,13 @@ header {
   }
 }
 
+.window_container,
+.mobile_container {
+  h1, h2, h3, p {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 720px) {
   /*
   #footer {
@@ -294,9 +300,10 @@ header {
   /* Generic device containers */
   .window_container {
     width: 42em;
-    height: 27em;
     border: #FFF 2px solid;
     border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
     .window_title {
       height: 1.5em;
