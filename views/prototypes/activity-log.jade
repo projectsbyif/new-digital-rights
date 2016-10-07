@@ -1,24 +1,35 @@
-div(id="activity_log")
-  div(id="header" class="section")
-    div(id="logo")
-    h1 Thanks
-    p We've received some documents
-  div(id="property" class="section")
-    img(src="/public/images/easyrent_building.jpg")
-    h2 38 Alexandra Grove
-    p £1,500 per month
-  div(id="latest" class="section")
-    h2 Latest
-    a(href="#") More activity
-    p Screenshots viewed by A. Smith
-    p(class="timestamp") 32 minutes ago
-  div(id="summary" class="section")
-    h2 Summary
-    h3 1.
-    p You have sent screenshots showing #[span(class="underline") 3 months worth of bank transactions] to #[span(class="underline") EasyRent Ltd.]
-    h3 2.
-    p They need this to #[span(class="underline") check if you can afford rent payments].
-    h3 3.
-    p It will only be accessible by the #[span(class="underline") accounts department].
-    h3 4.
-    p You screenshots will be kept #[span(class="underline") until the affordability check has been completed]. This usually takes 48 hours. They will then be deleted.
+div(class="window_container")
+  div(class="window_title")
+  div(class="window_content")
+    div(class="email_header")
+      p
+        span(class="label") From:
+        span(class="value") EasyRent Ltd.
+      p
+        span(class="label") Subject:
+        span(class="value") Your activity log
+    div(id="activity_log")
+      div(id="header" class="section")
+        img(src="/public/images/easyrent_logo.svg")
+        p Hello,
+        p We’re getting in touch to inform you that we’ve received and have accessed some of your personal documents. As per our terms, we’ll only keep documents until the contract with your prospective landlord has been signed.
+        p Take a look below at the a summary of your account and the latest activity around the documents you’ve supplied us with.
+        p Your friends at EasyRent.
+      div(id="property" class="section")
+        img(src="/public/images/easyrent_building.jpg")
+        p(class="bold") 38 Alexandra Grove
+        p £1,500 per month
+      div(id="latest" class="section")
+        h2 Recent activity
+        p(class="action") Screenshots viewed by A. Smith
+        p 32 minutes ago
+      div(id="summary" class="section")
+        h2 Summary
+        h3 1.
+        p You have sent screenshots showing #[span(class="underline") 3 months worth of bank transactions] to #[span(class="underline") EasyRent Ltd.]
+        h3 2.
+        p They need this to #[span(class="underline") check if you can afford rent payments].
+        h3 3.
+        p It will only be accessible by the #[span(class="underline") accounts department].
+        h3 4.
+        p You screenshots will be kept #[span(class="underline") until the affordability check has been completed]. This usually takes 48 hours. They will then be deleted.
