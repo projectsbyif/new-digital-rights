@@ -18,8 +18,8 @@ $(function() {
   $('.button_fill_basket').click(function(e) {
     e.preventDefault();
 
-    $('#shopping_list').fadeOut(250, function() {
-      $('#shopping_list_checkout').fadeIn(250);
+    $('#list_view').fadeOut(250, function() {
+      $('#confirm_view').fadeIn(250);
     });
   });
 
