@@ -1,26 +1,58 @@
 
 $(function() {
-  $('#button_save').click(function(e) {
+
+  //Slide up of locations for a yes click
+  $('#list_click_yes').click(function(e) {
     e.preventDefault();
 
-    $('#electricity_usage_window').fadeOut(250, function() {
-      $('#electricity_usage_window_confirmation').fadeIn(250);
+    $('.holiday_locations').slideUp(250, function() {
     });
   });
 
-  $("#energy_appear").click(function(){
-    $('#energy_blank').hide(function() {
-      $('#energy_no').hide();
-      $('#energy_yes').fadeIn();
+  //Hiding 'yes' and 'no' buttons
+  $('#list_click_yes').click(function(e) {
+    e.preventDefault();
+
+    $('#list_click_yes').hide(500, function() {
+    });
+
+    $('#list_click_no').hide(500, function() {
     });
   });
 
-  $("#energy_disappear").click(function(){
-    $('#energy_blank').hide(function() {
-      $('#energy_yes').hide();
-      $('#energy_no').fadeIn();
+  //Appending new text dependent on 'yes' 'no' click
+  $('#list_click_yes').click(function(e) {
+    e.preventDefault();
+
+    $('.decision_text').replaceWith("<p>The detailed location data from your trip has been removed. This data has been deleted and is no longer accessible.")
+  });
+
+  $('#list_click_no').click(function(e) {
+    e.preventDefault();
+
+    $('#list_click_yes').hide(500, function() {
+    });
+
+    $('#list_click_no').hide(500, function() {
     });
   });
+
+  $('#list_click_no').click(function(e) {
+    e.preventDefault();
+
+    $('.decision_text').replaceWith("<p>The detailed location data from your recent trip will be kept and can be viewed at a future date.</p>")
+  });
+
+  //Toggle between images dependent on 'yes' or 'no' click
+  $('#list_click_yes').click(function(e) {
+    e.preventDefault();
+
+    $('.brighton_yes').fadeOut(function() {
+      $('.brighton_no').fadeIn();
+    });
+  });
+
+
 });
   /*let timerIncrementTime;
   let now = moment().hour(0).minute(0).second(0).subtract(1, 'h');
