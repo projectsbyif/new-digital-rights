@@ -21,8 +21,11 @@ header {
   }
 }
 
-#homepage,
-#why {
+#homepage {
+  h1, p {
+    text-align: center;
+  }
+
   h1 {
     padding:0 1em;
   }
@@ -31,20 +34,6 @@ header {
     font-family: $default-fonts-regular;
     padding:0 1em;
     margin-bottom: 1em;
-  }
-}
-
-#homepage {
-  h1, p {
-    text-align: center;
-  }
-
-  .why_we_did_this {
-    margin: 2em 0;
-    display: block;
-    text-align: center;
-    font-family: $default-fonts-bold;
-    font-size: 1em;
   }
 
   .section {
@@ -115,6 +104,7 @@ header {
   border: #FFF 3px solid;
   border-radius: 5px;
 }
+
 
 /* Prototype nav */
 .prototype_header {
@@ -214,8 +204,7 @@ header {
   }
   */
 
-  #homepage,
-  #why {
+  #homepage {
     h1 {
       font-size: 3em;
       padding: 0;
@@ -224,20 +213,6 @@ header {
     p {
       font-size: 1em;
       padding: 0;
-    }
-  }
-
-  #why {
-    margin:0 20vw 4em 20vw;
-
-    p {
-      line-height: 1.2;
-    }
-  }
-
-  #homepage {
-    .why_we_did_this {
-      margin: 2em 0 4em 0;
     }
 
     #sections {
@@ -304,13 +279,6 @@ header {
     }
   }
 
-  .window_container {
-    width: 30vw;
-    border: #FFF 2px solid;
-    height: 70vh;
-    border-radius: 5px;
-  }
-
   /* Generic interface items */
   .vertical_list {
     input {
@@ -321,5 +289,52 @@ header {
   /* Prototype nav */
   .prototype_menu {
     width: 20em;
+  }
+
+  /* Generic device containers */
+  .window_container {
+    width: 42em;
+    height: 27em;
+    border: #FFF 2px solid;
+    border-radius: 5px;
+
+    .window_title {
+      height: 1.5em;
+      width: 100%;
+      border-bottom: #FFF 2px solid;
+      background-image: url('/public/images/window_container_buttons.svg');
+      background-repeat: no-repeat;
+      background-position: center left;
+
+
+      h1 {
+        font-family: $default-fonts-regular;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.8em;
+      }
+    }
+
+    .window_content {
+      height: calc(100% - 1.5em - 2px);
+      overflow-x: scroll;
+    }
+  }
+
+  .mobile_container {
+    width: 18em;
+    height: 34em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #FFF 2px solid;
+    border-radius: 35px;
+    @include absolute-center();
+
+    .mobile_content {
+      width: 16em;
+      height: 28em;
+      border: #FFF 2px solid;
+      overflow-x: scroll;
+    }
   }
 }

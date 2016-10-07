@@ -1,30 +1,44 @@
-.activity_log_receipt,
-.activity_log_timeline {
-  color: #222;
-  background: #FFF;
-  padding: 1em;
-  margin: 0 1em 1em 1em;
+.underline {
+  border-bottom: #FFF 1px solid;
+}
 
-  h1 {
-    border-bottom: #000 2px solid;
-    display: inline-block;
-    margin-bottom: 1em;
+#activity_log {
+  .section {
+    padding: 0.5em;
+    border-bottom: #FFF 1px solid;
+    width: calc(100vw - 1em);
   }
 
-  p {
-    &.timestamp {
-      margin-bottom: 0.25em;
-      color: #999;
+  #header {
+    #logo {
+      width: 4em;
+      height: 4em;
+      background-image: url('/public/images/easyrent_logo.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
+
+    h1 {
+
+    }
+  }
+
+  #property {
+    img {
+      width: calc(100% - 1em);
+      margin-bottom: 0.25em;
+    }
+
+    h2 {
+      margin-bottom: 0.5em;
+      font-size: 1em;
+    }
+
   }
 }
 
+
 @media screen and (min-width: 720px) {
-  .activity_log_receipt,
-  .activity_log_timeline {
-    width: 35vw;
-    max-height: 60vh;
-    overflow-x: scroll;
-  }
 
 }
