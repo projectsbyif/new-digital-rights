@@ -31,5 +31,4 @@ $(function() {
     $('#list_click_save').fadeOut(250);
     $('#list_click_saved').fadeIn(1200);
   });
-
 });
