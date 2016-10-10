@@ -41,10 +41,8 @@ $(function() {
       currentStep++;
     } else if (currentStep == 1) {
       // Show confirmation
-      $('#blinds_two').fadeOut(250, function() {
-        $('#blinds_three').fadeIn(250).css({
-          'display': 'flex'
-        });
+      $('.next').fadeOut(250, function() {
+        $('.saved').fadeIn(250)
       });
     }
   });
