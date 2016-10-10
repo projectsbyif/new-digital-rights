@@ -1,11 +1,11 @@
 div(class="window_container")
   div(class="window_title")
-    h1 Tesco Online
   div(id="portable_shopping_list" class="window_content")
     div(class="header")
-      img(src="/public/images/shopping_trolley.svg")
+      img(src="/public/images/tesco_logo.svg")
     div(id="list_view" class="section")
-      p Hi Sally. Here is your shopping basket from last time.
+      h2 Your shopping basket
+      P Add more items? (eggs, cheese, crisps...)
       div(id="top_list")
         input(type="text")
         input(type="text")
@@ -13,24 +13,25 @@ div(class="window_container")
         input(type="text")
         input(type="text")
         input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text")
+        input(type="text" placeholder="Add item...")
         input(type="text")
         input(type="text")
       div(id="results")
-        h2 Your basket has the following calorie count
+        h1 Select your provider
         div(id="results_tesco" class="retailer_results")
-          p Tesco
+          h2 Tesco
           p(class="total_cost") £0.00
-          a(href="#" class="button_fill_basket") Checkout
+          p Delivey tomorrow
+          a(href="" class="button_fill_basket") Checkout
         div(id="results_asda" class="retailer_results")
-          p Asda
+          h2 Asda
           p(class="total_cost") £0.00
+          p Delivery today
           a(href="#" class="button_fill_basket") Checkout
         div(id="results_morrisons" class="retailer_results")
-          p Morrisons
+          h2 Morrisons
           p(class="total_cost") £0.00
+          p Delivery tomorrow
           a(href="#" class="button_fill_basket") Checkout
-    div(id="confirm_view" class="section")
-      p Basket filled.
+      div(id="checkout")
+        h1 Checkout updated
