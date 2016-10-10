@@ -32,6 +32,7 @@ $(function() {
         }, 1500);
     });
 
+    $("#top_list input")[6].focus();
     // Getting shopping list favourites and populating the 'input' elements
     function getFavourites() {
       $.getJSON("/public/data/shopping-list-favourites.json", function(data) {
@@ -49,8 +50,8 @@ $(function() {
 
     function checkListItem(searchQuery, index) {
         $.getJSON("/public/data/shopping-list.json", function(data) {
-
-            //$("#top_list input")[4].focus(index);
+          let place = index;
+          console.log(searchQuery);
             // Loop through Tesco
             for (let product in data.tesco) {
                 let query = searchQuery.toLowerCase();
@@ -99,7 +100,6 @@ $(function() {
 
             // Loop throuh Asda
             for (let product in data.asda) {
-                console.log(data.asda)
                 let query = searchQuery.toLowerCase();
                 let comparator = data.asda[product].tag.toLowerCase();
 
