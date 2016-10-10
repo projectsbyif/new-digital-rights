@@ -7,6 +7,7 @@
     img {
       height: 2em;
       margin-bottom: 0;
+      padding-top: 0.5em;
     }
   }
 
@@ -42,10 +43,12 @@
 
   .retailer_results {
     margin-bottom: 1em;
+    margin-top: 1.5em;
 
     .total_cost {
       font-size: 1.6em;
       margin-bottom: 0;
+      padding-bottom: 0.5em;
     }
 
     &:last-child {
@@ -53,8 +56,10 @@
     }
   }
 
-  #confirm_view {
+  #checkout {
     display: none;
+    text-align: center;
+    padding-top: 1em;
   }
 }
 
