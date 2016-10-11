@@ -78,7 +78,9 @@ header {
     line-height: 1.2em;
 
     a {
-      color: $color-if-blue;
+      color: $color-if-grey;
+      text-decoration: none;
+      border-bottom: 1px solid $color-if-orange;
     }
   }
 }
