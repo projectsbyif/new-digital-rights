@@ -24,10 +24,10 @@ content = [
   },
   {
     "title": "Transparent targeting",
-    "top_text": "<p>Showing users why they’ve been targeted by an ad or service is going to become an important way for brands to increase trust. That’s especially true as our right to restrict processing is enforced.</p><p>The prototype shows how this might appear in adverts. People can see what data about them led to the ad being targeted in the first place, and gives them an opportunity to correct that information, or stop the network using it if they think it’s inaccurate or misleading.</p><p>See the ICO website to read more about <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-restrict-processing/\">the right to restrict processing</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for transparent targeting</p>",
+    "top_text": "<p>When we see adverts online it’s usually clear they have some relationship to our browsing history, but not entirely.</p><p>By revealing why we’ve been targeted by a particular ad we can learn more about what companies know about us, and opt out if that doesn’t feel right.</p>",
+    "bottom_text": "<p>While the cookie law attempted to protect consumers from data harvesting, the application of it in the form of cookie banners just obscured the problem further.</p><p>Transparent targeting exposes the information advertisers have to user straight away. It puts them in control of whether that data should be used or not, and gives them the ability to make the update in one click.</p>",
     "permalink": "transparent-targeting",
-    "tagline": "Explaining why we see the ads we see, and changing that"
+    "tagline": "Why we see particular adverts, and changing that"
   },
   {
     "title": "Public guardian for digital identity",
