@@ -10,10 +10,10 @@ content = [
   },
   {
     "title": "Portable shopping list",
-    "top_text": "<p>By encouraging companies to make users data more portable, new behaviours will emerge that change how we shop and interact with services online.</p><p>Price comparison sites today rely on integrating with APIs and scraping adat from dozens of different sites. Establishing standards for things like shopping lists or viewing history is a response to regulation that encourages data portability which will open up market innovation. It could see people changing shopping suppliers based on factors including price or delivery time as well as things like the quality of recommendation algorithm.</p><p>Visit the ICO website to read more about <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-data-portability/\">the right to data portability</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for portable shopping list</p>",
+    "top_text": "<p>The longer we shop with a particular store, the more our data improves their recommendations. But the cost of that loyalty is that we don’t change our grocer very often.</p><p>By making shopping lists and purchase history more portable, people have more control over their data. We have more power in the marketplace, and can make decisions based on factors beyond price, like fuel emissions or delivery time.</p>”,
+    "bottom_text": "<p>Data portability reduces people’s dependence on particular services. It means people can think about their habits online in a different way, and change at their convenience. It’s the kind of thing that will stimulate innovation in the market</p>",
     "permalink": "portable-shopping-list",
-    "tagline": "Taking your data with you from service to service"
+    "tagline": "Taking your data with you"
   },
   {
     "title": "Cover letter sandbox",
