@@ -10,17 +10,17 @@ content = [
   },
   {
     "title": "Portable shopping list",
-    "top_text": "<p>The longer we shop with a particular store, the more our data improves their recommendations. But the cost of that loyalty is that we don’t change our grocer very often.</p><p>By making shopping lists and purchase history more portable, people have more control over their data. We have more power in the marketplace, and can make decisions based on factors beyond price, like fuel emissions or delivery time.</p>”,
+    "top_text": "<p>The longer we shop with a particular store, the more our data improves their recommendations. But the cost of that loyalty is that we don’t change our grocer very often.</p><p>By making shopping lists and purchase history more portable, people have more control over their data. We have more power in the marketplace, and can make decisions based on factors beyond price, like fuel emissions or delivery time.</p>",
     "bottom_text": "<p>Data portability reduces people’s dependence on particular services. It means people can think about their habits online in a different way, and change at their convenience. It’s the kind of thing that will stimulate innovation in the market</p>",
     "permalink": "portable-shopping-list",
     "tagline": "Taking your data with you"
   },
   {
-    "title": "Cover letter sandbox",
-    "top_text": "<p>If algorithms are made more accountable to the public it creates an opportunity to build products and tools that show off how those algorithms work.</p><p>Automated CV pre-screening is already gaining traction in large organisations. The CV sandbox allows candidates to submit their CV to the system for a test run, so candidates can fine tune their application. A report shows how and why they’ve been accepted or rejected by the algorithm, exposing the rules it is checking the CV and explaining them clearly and simply.</p><p>See the ICO website to read more about <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/rights-related-to-automated-decision-making-and-profiling/\">rights related to automated decision making and profiling</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for cover letter sandbox</p>",
+    "title": "Single trip insurance checker",
+    "top_text": "<p>As the insurance industry adapts to innovations like self-driving cars and ride-sharing, getting quotes for short journeys is going to get increasingly common. It’s important people understand the premiums they’re paying.</p><p>The insurance checker exposes decisions about a trip so that people can see what assumptions are being made about them and their journey.</p>",
+    "bottom_text": "<p>The critical thing about tools like this is that is that people have the option to object to a decision.</p><p>While the particulars of a route across the country might not be controversial, decisions based on someone’s age, gender or background might result in people raising strong objections. This kind of transparency increases trust by exposing the biases of algorithms.</p>",
     "permalink": "cover-letter-sandbox",
-    "tagline": "Exposing automated decision making to users"
+    "tagline": "Exposing automated decision making"
   },
   {
     "title": "Transparent targeting",
