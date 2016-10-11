@@ -3,10 +3,10 @@ var content = {};
 content = [
   {
     "title": "Dynamic data minimisation",
-    "top_text": "<p>Devices can store more information about a greater number of things over time. But while some data gets more useful over time, other data potentially our privacy and security.</p><p>Dynamic data minimisation is a design pattern that takes detailed, real-time data and averages out historic data over time. The result balances long term use with the privacy implications of storing data over time. This is especially useful for things like smart meters in rented houses, where tenants would be able to see the general trends of a property with knowing detailed information about previous tenants habits.</p><p>See the ICO website to read more about the <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-erasure/\">right to erasure</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for dynamic data minimisation</p>",
+    "top_text": "<p>Location data is really important for lots of services, particularly when you’re trying to get somewhere or find a place you need to be. But really specific data about where we were is stored forever.</p><p>Instead of keeping that really detailed information, why not give people the option to make it less specific after a few weeks?</p>",
+    "bottom_text": "<p>Data minimisation tools keep us more secure. Our devices could ‘forget’ old wifi networks we joined and leave us less open to fraud and data theft.</p><p>Meanwhile, services that use less specific information – like photo libraries – can still show useful information.</p>",
     "permalink": "dynamic-data-minimisation",
-    "tagline": "A design pattern for data balancing privacy and value"
+    "tagline": "Balancing privacy and value"
   },
   {
     "title": "Portable shopping list",
