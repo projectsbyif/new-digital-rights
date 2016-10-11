@@ -37,9 +37,9 @@ content = [
     "tagline": "What happens to our data after we die"
   },
   {
-    "title": "Activity log",
-    "top_text": "<p>As people are given more insight about what information is stored about them and who else accesses it we need to think about ways of showing that that don’t overwhelm people.</p><p>The activity log is one way of doing this. It shows people information about how their data has been used by an organisation in a clear, accessible way. It also displays how long the information will be kept by the people who have accessed it and what will happen to it after that point.</p><p>See the ICO website to read more about <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-be-informed/\">the right to be informed</a> and <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-of-access/\">the right of access</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for activity log</p>",
+    "title": "Data access traceker",
+    "top_text": "<p>When we do things like rent a flat or buy a house we hand over a lot of personal data to people with no clear understanding why.</p><p>The data access tracker shows exactly what information you’ve sent, why someone else needs it, and who has accessed it. If people have accessed it for reasons you don’t understand you can report them.</p>",
+    "bottom_text": "<p>The amount of personal data we give services should be getting smaller. That means that when we do hand our data over to companies it should be extremely clear why we’re doing that.</p><p>Meanwhile, as security breaches become alarmingly commonplace, users should be able to see who has accessed their data and have the power to challenge that.</p>",
     "permalink": "activity-log",
     "tagline": "Seeing who accesses our data, and what for"
   },
