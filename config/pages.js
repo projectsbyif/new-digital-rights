@@ -37,16 +37,16 @@ content = [
     "tagline": "What happens to our data after we die"
   },
   {
-    "title": "Data access traceker",
+    "title": "Data access tracker",
     "top_text": "<p>When we do things like rent a flat or buy a house we hand over a lot of personal data to people with no clear understanding why.</p><p>The data access tracker shows exactly what information you’ve sent, why someone else needs it, and who has accessed it. If people have accessed it for reasons you don’t understand you can report them.</p>",
     "bottom_text": "<p>The amount of personal data we give services should be getting smaller. That means that when we do hand our data over to companies it should be extremely clear why we’re doing that.</p><p>Meanwhile, as security breaches become alarmingly commonplace, users should be able to see who has accessed their data and have the power to challenge that.</p>",
     "permalink": "activity-log",
     "tagline": "Seeing who accesses our data, and what for"
   },
   {
-    "title": "Property privacy protocol",
-    "top_text": "<p>Websites use robot inclusion and exclusion standards to determine how much information can be read by other machines. Properties should be able to do the same, proactively managing their privacy online rather than doing it after the fact.</p><p>If someone doesn’t want photos of their home processed by streetview cars, or the mac address of their router stored by devices, they should be say so. Similarly, if you manage a property that would benefit from better data – a farm, for instance – you could use a service that helps automated devices to capture better quality information.</p><p>See the ICO website to read more about <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-object/\">the right to object</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for property privacy protocol</p>",
+    "title": "Home privacy settings",
+    "top_text": "<p>A wireless router has the ability to broadcast information to other devices. That information could instruct things like Google’s mapping cars not to record certain information, including photographs or wifi network details.</p><p>These privacy settings could be part of how you set up wifi in your home, making digital privacy an everyday part of life.</p>",
+    "bottom_text": "<p>Objecting to the way a company uses your information is often difficult to do. It sometimes involves printing out legal documentation and using solicitors to act on your behalf.</p><p>By making it a simple digital service we make it easier for people to protect themselves and register their objection to unchecked data harvesting.</p>",
     "permalink": "property-privacy-control",
     "tagline": "Respecting privacy when collecting data"
   }
