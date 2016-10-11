@@ -79,8 +79,8 @@ header {
 
     a {
       color: $color-if-grey;
-      text-decoration: none;
-      border-bottom: 1px solid $color-if-orange;
+      text-decoration: underline;
+      color: $color-if-orange;
     }
   }
 }

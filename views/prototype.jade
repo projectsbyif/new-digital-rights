@@ -26,6 +26,8 @@ html(lang="en")
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.description}
+      a(href="/#{nextPage.permalink}") Next
+      a(href="") Previous
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
