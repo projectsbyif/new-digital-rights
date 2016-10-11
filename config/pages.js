@@ -24,17 +24,17 @@ content = [
   },
   {
     "title": "Transparent targeting",
-    "top_text": "<p>When we see adverts online it’s usually clear they have some relationship to our browsing history, but not entirely.</p><p>By revealing why we’ve been targeted by a particular ad we can learn more about what companies know about us, and opt out if that doesn’t feel right.</p>",
+    "top_text": "<p>When we see adverts online it’s usually clear they have some relationship to our browsing history, but it's rarely explicit.</p><p>By revealing why we’ve been targeted by a particular ad we can learn more about what companies know about us, and opt out when that doesn’t feel right.</p>",
     "bottom_text": "<p>While the cookie law attempted to protect consumers from data harvesting, the application of it in the form of cookie banners just obscured the problem further.</p><p>Transparent targeting exposes the information advertisers have to user straight away. It puts them in control of whether that data should be used or not, and gives them the ability to make the update in one click.</p>",
     "permalink": "transparent-targeting",
-    "tagline": "Why we see particular adverts, and changing that"
+    "tagline": "Putting people in control of the ads they see"
   },
   {
     "title": "Public guardian for digital identity",
-    "top_text": "<p>When companies sell our information on, there’s no chance to update that information. The GDPR places the burden of correcting it back on the company that sold it. But what about when we’re no longer here to correct it?</p><p>Rather than making families responsible for contact each service, our ‘digital identity will’ imagines a public guardian whose responsibility is to ensure that companies process the data of dead users according to the wishes of the deceased. Users can determine if they want their data to be deleted, archived, made accessible by a limited number of people or something in between, and follows traditional precedents like the Office for the Public Guardian.</p><p>See the ICO website to read more about <a href=\"https://ico.org.uk/for-organisations/data-protection-reform/overview-of-the-gdpr/individuals-rights/the-right-to-rectification/\">the right to rectification</a> in the General Data Protection Regulation.</p>",
-    "bottom_text": "<p>This is the bottom text for public guardian for digital identity</p>",
+    "top_text": "<p>The law is very clear about what happens to our property and things when we die, but much vaguer when it comes to digital identity.</p><p>We imagined the role a digital public might have: what formal process might people go through to transfer their accounts to people they trust, and what rules should services abide by?</p>",
+    "bottom_text": "<p>At the moment, if a service has your address it can be very difficult to change it, let alone change the address held by everyone they sold your address to. That makes it hard to imagine having much say in what happens to your data after you die.</p><p>The General Data Protection Regulation makes it clear that do have the right to rectify your data, something companies need to model in ways that allow for extreme changes of circumstance.</p>",
     "permalink": "public-guardian",
-    "tagline": "How services handle the death of a user"
+    "tagline": "What happens to our data after we die"
   },
   {
     "title": "Activity log",
