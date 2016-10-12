@@ -26,7 +26,9 @@ pages.sort(function(a, b) {
 // ROUTES
 // Render the app view
 app.get('/', function(req, res) {
-	res.render('index', { config, pages });
+  let firstPage = pages[0];
+  
+	res.render('index', { config, pages, firstPage });
 });
 
 // Render routes for each page
