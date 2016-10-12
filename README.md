@@ -1,15 +1,11 @@
 # Our Digital Rights
 
-Over the next couple of years, our rights as digital citizens will change.
+Our rights as digital citizens are changing.
 
-In May 2018, the European Parliament’s General Data Protection regulation will affect how services handle our data, security and privacy online. For the first time, our right to challenge algorithmic decision making, our right to correct data and even our right to have our data erased will be protected.
+The General Data Protection Regulation affects the way services handle our data, security and privacy. 
 
-Groups like the ICO are explaining what the regulations mean for organisations. They’re looking at GDPR as a matter of compliance. We think it’s a design problem.
+We will have the right to challenge automated decision making, to correct data and even to have our data erased. Everyday activities, like shopping for groceries, could begin to change as they reflect these new rights. 
 
-Even the most mundane of activities, like shopping for groceries, could change as these new rights emerge. And because the regulation will affect any service whose users include European citizens, it’s going to set a precedent around the world.
+But this isn’t the first time something like this has happened. The cookie law didn’t give people more control over how companies tracked them online, it just created a new, low bar for compliance: the cookie banner.
 
-This is a chance to think about the kind of services we want to see online.
-
-We’ve developed several prototypes that take new approaches to data and privacy. Each responds differently to the rights described by these new regulations. Each is a tiny, mostly mundane illustration of what our digital future could look like.
-
-Our job as designers is to look at these new rights and think about what services and tools they open up. To think about the possibilities, try stuff out, learn and improve.
+Our job as designers is to look at these new rights and think about what services or tools they could enable. The following prototypes are tiny, mundane illustrations of what digital services could do next.
