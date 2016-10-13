@@ -12,24 +12,17 @@ $(function() {
     listAsda.fill(null);
     listMorrisons.fill(null);
 
-    $('.button_fill_basket').click(function(e) {
-      e.preventDefault();
-
-      $('#results').fadeOut(250);
-      $('#checkout').fadeIn(250);
-    });
-
     $('#top_list input').first().focus();
 
     $('#top_list input').keyup(function() {
-        let val = $(this).val();
-        let index = $(this).index();
+      let val = $(this).val();
+      let index = $(this).index();
 
-        clearInterval(listTimer[index]);
+      clearInterval(listTimer[index]);
 
-        listTimer[index] = setTimeout(function() {
-            checkListItem(val, index);
-        }, 1500);
+      listTimer[index] = setTimeout(function() {
+          checkListItem(val, index);
+      }, 1500);
     });
 
     $("#top_list input")[6].focus();
@@ -49,99 +42,99 @@ $(function() {
     getFavourites();
 
     function checkListItem(searchQuery, index) {
-        $.getJSON("/public/data/shopping-list.json", function(data) {
-          let place = index;
-          console.log(searchQuery);
-            // Loop through Tesco
-            for (let product in data.tesco) {
-                let query = searchQuery.toLowerCase();
-                let comparator = data.tesco[product].tag.toLowerCase();
+      $.getJSON("/public/data/shopping-list.json", function(data) {
+        let place = index;
 
-                if (query === comparator) {
-                    listTesco[index] = data.tesco[product];
-                    break
-                } else {
-                    listTesco[index] = null;
-                }
-            }
+        // Loop through Tesco
+        for (let product in data.tesco) {
+          let query = searchQuery.toLowerCase();
+          let comparator = data.tesco[product].tag.toLowerCase();
 
-            let totalTesco = 0;
+          if (query === comparator) {
+            listTesco[index] = data.tesco[product];
+            break
+          } else {
+            listTesco[index] = null;
+          }
+        }
 
-            for (let product in listTesco) {
-                if (listTesco[product]) {
-                    totalTesco += listTesco[product].price;
-                }
-            }
+        let totalTesco = 0;
 
-            $('#results_tesco .total_cost').text(convertToCurrency(totalTesco));
+        for (let product in listTesco) {
+          if (listTesco[product]) {
+            totalTesco += listTesco[product].price;
+          }
+        }
 
-            // Loop through Morrisons
-            for (let product in data.morrisons) {
-                let query = searchQuery.toLowerCase();
-                let comparator = data.morrisons[product].tag.toLowerCase();
+        $('#results_tesco .total_cost').text(convertToCurrency(totalTesco));
 
-                if (query === comparator) {
-                    listMorrisons[index] = data.morrisons[product];
-                    break
-                } else {
-                    listMorrisons[index] = null;
-                }
-            }
+        // Loop through Morrisons
+        for (let product in data.morrisons) {
+          let query = searchQuery.toLowerCase();
+          let comparator = data.morrisons[product].tag.toLowerCase();
 
-            let totalMorrisons = 0;
+          if (query === comparator) {
+            listMorrisons[index] = data.morrisons[product];
+            break
+          } else {
+            listMorrisons[index] = null;
+          }
+        }
 
-            for (let product in listMorrisons) {
-                if (listMorrisons[product]) {
-                    totalMorrisons += listMorrisons[product].price;
-                }
-            }
+        let totalMorrisons = 0;
 
-            $('#results_morrisons .total_cost').text(convertToCurrency(totalMorrisons));
+        for (let product in listMorrisons) {
+          if (listMorrisons[product]) {
+            totalMorrisons += listMorrisons[product].price;
+          }
+        }
 
-            // Loop throuh Asda
-            for (let product in data.asda) {
-                let query = searchQuery.toLowerCase();
-                let comparator = data.asda[product].tag.toLowerCase();
+        $('#results_morrisons .total_cost').text(convertToCurrency(totalMorrisons));
 
-                if (query === comparator) {
-                    listAsda[index] = data.asda[product];
-                    break
-                } else {
-                    listAsda[index] = null;
-                }
-            }
+        // Loop throuh Asda
+        for (let product in data.asda) {
+          let query = searchQuery.toLowerCase();
+          let comparator = data.asda[product].tag.toLowerCase();
 
-            let totalAsda = 0;
+          if (query === comparator) {
+            listAsda[index] = data.asda[product];
+            break
+          } else {
+            listAsda[index] = null;
+          }
+        }
 
-            for (let product in listAsda) {
-                if (listAsda[product]) {
-                    totalAsda += listAsda[product].price;
-                }
-            }
+        let totalAsda = 0;
 
-            $('#results_asda .total_cost').text(convertToCurrency(totalAsda));
+        for (let product in listAsda) {
+          if (listAsda[product]) {
+            totalAsda += listAsda[product].price;
+          }
+        }
 
-        });
+        $('#results_asda .total_cost').text(convertToCurrency(totalAsda));
+
+      });
     }
 
     function convertToCurrency(value) {
-        if (!value) {
-            return CURRENCY_SYMBOL + "0" + SEPERATOR + "00";
-        }
+      if (!value) {
+        return CURRENCY_SYMBOL + "0" + SEPERATOR + "00";
+      }
 
-        // Ensure value is a string
-        value = value.toString();
+      // Ensure value is a string
+      value = value.toString();
 
-        // Pad out values when needed
-        if (value.length == 2) {
-            value = "0" + value;
-        } else if (value.length == 1) {
-            value = "00" + value;
-        }
+      // Pad out values when needed
+      if (value.length == 2) {
+        value = "0" + value;
+      } else if (value.length == 1) {
+        value = "00" + value;
+      }
 
-        // Construct string
-        value = CURRENCY_SYMBOL + value.slice(0, value.length - 2) + SEPERATOR + value.slice(-2);
+      // Construct string
+      value = CURRENCY_SYMBOL + value.slice(0, value.length - 2) + SEPERATOR + value.slice(-2);
 
-        return value
+      return value
     }
 });

@@ -3,9 +3,8 @@ div(class="window_container")
   div(id="portable_shopping_list" class="window_content")
     div(class="header")
       img(src="/public/images/tesco_logo.svg")
-    div(id="list_view" class="section")
-      h2 Your shopping basket
-      P Add more items? (eggs, cheese, crisps...)
+    div(class="section")
+      h1 Your shopping basket
       div(id="top_list")
         input(type="text")
         input(type="text")
@@ -17,21 +16,22 @@ div(class="window_container")
         input(type="text")
         input(type="text")
       div(id="results")
-        h1 Select your provider
+        h2 Choose a retailer
         div(id="results_tesco" class="retailer_results")
           h2 Tesco
           p(class="total_cost") £0.00
-          p Delivey tomorrow
-          a(href="" class="button_fill_basket") Checkout
+          p(class="delivery_time") Delivers tomorrow
+          p
+            a(href="#" class="button_fill_basket") Checkout
         div(id="results_asda" class="retailer_results")
           h2 Asda
           p(class="total_cost") £0.00
-          p Delivery today
-          a(href="#" class="button_fill_basket") Checkout
+          p(class="delivery_time") Delivers today
+          p
+            a(href="#" class="button_fill_basket") Fill basket
         div(id="results_morrisons" class="retailer_results")
           h2 Morrisons
           p(class="total_cost") £0.00
-          p Delivery tomorrow
-          a(href="#" class="button_fill_basket") Checkout
-      div(id="checkout")
-        h1 Checkout updated
+          p(class="delivery_time") Delivers tomorrow
+          p
+            a(href="#" class="button_fill_basket") Fill basket
