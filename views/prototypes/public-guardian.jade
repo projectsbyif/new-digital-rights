@@ -1,32 +1,9 @@
-div(id="digital_will" class="window_container")
-  div(style="text-align: center;")
-    img(src="/public/images/lion_head.svg")
-  h2 Appoint your legacy friend
-  p(class="intro") A legacy friend is an individual who can manage your social media accounts after you have died. They can maintain your accounts, close them or rectify any inaccurate information about you or others.
-  p
-    input(type="text" class="allow_access_to" placeholder="theirname@domain")
-  p  
-    input(type="checkbox" name="exception" id="share_folder")
-    label(for="share_folder") Grant then to power to delete accounts
-  p(class="intro") Select items to restrict access
-  div(class="social_media_list")
-    h2 Facebook
-    form(action="")
-      p
-        input(type="checkbox" name="exception" id="delete_folder")
-        label(for="delete_folder") Private messages
-      p
-        input(type="checkbox" name="exception" id="delete_folder")
-        label(for="delete_folder") Private photo albums
-  div(class="social_media_list")
-    h2 Tinder
-    form(action="")
-      p
-        input(type="checkbox" name="exception" id="delete_folder")
-        label(for="delete_folder") Private messages
-  div(class="social_media_list")
-      h2 Gmail
-      form(action="")
-        p
-          input(type="checkbox" name="exception" id="delete_folder")
-          label(for="delete_folder") Selected folders #[select(name="folders") #[option ———] #[option Personal] #[option Banking] #[option Holidays] #[option Newsletters]] Delete
+div(class="window_container")
+  div(class="window_title")
+    h1 Your digital will
+  div(id="public_guardian" class="window_content")
+    div(class="header")
+      img(src="/public/images/public_guardian_logo.svg")
+    div(class="section")
+      h2 This is a header
+      p This is a section
