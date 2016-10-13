@@ -94,6 +94,8 @@ header {
 }
 
 .window_container {
+  overflow: auto;
+  
   .window_title {
     display: none;
   }
