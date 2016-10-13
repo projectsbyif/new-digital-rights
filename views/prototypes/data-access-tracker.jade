@@ -12,8 +12,7 @@ div(class="window_container")
       div(id="header" class="section")
         img(src="/public/images/easyrent_logo.svg")
         p Hello,
-        p We’re getting in touch to inform you that we’ve received and have accessed some of your personal documents. As per our terms, we’ll only keep documents until the contract with your prospective landlord has been signed.
-        p Take a look below at the latest activity around the documents you’ve supplied us with.
+        p We’re getting in touch to inform you that we’ve received some personal documents from you. Take a look below at the latest activity around the documents you’ve supplied us.
         p Your friends at QuickRent.
       div(id="property" class="section no-padding")
         img(src="/public/images/easyrent_building.jpg")
@@ -21,15 +20,19 @@ div(class="window_container")
         p £1,500 per month
       div(id="latest" class="section")
         h2 Recent activity
-        p(class="action") Bank Statement viewed and deleted by A. Smith
-        p 32 minutes ago
+        p(class="action") Viewed by Alison Smith to check affordability #[span(class="timestamp") 32 minutes ago]
+        p(class="action") Viewed by Alan Hammond to confirm your identity #[span(class="timestamp") 2 hours ago]
+        p(class="action") Viewed by Stephen Jones to confirm receipt #[span(class="timestamp") 9 hours ago]
+        p
+          a(href="#") Report a problem
       div(id="summary" class="section")
         h2 Summary
-        h3 1.
-        p You have sent screenshots showing #[span(class="underline") 3 months worth of bank transactions] to #[span(class="underline") EasyRent Ltd.]
-        h3 2.
-        p They need this to #[span(class="underline") check if you can afford rent payments].
-        h3 3.
-        p It will only be accessible by the #[span(class="underline") accounts department].
-        h3 4.
-        p You screenshots will be kept #[span(class="underline") until the affordability check has been completed]. This usually takes 48 hours. They will then be deleted.
+        ul
+          li
+            p You have sent 3 months worth of bank statements to EasyRent Ltd.
+          li
+            p We need this to check if you can afford rent payments.
+          li
+            p It will only be accessible by the accounts department.
+          li
+            p Your statements will be kept until the affordability check has been completed. This usually takes 48 hours. They will then be deleted.
