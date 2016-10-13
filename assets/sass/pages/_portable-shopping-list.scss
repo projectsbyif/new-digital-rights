@@ -13,12 +13,13 @@
 
   .section {
     border-bottom: 0;
+    overflow: auto;
   }
 
   #top_list {
     border: #FFF 2px solid;
     border-radius: 4px;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 
     input {
       width: calc(100% - 1em);
@@ -41,34 +42,25 @@
     }
   }
 
-  .retailer_results {
+  #results {
     margin-bottom: 1em;
-    margin-top: 1.5em;
 
-    .total_cost {
-      font-size: 1.6em;
-      margin-bottom: 0;
-      padding-bottom: 0.5em;
+    .retailer_results {
+      overflow: auto;
+
+      .total_cost {
+        margin-bottom: 0.1em;
+        font-size: 1.6em;
+      }
+
+      .delivery_time {
+        margin-bottom: 1.25em;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-
-    .button_fill_basket {
-      text-decoration: none;
-      border-radius: 5px;
-      padding: 0.6em 0.3em 0.3em 0.3em;
-      margin-top: 2em;
-      color: $color-if-orange;
-      background-color: #FFF;
-    }
-  }
-
-  #checkout {
-    display: none;
-    text-align: center;
-    padding-top: 1em;
   }
 }
 
@@ -80,8 +72,6 @@
     }
 
     #results {
-      overflow: auto;
-
       .retailer_results {
         margin-bottom: 0;
         width: 33.333%;
