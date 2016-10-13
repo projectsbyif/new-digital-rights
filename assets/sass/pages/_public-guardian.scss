@@ -1,5 +1,10 @@
 #public_guardian {
-  
+  .header {
+    img {
+      padding-top: 0;
+      height: 4em;
+    }
+  }
 }
 
 @media screen and (min-width: 720px) {
