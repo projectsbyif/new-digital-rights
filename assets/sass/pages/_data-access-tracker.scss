@@ -3,6 +3,19 @@
   padding: 0.5em;
   border-bottom: #FFF 1px solid;
 
+  &.no-padding {
+    padding: 0;
+
+    p {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+
+      &:last-child {
+        padding-bottom: 0.5em;
+      }
+    }
+  }
+
   &:last-child {
     border-bottom: 0;
   }
