@@ -3,7 +3,7 @@ $(function() {
     e.preventDefault();
 
     $('#map').css({
-      'background-image': "url('/public/images/brighton-filtered.png')"
+      'background-image': "url('/public/images/brighton-filtered.jpg')"
     });
 
     $('#list_click_yes, #list_click_no').fadeOut(250, function() {

@@ -23,11 +23,11 @@ $(function() {
     } else if ($(this).parent().attr('id') === "blinds_two_selector") {
       if ($(this).text() === "Yes") {
         $('#blinds_two .preview_area').css({
-          'background-image': "url('/public/images/house_satellite.svg')"
+          'background-image': "url('/public/images/aerial.jpg')"
         });
       } else if ($(this).text() === "No") {
         $('#blinds_two .preview_area').css({
-          'background-image': "url('/public/images/house_satellite_blur.svg')"
+          'background-image': "url('/public/images/aerial_blur.jpg')"
         });
       }
     }
@@ -60,7 +60,7 @@ $(function() {
             currentStep++;
           });
         }
-      }  
+      }
     }
   });
 });
