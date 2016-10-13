@@ -131,6 +131,13 @@ header {
   display: block;
   float: left;
   text-decoration: none;
+
+  &.unselected {
+    border: #FFF 2px solid;
+    background: none;
+    opacity: 0.35;
+    color: #FFF !important;
+  }
 }
 
 /* Prototype nav */
