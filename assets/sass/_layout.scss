@@ -6,18 +6,25 @@ header {
   margin-bottom: 2em;
 
   #logo {
-    display:block;
-    text-indent:-9999px;
-    background-image:url('/public/images/if-logo.svg');
-    background-repeat:no-repeat;
-    background-size:contain;
-    margin:0 auto;
-    border-bottom:0;
-    height:54px;
-    width:40px;
-    position:absolute;
-    top:10px;
-    left:calc(50% - 20px);
+    display: block;
+    text-indent: -9999px;
+    background-image: url('/public/images/if-logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    border-bottom: 0;
+    height: 54px;
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 20px);
+  }
+
+  #title {
+    position: absolute;
+    text-decoration: none;
+    left: 10px;
+    top: 28px;
   }
 }
 
@@ -32,8 +39,8 @@ header {
 
   #wrapper {
     height: 2.5em;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    width: 920px;
+    margin: 0 auto;
 
     #previous,
     #next,
@@ -48,6 +55,7 @@ header {
 
         a {
           height: 100%;
+          text-decoration: none;
         }
       }
     }
@@ -70,8 +78,12 @@ header {
   padding-bottom: 2em;
 
   h1 {
-    padding:0 1em;
+    padding: 0 1em;
     text-align: center;
+  }
+
+  h2 {
+    padding: 0 0.8em;
   }
 
   p {
@@ -81,26 +93,26 @@ header {
   }
 
   #contents {
-    clear: left;
-    border-top: #f1f0ee 1px solid;
-    padding-top: 1.5em;
+    padding: 1em;
+    background: #EEE;
+    display: none;
 
     .item {
       h2 {
         font-size: 1em;
         margin-bottom: 0.5em;
       }
+
+      &:last-child {
+        p {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   #call_to_action {
     font-family: $default-fonts-bold;
-    border: $color-if-grey 2px solid;
-    text-decoration: none;
-    padding: 0.5em 0.5em 0.4em 0.5em;
-    display: block;
-    float:left;
-    margin-bottom: 2em;
   }
 }
 
@@ -111,17 +123,9 @@ header {
 }
 
 .prototype_description {
-  min-height: 20vh;
-  background-color: #FFF;
-  color: #000;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-  padding-top: 2em;
+  padding: 1em;
 
   p {
-    line-height: 1.2em;
-
     a {
       color: $color-if-grey;
       text-decoration: underline;
@@ -287,27 +291,40 @@ header {
 }
 
 @media screen and (min-width: 720px) {
+  header {
+    height: 96px;
+
+    #logo {
+      top: 14px;
+      left: calc(50% - 25.5555px);
+      height: 69px;
+      width: 51.1111px;
+    }
+
+    #title {
+      top: 36px;
+      left: 38px;
+    }
+  }
+
   #homepage {
-    margin: 0 20vw;
+    width: 920px;
+    margin: 0 auto;
 
-    h1 {
-      font-size: 3em;
+    h1, h2, p {
       padding: 0;
     }
 
-    p {
-      font-size: 1em;
-      padding: 0;
+    #show_contents,
+    #call_to_action {
+      width: 50%;
+      display: block;
+      float: left;
     }
 
-    #intro {
-      h2, p {
-        line-height: 1.2em;
-      }
-
-      p {
-        font-size: 1.2em;
-      }
+    #call_to_action {
+      font-family: $default-fonts-bold;
+      text-align: right;
     }
   }
 
@@ -317,13 +334,19 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 2em;
   }
 
   .prototype_description {
-    min-height: 20vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    padding-bottom: 1em;
+    padding: 0;
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+
+    &.bottom {
+      margin-bottom: 4.5em;
+    }
   }
 
   #show_prototype_menu_mobile,
@@ -365,7 +388,7 @@ header {
 
   /* Generic device containers */
   .window_container {
-    width: 42em;
+    width: 920px;
     border: #FFF 2px solid;
     border-radius: 5px;
     margin-top: 2em;

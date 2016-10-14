@@ -18,17 +18,15 @@ html(lang="en")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
   body
-    div(class="prototype_header")
-      a(href="/" id="logo-light")
-      a(href="#" id="show_prototype_menu_mobile" class="prototype_menu_link") Show menu
-      div(class="left")
-        a(href="/") #{config.site_name}
+    header
+      a(id="logo" href="https://projectsbyif.com") Projects By IF
+      a(id="title" href="/") #{config.site_name}
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.top_text}
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
-    div(class="prototype_description")
+    div(class="prototype_description bottom")
       p !{page.bottom_text}
   div(id="navigation")
     div(id="wrapper")
