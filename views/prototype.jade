@@ -30,17 +30,19 @@ html(lang="en")
       != renderTemplate(page.permalink)
     div(class="prototype_description")
       p !{page.bottom_text}
-      if nextPage
-        a(href="/#{nextPage.permalink}") Next: #{nextPage.title}
-      else
-        a(href="/") Back to homepage
-    div(class="prototype_menu")
-      a(href="#" id="hide_prototype_menu") Close
-      div(class="item" class="mobile_only_item")
-        p
-          a(href="/") Home
-      each page in pages
-        div(class="item")
+  div(id="navigation")
+    div(id="wrapper")
+      div(id="previous")
           p
-            a(href="/#{page.permalink}") #{page.title}
-          p #{page.tagline}
+            if previousPage
+              a(href="/#{previousPage.permalink}") ← #{previousPage.title}
+            else
+              a(href="/") ← Home
+      div(id="count")
+        p #{currentPage} of #{totalPages}
+      div(id="next")
+          p
+            if nextPage
+              a(href="/#{nextPage.permalink}") #{nextPage.title} →
+            else
+              a(href="/") Home →

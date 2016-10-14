@@ -21,6 +21,51 @@ header {
   }
 }
 
+#navigation {
+  width: 100vw;
+  height: 2.5em;
+  border-top: #EEE 1px solid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+
+  #wrapper {
+    height: 2.5em;
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    #previous,
+    #next,
+    #count {
+      width: calc(100% / 3);
+      float: left;
+      height: 2.5em;
+
+      p {
+        height: 100%;
+        line-height: 2.75em;
+
+        a {
+          height: 100%;
+        }
+      }
+    }
+
+    #previous {
+      text-align: left;
+    }
+
+    #next {
+      text-align: right;
+    }
+
+    #count {
+      text-align: center;
+    }
+  }
+}
+
 #homepage {
   padding-bottom: 2em;
 
@@ -37,7 +82,7 @@ header {
 
   #contents {
     clear: left;
-    border-top: $color-if-grey 1px solid;
+    border-top: #f1f0ee 1px solid;
     padding-top: 1.5em;
 
     .item {
@@ -95,7 +140,7 @@ header {
 
 .window_container {
   overflow: auto;
-  
+
   .window_title {
     display: none;
   }
