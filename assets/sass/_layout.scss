@@ -118,8 +118,8 @@ header {
 
 /* Prototype pages */
 .prototype_canvas {
-  background-color: #212121;
-  color: #FFF;
+  background-color: $color-if-grey;
+  color: $color-if-black;
 }
 
 .prototype_description {
@@ -129,7 +129,7 @@ header {
     a {
       color: $color-if-grey;
       text-decoration: underline;
-      color: $color-if-orange;
+      color: $color-if-blue;
     }
   }
 }
@@ -189,7 +189,7 @@ header {
 
 .chunky_button {
   background: #FFF;
-  color: $color-if-orange !important;
+  color: $color-if-blue !important;
   padding: 0.75em 0.75em 0.45em 0.75em;
   margin-right: 0.25em;
   margin-bottom: 0.25em;
@@ -389,7 +389,7 @@ header {
   /* Generic device containers */
   .window_container {
     width: 920px;
-    border: #FFF 2px solid;
+    border: $color-if-black 2px solid;
     border-radius: 5px;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -397,7 +397,7 @@ header {
     .window_title {
       height: 1.5em;
       width: 100%;
-      border-bottom: #FFF 2px solid;
+      border-bottom: $color-if-black 2px solid;
       background-image: url('/public/images/window_container_buttons.svg');
       background-repeat: no-repeat;
       background-position: center left;
