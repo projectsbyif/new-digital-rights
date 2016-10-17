@@ -18,31 +18,29 @@ html(lang="en")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
   body
-    div(class="prototype_header")
-      a(href="/" id="logo-light")
-      a(href="#" id="show_prototype_menu_mobile" class="prototype_menu_link") Show menu
-      div(class="left")
-        a(href="/") Digital Rights
-      div(class="right")
-        a(href="#" class="prototype_menu_link") Menu
+    header
+      a(id="logo" href="https://projectsbyif.com") Projects By IF
+      a(id="title" href="/") #{config.site_name}
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.top_text}
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
-    div(class="prototype_description")
+    div(class="prototype_description bottom")
       p !{page.bottom_text}
-      if nextPage
-        a(href="/#{nextPage.permalink}") Next: #{nextPage.title}
-      else
-        a(href="/") Back to homepage
-    div(class="prototype_menu")
-      a(href="#" id="hide_prototype_menu") Close
-      div(class="item" class="mobile_only_item")
-        p
-          a(href="/") Home
-      each page in pages
-        div(class="item")
+  div(id="navigation")
+    div(id="wrapper")
+      div(id="previous")
           p
-            a(href="/#{page.permalink}") #{page.title}
-          p #{page.tagline}
+            if previousPage
+              a(href="/#{previousPage.permalink}") ← #{previousPage.title}
+            else
+              a(href="/") ← Home
+      div(id="count")
+        p #{currentPage} of #{totalPages}
+      div(id="next")
+          p
+            if nextPage
+              a(href="/#{nextPage.permalink}") #{nextPage.title} →
+            else
+              a(href="/") Home →

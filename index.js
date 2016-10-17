@@ -26,21 +26,30 @@ pages.sort(function(a, b) {
 // ROUTES
 // Render the app view
 app.get('/', function(req, res) {
-	res.render('index', { config, pages });
+  let firstPage = pages[0];
+
+	res.render('index', { config, pages, firstPage });
 });
 
 // Render routes for each page
 for (let index in pages) {
 	let page = pages[index];
   let nextPage = null;
+  let previousPage = null;
   index = parseInt(index);
+  let currentPage = index + 1;
+  let totalPages = parseInt(pages.length);
 
   if ((index + 1) < pages.length) {
     nextPage = pages[index + 1];
   }
 
+  if (index > 0) {
+    previousPage = pages[index - 1];
+  }
+
 	app.get('/' + page.permalink, function(req, res) {
-		res.render('prototype', { config, page, pages, nextPage });
+		res.render('prototype', { config, page, pages, nextPage, previousPage, currentPage, totalPages });
 	});
 }
 

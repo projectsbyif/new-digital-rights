@@ -23,8 +23,7 @@
 
   .screen {
     .preview_area {
-      background: red;
-      height: 18em;
+      height: 21.5em;
       border-bottom: #FFF 2px solid;
       background-size: cover;
       background-position: center center;
@@ -32,7 +31,7 @@
     }
 
     .config_area {
-      height: 8em;
+      height: 4.5em;
       padding: 0.5em 0.5em 0.5em 0.5em;
 
       .description {
@@ -41,19 +40,18 @@
         float: left;
       }
 
-      .next,
+      .next {
+        float: right !important;
+        margin: 0 !important;
+      }
+
       .saved {
-        float: right;
-        color: #FFF;
-        border: #FFF 2px solid;
-        padding: 0.5em 0.5em 0.3em 0.5em;
-        color: #FFF;
-        text-decoration: none;
+        display:none;
+        color:#FFF;
       }
 
       .selector {
         overflow: auto;
-        margin-bottom: 1em;
 
         a {
           border: #FFF 2px solid;
@@ -66,7 +64,7 @@
 
           &.selected {
             background: #FFF;
-            color: $color-if-orange;
+            color: #222;
           }
         }
       }
@@ -85,7 +83,7 @@
 
   #blinds_two {
     .preview_area {
-      background-image: url('/public/images/house_satellite.svg');
+      background-image: url('/public/images/aerial.jpg');
     }
   }
 

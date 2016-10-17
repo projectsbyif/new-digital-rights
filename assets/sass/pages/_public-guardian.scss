@@ -1,99 +1,17 @@
-#digital_will {
-  position: relative;
-
-  .allow_access_to {
-    width: calc(100% - 2em);
-    margin-left: 1.5em;
-  }
-
-  .intro {
-    margin: 2em 1em 1em 1em;
-  }
-
-  .social_media_list {
-    margin-bottom: 1.2em;
-
-    p {
-      margin-left: 1em;
+#public_guardian {
+  .header {
+    img {
+      padding-top: 0;
+      height: 4em;
     }
-  }
-
-  img {
-    margin: 0 auto;
-    padding-top: 1em;
-  }
-
-  select {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  input {
-    color: #FFF;
-    border: 0;
-    background: none;
-    font-family: $default-fonts-regular;
-    font-size: 1em;
-    border-bottom: #FFF 1px solid;
-
-    &::-webkit-input-placeholder {
-      color: #CCC;
-    }
-  }
-
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin-right: 0.5em;
-  }
-
-  a {
-    color: #FFF;
-  }
-
-  h1 {
-    font-size: 1.2em;
-    text-align: center;
-    padding: 0.5em;
-    margin-bottom: 1em;
-  }
-
-  h2 {
-    margin: 0.5em 0.5em 1em 0.5em;
-    font-size: 1.1em;
-  }
-
-  p {
-    margin: 0.5em;
-  }
-
-  #button_save {
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-    border-top: #FFF 2px solid;
-    display: block;
-    width: calc(100% - 1em);
-    padding: 0.5em;
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-#digital_will_confirmation {
-  display: none;
-}
-
-.social-checks {
-
-  input {
-    padding-left: 2em;
-  }
-
-  label {
-    padding-left: 2em;
   }
 }
 
 @media screen and (min-width: 720px) {
-
+  #public_guardian {
+    .section {
+      width: 25em;
+      margin: 2em auto;
+    }
+  }
 }
