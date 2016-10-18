@@ -5,7 +5,7 @@ $(function() {
     Slow + major : 2
     Slow + minor : 3
   */
-  
+
   let predefinedRoutes = [
     {
       "identifier": "(0) Via A57",
@@ -124,4 +124,36 @@ $(function() {
 
     return value
   }
+
+  $('#get_route').click(function(e) {
+    e.preventDefault();
+
+    $('.hide_journey').fadeOut(250, function() {
+      $('.hide_route').delay(750).fadeIn(500);
+    });
+  });
+
+  $('#quote_yes').click(function(e) {
+    e.preventDefault();
+
+    $('.hide_route').fadeOut(250, function() {
+      $('.hide_options').delay(750).fadeIn(500);
+    });
+  });
+
+  $('#quote_no').click(function(e) {
+    e.preventDefault();
+
+    $('.hide_route').fadeOut(250, function() {
+      $('.hide_quote').delay(750).fadeIn(500);
+    });
+  });
+
+  $('#quote_accept').click(function(e) {
+    e.preventDefault();
+
+    $('.hide_options').fadeOut(250, function() {
+      $('.hide_quote').delay(750).fadeIn(500);
+    });
+  });
 });
