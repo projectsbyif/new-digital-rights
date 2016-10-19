@@ -1,0 +1,45 @@
+#journey_planner {
+  .journey_plan_section {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 0.5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .label {
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 1.55em;
+      text-align: center;
+      line-height: 1.8em;
+      border: #FFF 2px solid;
+      float: left;
+      margin-right: 0.5em;
+      margin-bottom: 0;
+    }
+
+    input {
+      float: left;
+      width: calc(100% - 2.5em);
+      height: 1.5em;
+      border: 0;
+      border-bottom: #FFF 2px solid;
+      background: none;
+      color: #FFF;
+      font-family: $default-fonts-regular;
+      font-size: 18px;
+      padding: 0;
+      padding-top: 0.3em;
+    }
+  }
+
+  #route_distance {
+    margin-right: 0.5em;
+  }
+
+  #quote_amount {
+    font-size: 1.4em;
+  }
+}

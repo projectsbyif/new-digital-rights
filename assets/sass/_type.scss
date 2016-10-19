@@ -1,17 +1,18 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 1.4;
   font-family: $default-fonts-regular;
-  color: $color-dark;
+  color: $color-if-black;
 }
 
 a {
-  color: $color-dark;
+  color: $color-if-black;
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 36px;
   font-family: $default-fonts-bold;
   margin-bottom: $default-spacing;
 }
@@ -27,5 +28,25 @@ p {
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style-type: disc;
+  margin-bottom: $default-spacing;
+
+  li {
+    margin-left: $default-spacing;
+    margin-bottom: 0.15em;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 55px;
   }
 }

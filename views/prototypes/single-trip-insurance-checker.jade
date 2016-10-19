@@ -1,0 +1,43 @@
+div(class="mobile_container")
+  div(class="mobile_content")
+    div(id="journey_planner")
+      div(class="section")
+        h2 Journey
+        div(class="journey_plan_section")
+          p(class="label") A
+          input(type="text" value="Sheffield" disabled="disabled")
+        div(class="journey_plan_section")
+          p(class="label") B
+          input(type="text" value="Manchester" disabled="disabled")
+
+      div(class="section")
+        h2 Options
+        div(id="road_speed" class="option")
+          h3 Road speed
+          a(href="#" class="selected") Slow
+          a(href="#") Fast
+        div(id="road_type" class="option")
+          h3 Road type
+          a(href="#" class="selected") Minor roads
+          a(href="#") Major roads
+        div(id="passengers" class="option")
+          h3 Passengers
+          a(href="#" class="selected") Driver only
+          a(href="#") Driver + Passengers
+        div(id="time" class="option")
+          h3 Time
+          a(href="#" class="selected") Day
+          a(href="#") Night
+      
+      div(class="section")
+        h2 Best route
+        p(id="route_identifier") —
+        p
+          span(id="route_distance") —
+          span(id="route_time") —
+        p(id="route_depart") Leave between
+      
+      div(class="section")
+        h2 Insurance quote
+        p(id="quote_amount") —
+        a(href="#") Report this quote

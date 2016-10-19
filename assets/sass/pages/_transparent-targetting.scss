@@ -1,0 +1,94 @@
+@mixin ad-example() {
+  background-image: url('/public/images/sample.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#transparent_targetting {
+  .feed_item_container {
+    margin: 1em 0.5em;
+    padding: 0.5em;
+    border: #FFF 2px solid;
+    border-radius: 2px;
+    width: calc(100% - 2em - 4px);
+  }
+
+  .feed_item_sample {
+    @include ad-example();
+    width: 100%;
+    height: 12em;
+    margin: 0.25em 0 0.5em 0;
+  }
+
+  .fake_sample_container {
+    width: calc(100% - 1em - 4px);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    height: 2em;
+    border-left: #FFF 2px solid;
+    border-right: #FFF 2px solid;
+    border-radius: 2px;
+
+    &.top {
+      border-bottom: #FFF 2px solid;
+    }
+
+    &.bottom {
+      border-top: #FFF 2px solid;
+    }
+  }
+
+  #show_permissions_dialog {
+    text-decoration: none;
+    background: #FFF;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 0.45em;
+    padding-bottom: 0.25em;
+    margin-top: 0.5em;
+  }
+
+  .permissions_container {
+    display: none;
+    position: relative;
+
+    p {
+      margin-bottom: 0.5em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        background: #FFF;
+        display: block;
+        width: 100%;
+        padding-top: 0.45em;
+        padding-bottom: 0.2em;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .deny_ad_container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .feed {
+    width: 25em;
+    margin: 0 auto;
+  }
+
+  .feed_item_container {
+    height: 18em;
+  }
+
+  .permission_buttons {
+    margin-top: 4.5em;
+  }
+}

@@ -1,22 +1,17 @@
 $(function() {
-  // Prototype menu toggle
-  $('#show_prototype_menu').click(function(e) {
+  let isContentsVisible = false;
+
+  $('#show_contents').click(function(e) {
     e.preventDefault();
 
-    $('.prototype_menu').show().css({
-      'left': $(window).width()
-    }).animate({
-      'left': $(window).width() - $('.prototype_menu').outerWidth()
-    }, 250);
-  });
-
-  $('#hide_prototype_menu').click(function(e) {
-    e.preventDefault();
-
-    $('.prototype_menu').animate({
-      'left': $(window).width()
-    }, 250, function() {
-      $('.prototype_menu').hide();
-    });
+    if (!isContentsVisible) {
+      $('#contents').show();
+      $('#show_contents a').text("Hide contents");
+      isContentsVisible = true;
+    } else {
+      $('#contents').hide();
+      $('#show_contents a').text("Show contents");
+      isContentsVisible = false;
+    }
   });
 });
