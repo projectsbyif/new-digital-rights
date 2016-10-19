@@ -1,37 +1,21 @@
 div(class="window_container")
   div(class="window_title")
-  div(id="portable_shopping_list" class="window_content")
+  div(id="shopping_import" class="window_content portable_shopping_list")
     div(class="header")
       img(src="/public/images/tesco_logo.svg")
     div(class="section")
-      h1 Your shopping basket
-      div(id="top_list")
+      p Introduction of the process here
+      p Introduction of the process here
+      p Introduction of the process here
+      p Introduction of the process here
+      a(id="import_shopping" class="chunky_button" href="#") Import your shopping list from Morrisons
+      
+  div(id="shopping_list" class="window_content portable_shopping_list")
+    div(class="header")
+      img(src="/public/images/tesco_logo.svg")
+    div(class="section")
+      div(class="shopping")
         input(type="text")
         input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text" placeholder="Add item...")
-        input(type="text")
-        input(type="text")
-      div(id="results")
-        h2 Choose a retailer
-        div(id="results_tesco" class="retailer_results")
-          h2 Tesco
-          p(class="total_cost") £0.00
-          p(class="delivery_time") Delivers tomorrow
-          p
-            a(href="#" class="button_fill_basket") Checkout
-        div(id="results_asda" class="retailer_results")
-          h2 Asda
-          p(class="total_cost") £0.00
-          p(class="delivery_time") Delivers today
-          p
-            a(href="#" class="button_fill_basket") Fill basket
-        div(id="results_morrisons" class="retailer_results")
-          h2 Morrisons
-          p(class="total_cost") £0.00
-          p(class="delivery_time") Delivers tomorrow
-          p
-            a(href="#" class="button_fill_basket") Fill basket
+      div(class="results")
+        h2 Checkout

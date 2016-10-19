@@ -1,11 +1,11 @@
-#portable_shopping_list {
+.portable_shopping_list {
   .section {
     border-bottom: 0;
     overflow: auto;
   }
 
-  #top_list {
-    border: #FFF 2px solid;
+  .shopping {
+    border: #000 2px solid;
     border-radius: 4px;
     margin-bottom: 2em;
 
@@ -18,7 +18,7 @@
       font-family: $default-fonts-regular;
       font-size: 1em;
       padding: 0.5em;
-      color: #FFF;
+      color: #000;
 
       &:first-child {
         border-top: 0;
@@ -30,7 +30,7 @@
     }
   }
 
-  #results {
+  .results {
     margin-bottom: 1em;
 
     .retailer_results {
@@ -53,13 +53,13 @@
 }
 
 @media screen and (min-width: 720px) {
-  #portable_shopping_list {
+  .portable_shopping_list {
     .section {
       width: 25em;
       margin: 2em auto;
     }
 
-    #results {
+    .results {
       .retailer_results {
         margin-bottom: 0;
         width: 33.333%;
@@ -67,4 +67,8 @@
       }
     }
   }
+}
+
+#shopping_list {
+  display: none;
 }
