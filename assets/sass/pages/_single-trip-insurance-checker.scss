@@ -1,5 +1,8 @@
 #journey_planner {
 
+  overflow: auto;
+  margin-bottom: 1em;
+
   .journey_plan_section {
     overflow: auto;
     width: 100%;
@@ -61,6 +64,7 @@
 .hide_options,
 .hide_quote {
     display: none;
+    overflow: auto;
 }
 
 #reported_button {
