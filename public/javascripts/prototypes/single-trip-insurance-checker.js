@@ -120,14 +120,6 @@ $(function() {
     recalculate();
   });
 
-  $('#quote_no').click(function(e) {
-    e.preventDefault();
-
-    $('.hide_route').fadeOut(250, function() {
-      $('.hide_quote').delay(750).fadeIn(500);
-    });
-  });
-
   $('#quote_accept').click(function(e) {
     e.preventDefault();
 
@@ -137,4 +129,11 @@ $(function() {
 
     recalculate();
   });
+
+  $('#concern_button').click(function(e) {
+    e.preventDefault();
+
+    $('#concern_button').fadeOut(250);
+  });
+  
 });
