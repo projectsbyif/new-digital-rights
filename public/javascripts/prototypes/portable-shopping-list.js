@@ -8,4 +8,12 @@ $(function() {
     });
   });
 
+  $('#checkout').click(function(e) {
+    e.preventDefault();
+
+    $('#shopping_list').fadeOut(250, function() {
+      $('#shopping_accept').fadeIn(500);
+    });
+  });
+
 });

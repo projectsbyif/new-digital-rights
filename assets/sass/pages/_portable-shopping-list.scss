@@ -4,21 +4,21 @@
     overflow: auto;
   }
 
-  .shopping {
+  #top_list {
     border: #000 2px solid;
     border-radius: 4px;
-    margin-bottom: 2em;
 
-    input {
+    p {
       width: calc(100% - 1em);
       display: block;
       background: none;
       border: 0;
-      border-top: rgba(255, 255, 255, 0.8) 1px solid;
+      border-top: #000 1px solid;
       font-family: $default-fonts-regular;
       font-size: 1em;
       padding: 0.5em;
       color: #000;
+      margin-bottom: 0em;
 
       &:first-child {
         border-top: 0;
@@ -27,11 +27,26 @@
       &:last-child {
         border-bottom: 0;
       }
+
+      span {
+        float: right;
+        margin-right: 2em;
+      }
     }
   }
 
   .results {
     margin-bottom: 1em;
+
+    h2 {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    span {
+      float: right;
+      margin-right: 2em;
+    }
 
     .retailer_results {
       overflow: auto;
@@ -71,4 +86,8 @@
 
 #shopping_list {
   display: none;
+}
+
+#shopping_accept {
+  display:none;
 }
