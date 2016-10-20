@@ -11,7 +11,7 @@ $(function() {
     e.preventDefault();
 
     $('.permissions_container').fadeOut(250, function(e) {
-      $('#show_permissions_dialog').text("Thank you for your feedback.");
+      $('#show_permissions_dialog').text("Thank you.");
       $('.sample_container').fadeIn(250);
     });
   });
