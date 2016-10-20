@@ -133,7 +133,9 @@ $(function() {
   $('#concern_button').click(function(e) {
     e.preventDefault();
 
-    $('#concern_button').fadeOut(250);
+    $('#concern_button').fadeOut(250,  function() {
+      $('#reported_button').delay(750).fadeIn(500);
+    });
   });
-  
+
 });
