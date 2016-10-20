@@ -52,21 +52,6 @@
 
       .selector {
         overflow: auto;
-
-        a {
-          border: #FFF 2px solid;
-          padding: 0.5em 0.5em 0.3em 0.5em;
-          color: #FFF;
-          text-decoration: none;
-          display: block;
-          float:left;
-          margin-right: 0.5em;
-
-          &.selected {
-            background: #FFF;
-            color: #222;
-          }
-        }
       }
 
       h2 {
