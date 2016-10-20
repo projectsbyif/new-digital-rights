@@ -2,14 +2,22 @@
   .header {
     img {
       padding-top: 0;
-      height: 6em;
+      height: 4em;
+      margin-top: 1em;
     }
   }
 
-  img {
+  .signature {
     padding-top: 0;
     width: 9em;
     margin-bottom: 1em;
+  }
+
+  .qr_code {
+    padding-top: 0;
+    width: 4em;
+    margin-bottom: 1em;
+    float: right;
   }
 }
 
