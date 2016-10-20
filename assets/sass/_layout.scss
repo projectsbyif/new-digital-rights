@@ -39,7 +39,7 @@ header {
 
   #wrapper {
     height: 2.5em;
-    width: 920px;
+    width: 100%;
     margin: 0 auto;
 
     #previous,
@@ -292,64 +292,51 @@ header {
 @media screen and (min-width: 720px) {
   header {
     height: 96px;
-
+  }
     /* mobile navigation */
-    #navigation {
-      width: 100vw;
+  #navigation {
+    width: 100vw;
+    height: 2.5em;
+    border-top: #EEE 1px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+
+    #wrapper {
       height: 2.5em;
-      border-top: #EEE 1px solid;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      background: #FFF;
+      width: 920px;
+      margin: 0 auto;
 
-      #wrapper {
+      #previous,
+      #next,
+      #count {
+        width: calc(100% / 3);
+        float: left;
         height: 2.5em;
-        width: 920px;
-        margin: 0 auto;
 
-        #previous,
-        #next,
-        #count {
-          width: calc(100% / 3);
-          float: left;
-          height: 2.5em;
+        p {
+          height: 100%;
+          line-height: 2.75em;
 
-          p {
+          a {
             height: 100%;
-            line-height: 2.75em;
-
-            a {
-              height: 100%;
-              text-decoration: none;
-            }
+            text-decoration: none;
           }
         }
-
-        #previous {
-          text-align: left;
-        }
-
-        #next {
-          text-align: right;
-        }
-
-        #count {
-          text-align: center;
-        }
       }
-    }
 
-    #logo {
-      top: 14px;
-      left: calc(50% - 25.5555px);
-      height: 69px;
-      width: 51.1111px;
-    }
+      #previous {
+        text-align: left;
+      }
 
-    #title {
-      top: 36px;
-      left: 38px;
+      #next {
+        text-align: right;
+      }
+
+      #count {
+        text-align: center;
+      }
     }
   }
 
