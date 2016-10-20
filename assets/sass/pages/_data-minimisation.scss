@@ -1,12 +1,18 @@
 #dynamic_data_minimisation {
+
   #map {
-    width: 16em;
+    width: 100%em;
     background-image: url('/public/images/brighton-unfiltered.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     height: 16em;
     border-bottom: #FFF 1px solid;
+  }
+
+  .minimisation {
+    height: 7em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
   }
 
   #list_click_save,
