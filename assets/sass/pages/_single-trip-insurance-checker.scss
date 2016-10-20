@@ -1,4 +1,5 @@
 #journey_planner {
+
   .journey_plan_section {
     overflow: auto;
     width: 100%;
@@ -14,7 +15,7 @@
       border-radius: 1.55em;
       text-align: center;
       line-height: 1.8em;
-      border: #FFF 2px solid;
+      border: #000 2px solid;
       float: left;
       margin-right: 0.5em;
       margin-bottom: 0;
@@ -27,12 +28,24 @@
       border: 0;
       border-bottom: #FFF 2px solid;
       background: none;
-      color: #FFF;
+      color: #000;
       font-family: $default-fonts-regular;
       font-size: 18px;
       padding: 0;
       padding-top: 0.3em;
     }
+  }
+
+  .button {
+    background: #FFF;
+    color: #000;
+    display: block;
+    width: 100%;
+    padding-top: 0.45em;
+    padding-bottom: 0.2em;
+    margin-top: 1.5em;
+    text-align: center;
+    text-decoration: none;
   }
 
   #route_distance {
@@ -42,4 +55,22 @@
   #quote_amount {
     font-size: 1.4em;
   }
+}
+
+.hide_route,
+.hide_options,
+.hide_quote {
+    display: none;
+}
+
+.button {
+  background: #FFF;
+  color: #000;
+  display: block;
+  width: 100%;
+  padding-top: 0.45em;
+  padding-bottom: 0.2em;
+  margin-top: 1em;
+  text-align: center;
+  text-decoration: none;
 }

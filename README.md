@@ -1,11 +1,9 @@
-# Our Digital Rights
+# Designing for new digital rights
 
-Our rights as digital citizens are changing.
+The General Data Protection Regulation gives people new rights around data, privacy and security.
 
-The General Data Protection Regulation affects the way services handle our data, security and privacy. 
+We’ll have the right to challenge automated decisions, to restrict how personal data is used, and to take data with us from service to service.
 
-We will have the right to challenge automated decision making, to correct data and even to have our data erased. Everyday activities, like shopping for groceries, could begin to change as they reflect these new rights. 
+As designers, our job is to look at these new rights and think about what they make possible. If we don’t, then it’s likely that these new rights will just disappear into the small print.
 
-But this isn’t the first time something like this has happened. The cookie law didn’t give people more control over how companies tracked them online, it just created a new, low bar for compliance: the cookie banner.
-
-Our job as designers is to look at these new rights and think about what services or tools they could enable. The following prototypes are tiny, mundane illustrations of what digital services could do next.
+The following prototypes are tiny, mundane illustrations of what could come next.
