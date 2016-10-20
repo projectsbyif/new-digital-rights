@@ -24,10 +24,11 @@ html(lang="en")
         p As designers, our job is to look at these new rights and think about what they make possible. If we don’t, then it’s likely that these new rights will just disappear into the small print.
         p The following prototypes are tiny, mundane illustrations of what could come next.
         div(style="overflow: auto")
+          p(id="call_to_action")
+            a(style="color: #ff5e23;" href="/#{firstPage.permalink}") Explore the prototypes
+        div(style="overflow: auto")
           p(id="show_contents")
             a(href="#") Show contents
-          p(id="call_to_action")
-            a(href="/#{firstPage.permalink}") Explore our prototypes →
       div(id="contents")
         each page in pages
           div(class="item")
