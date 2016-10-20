@@ -1,7 +1,7 @@
 /* Generic stuff */
 .section {
   padding: 0.5em;
-  border-bottom: #FFF 1px solid;
+  border-bottom: #000 1px solid;
 
   &.no-padding {
     padding: 0;
@@ -103,7 +103,7 @@
 
 
 .email_header {
-  border-bottom: #FFF 1px solid;
+  border-bottom: #000 1px solid;
   padding: 0.5em;
   overflow: auto;
 
@@ -146,6 +146,10 @@
         margin-left: 0.5em;
       }
     }
+
+    a {
+      color: #000;
+    }
   }
 
   #summary {
@@ -169,7 +173,7 @@
   #activity_log {
     width: 25em;
     margin: 2em auto;
-    border: #FFF 2px solid;
+    border: #000 2px solid;
     border-radius: 4px;
   }
 }
