@@ -138,7 +138,7 @@ header {
 .window {
   width: 80vw;
   height: 70vh;
-  border: #FFF 3px solid;
+  border: #000 3px solid;
   border-radius: 5px;
 }
 
@@ -152,7 +152,7 @@ header {
   .window_content {
     .header {
       padding: 0.5em;
-      border-bottom: #FFF 1px solid;
+      border-bottom: #000 1px solid;
       text-align: center;
 
       img {
@@ -166,7 +166,7 @@ header {
 
 .mobile_container {
   .header {
-    border-bottom: #FFF 1px solid;
+    border-bottom: #000 1px solid;
     width: 100%;
     text-align: center;
     padding-top: 0.5em;
@@ -189,10 +189,11 @@ header {
 
 .chunky_button {
   background: #FFF;
-  color: $color-if-blue !important;
+  color: $color-if-orange !important;
+  border-radius: 5px;
   padding: 0.75em 0.75em 0.45em 0.75em;
   margin-right: 0.25em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
   display: block;
   float: left;
   text-decoration: none;
@@ -260,7 +261,7 @@ header {
     width: calc(100% - 2em);
 
     a {
-      color: #FFF;
+      color: #000;
       font-family: $default-fonts-bold;
     }
 
@@ -270,7 +271,7 @@ header {
   }
 
   #hide_prototype_menu {
-    color: #FFF;
+    color: #000;
     width: 1.5em;
     height: 1.5em;
     display:block;
@@ -419,14 +420,14 @@ header {
     margin-bottom: 2em;
     background-size: contain;
     background-repeat: no-repeat;
-    border: #FFF 2px solid;
+    border: #000 2px solid;
     border-radius: 35px;
     @include absolute-center();
 
     .mobile_content {
       width: 16em;
       height: 28em;
-      border: #FFF 2px solid;
+      border: #000 2px solid;
       overflow-x: scroll;
     }
   }
