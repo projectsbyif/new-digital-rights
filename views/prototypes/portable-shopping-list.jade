@@ -1,37 +1,44 @@
 div(class="window_container")
   div(class="window_title")
-  div(id="portable_shopping_list" class="window_content")
+  div(id="shopping_import" class="window_content portable_shopping_list")
     div(class="header")
       img(src="/public/images/tesco_logo.svg")
     div(class="section")
-      h1 Your shopping basket
+      p Quickly populate your shopping list by pulling in data from another supermarket. You've chosen to import data from the last time you shopped with Asda. 
+      p Click below to import that data.
+      a(id="import_shopping" class="chunky_button" href="#") Import from Asda
+      
+  div(id="shopping_list" class="window_content portable_shopping_list")
+    div(class="header")
+      img(src="/public/images/tesco_logo.svg")
+    div(class="section")
+      div(class="shopping")
       div(id="top_list")
-        input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text")
-        input(type="text" placeholder="Add item...")
-        input(type="text")
-        input(type="text")
-      div(id="results")
-        h2 Choose a retailer
-        div(id="results_tesco" class="retailer_results")
-          h2 Tesco
-          p(class="total_cost") £0.00
-          p(class="delivery_time") Delivers tomorrow
-          p
-            a(href="#" class="button_fill_basket") Checkout
-        div(id="results_asda" class="retailer_results")
-          h2 Asda
-          p(class="total_cost") £0.00
-          p(class="delivery_time") Delivers today
-          p
-            a(href="#" class="button_fill_basket") Fill basket
-        div(id="results_morrisons" class="retailer_results")
-          h2 Morrisons
-          p(class="total_cost") £0.00
-          p(class="delivery_time") Delivers tomorrow
-          p
-            a(href="#" class="button_fill_basket") Fill basket
+        p Skimmed milk - 2 litres
+          span £1.50
+        p Kingsmill bread - loaf
+          span £1.32
+        p Bag of rice - 1kg
+          span £1.22
+        p Granny smith apples x5
+          span £1.60
+        p Fig roll biscuits
+          span £40p
+        p Mince meat - lean (500g)
+          span £3.82
+        p Smoked bacon
+          span £1.74
+
+      div(class="results")
+        h2 Total cost
+          span £11.60
+        p Delivery tomorrow - 20:00
+        a(id="checkout" class="chunky_button" href="#") Purchase
+
+  div(id="shopping_accept" class="window_content portable_shopping_list")
+    div(class="header")
+      img(src="/public/images/tesco_logo.svg")
+    div(class="section")
+      h2 Your shopping is on it's way. 
+      p Thank you for sharing your Asda shopping list with Tesco.  
+            
