@@ -1,7 +1,8 @@
 #journey_planner {
 
   overflow: auto;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 
   .journey_plan_section {
     overflow: auto;
@@ -9,7 +10,7 @@
     margin-bottom: 0.5em;
 
     &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 2em;
     }
 
     .label {
@@ -39,18 +40,6 @@
     }
   }
 
-  .button {
-    background: #FFF;
-    color: #000;
-    display: block;
-    width: 100%;
-    padding-top: 0.45em;
-    padding-bottom: 0.2em;
-    margin-top: 1.5em;
-    text-align: center;
-    text-decoration: none;
-  }
-
   #route_distance {
     margin-right: 0.5em;
   }
@@ -73,16 +62,4 @@
 
 #reported_button {
   display:none;
-}
-
-.button {
-  background: #FFF;
-  color: #000;
-  display: block;
-  width: 100%;
-  padding-top: 0.45em;
-  padding-bottom: 0.2em;
-  margin-top: 1em;
-  text-align: center;
-  text-decoration: none;
 }

@@ -1,6 +1,6 @@
 var config = {};
 
-config.site_name = "New Digital Rights";
+config.site_name = "Designing New Digital Rights";
 config.site_description = "The General Data Protection Regulation gives people new rights around data, privacy and security.";
 
 config.homepage_headline = "Designing for new digital rights";
