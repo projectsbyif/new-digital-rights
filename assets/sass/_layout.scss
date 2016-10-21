@@ -160,7 +160,7 @@ header {
   }
 
   #call_to_action {
-    font-family: $default-fonts-bold;
+    font-family: $default-fonts-regular;
   }
 }
 
@@ -198,6 +198,7 @@ header {
   }
 
   .window_content {
+
     .header {
       padding: 0.5em;
       text-align: center;
@@ -237,7 +238,7 @@ header {
 .chunky_button {
   background: #FFF;
   color: $color-if-orange !important;
-  border-radius: 5px;
+  //border-radius: 5px;
   padding: 0.75em 0.75em 0.45em 0.75em;
   margin-right: 0.25em;
   display: block;
@@ -458,7 +459,7 @@ header {
 
     #call_to_action {
       color: $color-if-orange;
-      font-family: $default-fonts-bold;
+      font-family: $default-fonts-regular;
     }
   }
 
@@ -561,7 +562,7 @@ header {
       width: 16em;
       height: 28em;
       border: #000 2px solid;
-      overflow-x: scroll;
+      //overflow-x: scroll;
     }
   }
 }

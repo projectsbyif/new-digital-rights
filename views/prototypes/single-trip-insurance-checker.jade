@@ -20,7 +20,9 @@ div(class="mobile_container")
         div(class="section")
           h2 Best route
           img(style="width: 1em; float: left; margin-right: 2em;" src="/public/images/journey.svg")
-          p(id="route_identifier") —
+          p
+            span(id="route_identifier") —
+          p
             span(id="route_distance") —
           p
             span(id="route_time") —
@@ -55,4 +57,4 @@ div(class="mobile_container")
           h2 Final quote  
           p(id="quote_amount_3") —
           a(class="chunky_button" id="concern_button" href="#") Report a concern
-          a(class="chunky_button" id="reported_button" href="#") Thank you
+          p(id="reported_button") Thank you for reporting this

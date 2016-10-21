@@ -30,7 +30,7 @@ content = [
     "tagline": "Giving people power over the data advertisers use"
   },
   {
-    "title": "Public guardian for digital identity",
+    "title": "Guardian for digital identity",
     "top_text": "<p>The law is very clear about what happens to our belongings when we die, but much vaguer when it comes to digital identity.</p><p>We imagined the role a digital public might have. What formal process might people go through to transfer their accounts to people they trust, and what rules should services abide by?</p>",
     "bottom_text": "<p>Today, if you give a service your address and they sell those details on, it can be extremely difficult to correct that when you move. That makes it very hard to imagine having much say in what happens to your data after you die.</p><p>The General Data Protection Regulation makes it clear that people do have the right to rectify data. Organisations need to think about how they do that in ways that allow for much more extreme changes of circumstance than just moving home.</p>",
     "permalink": "public-guardian",

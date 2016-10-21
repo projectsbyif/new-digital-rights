@@ -14,6 +14,11 @@ $(function() {
       $('#show_permissions_dialog').text("Thank you.");
       $('.sample_container').fadeIn(250);
     });
+
+    $('#sponsored_text, #show_permissions_dialog').fadeOut(250, function() {
+      $('#hidden_text').fadeIn(250);
+    });
+
   });
 
   $('#deny_ad').click(function(e) {
