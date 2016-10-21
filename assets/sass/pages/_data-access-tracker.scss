@@ -1,3 +1,7 @@
+.window_content {
+  background-color: #FFF;
+}
+
 .email_header {
   border-bottom: $color-if-black 1px solid;
   padding: 0.5em;
@@ -65,7 +69,7 @@
 @media screen and (min-width: 720px) {
   #activity_log {
     width: 25em;
-    margin: 2em auto;
+    margin: 0em auto;
     border-radius: 4px;
   }
 }
