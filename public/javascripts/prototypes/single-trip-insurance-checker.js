@@ -105,7 +105,7 @@ $(function() {
     e.preventDefault();
 
     $('.hide_journey').fadeOut(250, function() {
-      $('.hide_route').delay(750).fadeIn(500);
+      $('.hide_route').fadeIn(500);
     });
 
   });
@@ -114,7 +114,7 @@ $(function() {
     e.preventDefault();
 
     $('.hide_route').fadeOut(250, function() {
-      $('.hide_options').delay(750).fadeIn(500);
+      $('.hide_options').fadeIn(500);
     });
 
     recalculate();
@@ -124,7 +124,7 @@ $(function() {
     e.preventDefault();
 
     $('.hide_options').fadeOut(250, function() {
-      $('.hide_quote').delay(750).fadeIn(500);
+      $('.hide_quote').fadeIn(500);
     });
 
     recalculate();
@@ -134,7 +134,7 @@ $(function() {
     e.preventDefault();
 
     $('#concern_button').fadeOut(250,  function() {
-      $('#reported_button').delay(750).fadeIn(500);
+      $('#reported_button').fadeIn(500);
     });
   });
 

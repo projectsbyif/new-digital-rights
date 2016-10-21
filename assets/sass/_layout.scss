@@ -52,6 +52,7 @@ header {
       p {
         height: 100%;
         line-height: 2.75em;
+        display: none;
 
         a {
           height: 100%;
@@ -293,7 +294,7 @@ header {
   header {
     height: 96px;
   }
-    /* mobile navigation */
+
   #navigation {
     width: 100vw;
     height: 2.5em;
@@ -318,7 +319,8 @@ header {
         p {
           height: 100%;
           line-height: 2.75em;
-
+          display: block;
+          
           a {
             height: 100%;
             text-decoration: none;
