@@ -24,14 +24,13 @@
   .screen {
     .preview_area {
       height: 21.5em;
-      border-bottom: #FFF 2px solid;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
     }
 
     .config_area {
-      height: 4.5em;
+      height: 7em;
       padding: 0.5em 0.5em 0.5em 0.5em;
 
       .description {
@@ -41,17 +40,21 @@
       }
 
       .next {
-        float: right !important;
-        margin: 0 !important;
+        float: left!important;
+        margin-bottom: 2em;
+        display: none;
       }
 
-      .saved {
+      .next_save {
         display:none;
+        float: left !important;
+        margin-bottom: 2em;
         color:#FFF;
       }
 
       .selector {
         overflow: auto;
+        max-width: 30vw;
       }
 
       h2 {
@@ -69,6 +72,10 @@
   #blinds_two {
     .preview_area {
       background-image: url('/public/images/aerial.jpg');
+    }
+
+    .saved_settings {
+      display: none;
     }
   }
 

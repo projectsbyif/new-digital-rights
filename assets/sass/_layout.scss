@@ -39,7 +39,7 @@ header {
 
   #wrapper {
     height: 2.5em;
-    width: 920px;
+    width: 100%;
     margin: 0 auto;
 
     #previous,
@@ -152,7 +152,6 @@ header {
   .window_content {
     .header {
       padding: 0.5em;
-      border-bottom: #000 1px solid;
       text-align: center;
 
       img {
@@ -193,7 +192,6 @@ header {
   border-radius: 5px;
   padding: 0.75em 0.75em 0.45em 0.75em;
   margin-right: 0.25em;
-  margin-bottom: 0.5em;
   display: block;
   float: left;
   text-decoration: none;
@@ -294,17 +292,52 @@ header {
 @media screen and (min-width: 720px) {
   header {
     height: 96px;
+  }
+    /* mobile navigation */
+  #navigation {
+    width: 100vw;
+    height: 2.5em;
+    border-top: #EEE 1px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
 
-    #logo {
-      top: 14px;
-      left: calc(50% - 25.5555px);
-      height: 69px;
-      width: 51.1111px;
-    }
+    #wrapper {
+      height: 2.5em;
+      width: 920px;
+      margin: 0 auto;
 
-    #title {
-      top: 36px;
-      left: 38px;
+      #previous,
+      #next,
+      #count {
+        width: calc(100% / 3);
+        float: left;
+        height: 2.5em;
+
+        p {
+          height: 100%;
+          line-height: 2.75em;
+
+          a {
+            height: 100%;
+            text-decoration: none;
+          }
+        }
+      }
+
+      #previous {
+        text-align: left;
+      }
+
+      #next {
+        text-align: right;
+
+      }
+
+      #count {
+        text-align: center;
+      }
     }
   }
 
@@ -324,8 +357,8 @@ header {
     }
 
     #call_to_action {
+      color: $color-if-orange;
       font-family: $default-fonts-bold;
-      text-align: right;
     }
   }
 

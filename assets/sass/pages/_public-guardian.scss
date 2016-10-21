@@ -3,7 +3,22 @@
     img {
       padding-top: 0;
       height: 4em;
+      margin-top: 1em;
     }
+  }
+
+  .signature {
+    padding-top: 0;
+    width: 9em;
+    margin-bottom: 1em;
+  }
+
+  .qr_code {
+    padding-top: 0;
+    padding-right: 1em;
+    width: 4em;
+    margin-bottom: 1em;
+    float: right;
   }
 }
 
@@ -11,7 +26,7 @@
   #public_guardian {
     .section {
       width: 25em;
-      margin: 2em auto;
+      margin: 0em auto;
     }
   }
 }

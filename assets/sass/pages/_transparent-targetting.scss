@@ -8,10 +8,20 @@
 #transparent_targetting {
   .feed_item_container {
     margin: 1em 0.5em;
+    height: 14em;
     padding: 0.5em;
     border: #FFF 2px solid;
     border-radius: 2px;
     width: calc(100% - 2em - 4px);
+
+
+    a {
+      float: right;
+      background-color: #fff;
+      color: $color-if-orange;
+      padding: 0.2em 0.7em 0.2em 0.7em;
+      text-decoration: none;
+    }
   }
 
   .feed_item_sample {
@@ -38,7 +48,7 @@
       border-top: #FFF 2px solid;
     }
   }
-
+/*
   #show_permissions_dialog {
     text-decoration: none;
     background: #FFF;
@@ -49,28 +59,10 @@
     padding-bottom: 0.25em;
     margin-top: 0.5em;
   }
-
+*/
   .permissions_container {
     display: none;
     position: relative;
-
-    p {
-      margin-bottom: 0.5em;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      a {
-        background: #FFF;
-        display: block;
-        width: 100%;
-        padding-top: 0.45em;
-        padding-bottom: 0.2em;
-        text-align: center;
-        text-decoration: none;
-      }
-    }
   }
 
   .deny_ad_container {

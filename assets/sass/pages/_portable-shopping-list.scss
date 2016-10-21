@@ -2,10 +2,11 @@
   .section {
     border-bottom: 0;
     overflow: auto;
+    padding-bottom: 2em;
   }
 
   #top_list {
-    border: #000 2px solid;
+    border: #000 1px solid;
     border-radius: 4px;
 
     p {
@@ -19,6 +20,7 @@
       padding: 0.5em;
       color: #000;
       margin-bottom: 0em;
+      text-align: justify;
 
       &:first-child {
         border-top: 0;
@@ -30,7 +32,7 @@
 
       span {
         float: right;
-        margin-right: 2em;
+        margin-right: 1em;
       }
     }
   }
@@ -45,7 +47,7 @@
 
     span {
       float: right;
-      margin-right: 2em;
+      margin-right: 1em;
     }
 
     .retailer_results {

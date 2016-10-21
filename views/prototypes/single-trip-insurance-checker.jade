@@ -1,6 +1,6 @@
 div(class="mobile_container")
-  div(class="mobile_content hide_journey")
-    div(id="journey_planner")
+  div(class="mobile_content")
+    div(id="journey_planner" class="hide_journey")
       div(class="section")
         h2 Journey
         div(class="journey_plan_section")
@@ -13,44 +13,44 @@ div(class="mobile_container")
           a(class="chunky_button" id="get_route" href="#") Get route
 
       
-  div(class="mobile_content hide_route")
-    div(id="journey_planner")
-    div(class="section")
-      h2 Best route
-      img(style="width: 1em; float: left; margin-right: 2em;" src="/public/images/journey.svg")
-      p(id="route_identifier") —
-      p
+    div(class="hide_route")
+      div(id="journey_planner")
+      div(class="section")
+        h2 Best route
+        img(style="width: 1em; float: left; margin-right: 2em;" src="/public/images/journey.svg")
+        p(id="route_identifier") —
         span(id="route_distance") —
-      p
+        p
         span(id="route_time") —
-    div(class="section")
-      h2 Insurance quote
-      p(id="quote_amount") —
-    div(class="section") 
-      p Do you want to query this quote?   
-      a(style="color: #000;" class="chunky_button" href="#" id="quote_yes") Yes
-      a(style="color: #000;" class="chunky_button" href="#" id="quote_no") No
+      div(class="section")
+        h2 Insurance quote
+        p(id="quote_amount") —
+      div(class="section") 
+        p Do you want to query this quote?   
+        a(style="color: #000;" class="chunky_button" href="#" id="quote_yes") Yes
             
-  div(class="mobile_content hide_options")
-    div(id="journey_planner")
-      div(class="section")
-        h2 Options
-        div(id="road_type" class="option")
-          h3 Road type
-          a(href="#" class="selected") Minor roads
-          a(href="#") Major roads
-        div(id="passengers" class="option")
-          h3 Passengers
-          a(href="#" class="selected") Driver only
-          a(href="#") + Passengers
-      div(class="section")
-        h2 Rate
-        p(id="quote_amount_2") —
-      div(class="section")
-        a(class="chunky_button" href="#" id="quote_accept") Accept
+    div(class="hide_options")
+      div(id="journey_planner")
+        div(class="section")
+          h2 Options
+          div(id="road_type" class="option")
+            h3 Road type
+            a(href="#" class="selected") Minor roads
+            a(href="#") Major roads
+          div(id="passengers" class="option")
+            h3 Passengers
+            a(href="#" class="selected") Driver only
+            a(href="#") + Passengers
+        div(class="section")
+          h2 Rate
+          p(id="quote_amount_2") —
+        div(class="section")
+          a(class="chunky_button" href="#" id="quote_accept") Accept
         
-  div(class="mobile_content hide_quote")
-    div(id="journey_planner")
-      div(class="section")
-        h2 Final quote  
-        p(id="quote_amount_3") —
+    div(class="hide_quote")
+      div(id="journey_planner")
+        div(class="section")
+          h2 Final quote  
+          p(id="quote_amount_3") —
+          a(class="chunky_button" id="concern_button" href="#") Report a concern
+          a(class="chunky_button" id="reported_button" href="#") Thank you
