@@ -36,10 +36,58 @@ header {
   bottom: 0;
   left: 0;
   background: #FFF;
+  display: none;
 
   #wrapper {
     height: 2.5em;
     width: 100%;
+    margin: 0 auto;
+
+    #previous,
+    #next,
+    #count {
+      width: calc(100% / 3);
+      float: left;
+      height: 2.5em;
+
+      p {
+        height: 100%;
+        line-height: 2.75em;
+
+        a {
+          height: 100%;
+          text-decoration: none;
+        }
+      }
+    }
+
+    #previous {
+      text-align: left;
+    }
+
+    #next {
+      text-align: right;
+    }
+
+    #count {
+      text-align: center;
+    }
+  }
+}
+
+#navigation_mobile {
+  width: 100vw;
+  height: 2.5em;
+  border-top: #EEE 1px solid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #FFF;
+  display: block;
+
+  #wrapper {
+    height: 2.5em;
+    width: 90%;
     margin: 0 auto;
 
     #previous,
@@ -293,8 +341,8 @@ header {
   header {
     height: 96px;
   }
-    /* mobile navigation */
-  #navigation {
+
+  #navigation_mobile {
     width: 100vw;
     height: 2.5em;
     border-top: #EEE 1px solid;
@@ -302,6 +350,7 @@ header {
     bottom: 0;
     left: 0;
     background: #FFF;
+    display: none;
 
     #wrapper {
       height: 2.5em;
@@ -318,6 +367,57 @@ header {
         p {
           height: 100%;
           line-height: 2.75em;
+
+
+          a {
+            height: 100%;
+            text-decoration: none;
+          }
+        }
+      }
+
+      #previous {
+        text-align: left;
+        padding-left: 1em;
+      }
+
+      #next {
+        text-align: right;
+
+      }
+
+      #count {
+        text-align: center;
+      }
+    }
+  }
+
+  #navigation {
+    width: 100vw;
+    height: 2.5em;
+    border-top: #EEE 1px solid;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #FFF;
+    display: block;
+
+    #wrapper {
+      height: 2.5em;
+      width: 920px;
+      margin: 0 auto;
+
+      #previous,
+      #next,
+      #count {
+        width: calc(100% / 3);
+        float: left;
+        height: 2.5em;
+
+        p {
+          height: 100%;
+          line-height: 2.75em;
+
 
           a {
             height: 100%;

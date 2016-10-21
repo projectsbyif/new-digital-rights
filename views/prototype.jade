@@ -44,3 +44,20 @@ html(lang="en")
               a(href="/#{nextPage.permalink}") #{nextPage.title} →
             else
               a(href="/") Home →
+
+  div(id="navigation_mobile")
+    div(id="wrapper")
+      div(id="previous")
+          p
+            if previousPage
+              a(href="/#{previousPage.permalink}") ←
+            else
+              a(href="/") ← Home
+      div(id="count")
+        p #{currentPage} of #{totalPages}
+      div(id="next")
+          p
+            if nextPage
+              a(href="/#{nextPage.permalink}") →
+            else
+              a(href="/") Home →
