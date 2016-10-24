@@ -1,11 +1,8 @@
-.window_content {
-  background-color: #FFF;
-}
-
 .email_header {
   border-bottom: $color-if-black 1px solid;
   padding: 0.5em;
   overflow: auto;
+  background-color: #FFF;
 
   p {
     margin-bottom: 0.25em;
