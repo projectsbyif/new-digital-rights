@@ -541,9 +541,8 @@ header {
     margin-bottom: 2em;
 
     .window_title {
-      height: 1.5em;
+      height: 3em;
       width: 100%;
-      border-bottom: $color-if-black 2px solid;
       background-image: url('/public/images/window_container_buttons.svg');
       background-repeat: no-repeat;
       background-position: center left;
