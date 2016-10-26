@@ -192,6 +192,7 @@ header {
 
 .window_container {
   overflow: auto;
+  background-color: #FFF;
 
   .window_title {
     display: none;
@@ -236,9 +237,9 @@ header {
 }
 
 .chunky_button_dead {
-  background: #FFF;
+  background: $color-if-grey;
   color: #000 !important;
-  //border-radius: 5px;
+  border-radius: 5px;
   padding: 0.75em 0.75em 0.45em 0.75em;
   margin-right: 0.25em;
   display: block;
@@ -247,9 +248,9 @@ header {
 }
 
 .chunky_button {
-  background: #FFF;
-  color: $color-if-orange !important;
-  //border-radius: 5px;
+  background: #000;
+  color: #FFF !important;
+  border-radius: 5px;
   padding: 0.75em 0.75em 0.45em 0.75em;
   margin-right: 0.25em;
   display: block;
@@ -539,6 +540,7 @@ header {
     border-radius: 5px;
     margin-top: 2em;
     margin-bottom: 2em;
+    background-color: #FFF;
 
     .window_title {
       height: 3em;
