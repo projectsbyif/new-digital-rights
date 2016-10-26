@@ -1,6 +1,6 @@
 header {
   width:100vw;
-  height:72px;
+  height:96px;
   border-bottom:1px solid #f1f0ee;
   background:#FFF;
   margin-bottom: 2em;
@@ -21,10 +21,16 @@ header {
   }
 
   #title {
+    display: none;
+  }
+
+  #title_mobile {
+    display: block;
     position: absolute;
     text-decoration: none;
-    left: 10px;
-    top: 28px;
+    left: 36px;
+    top: 36px;
+    font-size: 22px;
   }
 }
 
@@ -351,8 +357,42 @@ header {
 }
 
 @media screen and (min-width: 720px) {
+
   header {
-    height: 96px;
+    width:100vw;
+    height:96px;
+    border-bottom:1px solid #f1f0ee;
+    background:#FFF;
+    margin-bottom: 2em;
+
+    #logo {
+      display: block;
+      text-indent: -9999px;
+      background-image: url('/public/images/if-logo.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 0 auto;
+      border-bottom: 0;
+      height: 69px;
+      width: 51.111px;
+      margin-top: 0.2em;
+      position: absolute;
+      top: 10px;
+      left: calc(50% - 20px);
+    }
+
+    #title {
+      font-family: $default-fonts-regular;
+      display: block;
+      position: absolute;
+      text-decoration: none;
+      left: 36px;
+      top: 36px;
+    }
+
+    #title_mobile {
+      display: none;
+    }
   }
 
   #navigation_mobile {
