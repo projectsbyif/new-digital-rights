@@ -13,6 +13,11 @@
   .minimisation {
     height: 7.6em;
     padding: 0.5em 0.5em 0.5em 0.5em;
+    background-color: $color-if-grey;
+
+    .decision_text {
+      
+    }
   }
 
   #list_click_save,
