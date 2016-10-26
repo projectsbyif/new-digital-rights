@@ -213,7 +213,6 @@ header {
 }
 
 .mobile_container {
-
   .header {
     border-bottom: #000 1px solid;
     width: 100%;
@@ -234,6 +233,17 @@ header {
       }
     }
   }
+}
+
+.chunky_button_dead {
+  background: #FFF;
+  color: #000 !important;
+  //border-radius: 5px;
+  padding: 0.75em 0.75em 0.45em 0.75em;
+  margin-right: 0.25em;
+  display: block;
+  float: left;
+  text-decoration: none;
 }
 
 .chunky_button {
@@ -555,9 +565,9 @@ header {
     margin-bottom: 2em;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #FFF;
     border: #000 2px solid;
     border-radius: 35px;
-    background-color: #FFF;
     @include absolute-center();
 
     .mobile_content {
