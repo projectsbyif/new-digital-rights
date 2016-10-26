@@ -1,18 +1,39 @@
 #public_guardian {
   background-color: #FFF;
+  text-align: justify;
 
   .header {
+
     img {
       padding-top: 0;
-      height: 4em;
-      margin-top: 1em;
+      height: 5em;
+      margin-top: 2em;
     }
+  }
+
+  .section {
+
+    .address {
+      text-align: right;
+      font-size: 18px;
+      line-height: 1em
+
+    }
+
+    .personal_info {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1em;
+      padding-bottom: 0.5em;
+    }
+
   }
 
   .signature {
     padding-top: 0;
-    width: 9em;
+    width: 12em;
     margin-bottom: 1em;
+    margin-top: 1em;
   }
 
   .qr_code {
