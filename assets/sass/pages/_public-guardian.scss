@@ -2,6 +2,10 @@
   background-color: #FFF;
   text-align: justify;
 
+  hr {
+    margin-bottom: 1.5em;
+  }
+
   .header {
 
     img {
@@ -17,16 +21,26 @@
       text-align: right;
       font-size: 18px;
       line-height: 1em
-
     }
 
     .personal_info {
-      text-align: left;
-      font-size: 18px;
-      line-height: 1em;
-      padding-bottom: 0.5em;
+
+      h2 {
+
+        span {
+          font-size: 22px;
+          font-family: $default-fonts-regular;
+          margin-left: 0.5em;
+        }
+      }
     }
 
+    .footer_address {
+      padding-bottom: 2em;
+      padding-top: 1em;
+      font-size: 18px;
+      text-align: center;
+    }
   }
 
   .signature {
