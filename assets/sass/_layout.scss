@@ -213,6 +213,7 @@ header {
 }
 
 .mobile_container {
+
   .header {
     border-bottom: #000 1px solid;
     width: 100%;
@@ -556,12 +557,14 @@ header {
     background-repeat: no-repeat;
     border: #000 2px solid;
     border-radius: 35px;
+    background-color: #FFF;
     @include absolute-center();
 
     .mobile_content {
       width: 16em;
       height: 28em;
       border: #000 2px solid;
+      background-color: $color-if-grey;
       //overflow-x: scroll;
     }
   }

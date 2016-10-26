@@ -11,8 +11,14 @@
   }
 
   .minimisation {
-    height: 7.6em;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    height: 8.2em;
+    padding: 0.5em 0.5em 0em 0.5em;
+    background-color: $color-if-grey;
+
+    p {
+      text-align: justify;
+      padding: 0.5em 0.5em 0em 0.5em;
+    }
   }
 
   #list_click_save,
