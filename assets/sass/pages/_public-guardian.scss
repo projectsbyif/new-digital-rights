@@ -1,17 +1,56 @@
 #public_guardian {
   background-color: #FFF;
+  text-align: justify;
+
+  hr {
+    margin-bottom: 1.5em;
+  }
 
   .header {
+
     img {
       padding-top: 0;
-      height: 4em;
+      height: 5em;
+      margin-top: 2em;
+    }
+  }
+
+  .section {
+
+    hr {
+      margin-bottom: 1.5em;
       margin-top: 1em;
     }
+
+    .address {
+      text-align: right;
+      font-size: 18px;
+      line-height: 1em
+    }
+
+    .personal_info {
+
+      h2 {
+
+        span {
+          font-size: 22px;
+          font-family: $default-fonts-regular;
+          margin-left: 0.5em;
+        }
+      }
+    }
+  }
+
+  .footer_address {
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    font-size: 18px;
+    text-align: center;
   }
 
   .signature {
     padding-top: 0;
-    width: 9em;
+    width: 12em;
     margin-bottom: 1em;
   }
 

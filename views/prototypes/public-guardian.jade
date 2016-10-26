@@ -1,10 +1,22 @@
 div(class="window_container")
-  div(class="window_title")
+  div
   div(id="public_guardian" class="window_content")
     div(class="header")
       img(src="/public/images/public_guardian_logo.svg")
     div(class="section")
-      h2 ID# 174934 - 03/25/2016
+      div(class="address")
+        p Digital Public Guardian,
+        p 142 Victoria Place,
+        p London,
+        p W14 0RP
+      div(class="personal_info")
+        h2 Name:
+          span James Reeves
+        h2 Date:
+          span  26 October, 2016
+        h2 Your ref:
+          span  AERT98645383
+      hr
       p On event of my death, I (the undersigned), wish to transfer access to my digital identities (accounts listed below).
       p The transfer of these accounts should take place using the protocols established by the Office of the Digital Public Guardian.
       h2 Please transfer the following accounts
@@ -43,6 +55,14 @@ div(class="window_container")
           p Experian
 
       p The full details of transfer will be completed through the Office of the Digital Public Guardian upon verification of my death.
+      hr 
+      
+    div(class="section")
       img(class="qr_code" src="/public/images/qrcode.svg")
       h2 Signed,
       img(class="signature" src="/public/images/signature.png")
+      hr
+            
+    div(class="section footer_address") 
+      p Office of the Digital Public Guardian
+      p 2016
