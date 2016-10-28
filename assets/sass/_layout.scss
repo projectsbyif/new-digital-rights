@@ -1,9 +1,9 @@
 header {
   width:100vw;
-  height:96px;
+  height:71px;
   border-bottom:1px solid #f1f0ee;
   background:#FFF;
-  margin-bottom: 2em;
+  margin-bottom: 1.6em;
 
   #logo {
     display: block;
@@ -13,10 +13,10 @@ header {
     background-size: contain;
     margin: 0 auto;
     border-bottom: 0;
-    height: 54px;
-    width: 40px;
+    height: 55px;
+    width: 41px;
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: calc(50% - 20px);
   }
 
@@ -25,12 +25,13 @@ header {
   }
 
   #title_mobile {
-    display: block;
-    position: absolute;
+    //display: block;
+    //position: absolute;
     text-decoration: none;
-    left: 36px;
-    top: 36px;
-    font-size: 22px;
+    margin-right: 16px;
+    margin-top: 28px;
+    font-size: 18px;
+    float: right;
   }
 }
 
@@ -38,7 +39,6 @@ header {
   width: 100vw;
   height: 2.5em;
   border-top: #EEE 1px solid;
-  position: fixed;
   bottom: 0;
   left: 0;
   background: #FFF;
@@ -85,7 +85,6 @@ header {
   width: 100vw;
   height: 2.5em;
   border-top: #EEE 1px solid;
-  position: fixed;
   bottom: 0;
   left: 0;
   background: #FFF;
@@ -109,6 +108,7 @@ header {
 
         a {
           height: 100%;
+          font-size: 30px;
           text-decoration: none;
         }
       }
@@ -247,7 +247,7 @@ header {
 .chunky_button_dead {
   background: $color-if-grey;
   color: #000 !important;
-  border-radius: 30px;
+  border-radius: 9.25px;
   padding: 0.65em 0.75em 0.50em 0.75em;
   margin-right: 0.25em;
   display: block;
@@ -260,9 +260,8 @@ header {
   width: 83%;
   background: #2341C1;
   color: #FFF !important;
-  border-radius: 30px;
-  padding: 0.65em 1.2em 0.5em 1.2em;
-  margin-right: 0.5em;
+  border-radius: 9.25px;
+  padding: 0.55em 1.2em 0.4em 1.2em;
   margin-top: 0em;
   margin-bottom: 0.5em;
   display: block;
@@ -405,7 +404,6 @@ header {
     width: 100vw;
     height: 2.5em;
     border-top: #EEE 1px solid;
-    position: fixed;
     bottom: 0;
     left: 0;
     background: #FFF;
@@ -455,7 +453,6 @@ header {
     width: 100vw;
     height: 2.5em;
     border-top: #EEE 1px solid;
-    position: fixed;
     bottom: 0;
     left: 0;
     background: #FFF;
