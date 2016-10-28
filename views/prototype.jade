@@ -27,8 +27,6 @@ html(lang="en")
       p !{page.top_text} 
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
-    div(class="prototype_description bottom")
-      p !{page.bottom_text}
   div(id="navigation")
     div(id="wrapper")
       div(id="previous")
@@ -53,7 +51,7 @@ html(lang="en")
             if previousPage
               a(href="/#{previousPage.permalink}") <<
             else
-              a(href="/") << Home
+              a(href="/") <<
       div(id="count")
         p #{currentPage} of #{totalPages}
       div(id="next")

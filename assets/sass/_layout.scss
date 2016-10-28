@@ -199,8 +199,8 @@ header {
 .window_container {
   overflow: auto;
   background-color: #FFF;
-  border-top: #000 1px solid;
-  border-bottom: #000 1px solid;
+  //border-top: #000 1px solid;
+  //border-bottom: #000 1px solid;
 
   .window_title {
     display: none;
@@ -245,11 +245,13 @@ header {
 }
 
 .chunky_button_dead {
+  text-align: center;
   background: $color-if-grey;
   color: #000 !important;
   border-radius: 9.25px;
-  padding: 0.65em 0.75em 0.50em 0.75em;
-  margin-right: 0.25em;
+  padding: 0.55em 2em 0.4em 2em;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
   display: block;
   float: left;
   text-decoration: none;
@@ -257,13 +259,13 @@ header {
 
 .chunky_button {
   text-align: center;
-  width: 83%;
   background: #2341C1;
   color: #FFF !important;
   border-radius: 9.25px;
-  padding: 0.55em 1.2em 0.4em 1.2em;
+  padding: 0.55em 2em 0.4em 2em;
   margin-top: 0em;
   margin-bottom: 0.5em;
+  margin-right: 1em;
   display: block;
   float: left;
   text-decoration: none;
@@ -625,7 +627,7 @@ header {
 }
 
 .section {
-  margin-bottom: 1em;
+  margin-bottom: 0em;
   padding: 0.5em 1em 0em 1em;
 
   &:last-child {

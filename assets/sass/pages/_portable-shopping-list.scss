@@ -1,12 +1,14 @@
 .portable_shopping_list {
 
-  img {
-    margin-top: 1em;
-  }
   .section {
-    border-bottom: 0;
     overflow: auto;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+
+    img {
+      text-align: left;
+      width: 170px;
+      padding-top: 0.5em;
+    }
   }
 
   #top_list {
@@ -18,7 +20,6 @@
       display: block;
       background: none;
       border: 0;
-      //border-top: #000 1px solid;
       font-family: $default-fonts-regular;
       font-size: 1em;
       padding: 0.5em;
@@ -63,10 +64,6 @@
         font-size: 1.6em;
       }
 
-      .delivery_time {
-        margin-bottom: 1.25em;
-      }
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -78,7 +75,7 @@
   .portable_shopping_list {
     .section {
       width: 25em;
-      margin: 2em auto;
+      margin: 1em auto;
     }
 
     .results {
