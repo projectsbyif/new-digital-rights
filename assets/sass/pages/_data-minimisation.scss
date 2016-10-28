@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 13em;
+    height: 14em;
     border-bottom: #FFF 1px solid;
   }
 
@@ -20,10 +20,11 @@
       text-align: justify;
       padding: 0.5em 0.5em 0em 0.5em;
     }
+
+    .decision_text {
+      margin-bottom: 1em;
+    }
   }
 
-  #list_click_save,
-  #list_click_saved {
-    display: none;
-  }
+
 }

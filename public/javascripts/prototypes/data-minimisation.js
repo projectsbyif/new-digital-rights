@@ -12,12 +12,4 @@ $(function() {
 
   });
 
-  $('#list_click_no').click(function(e) {
-    e.preventDefault();
-
-    $('.decision_text').replaceWith("<p>The detailed location data from your recent trip will be kept.</p>");
-
-    $('#list_click_yes, #list_click_no').fadeOut(250);
-  });
-
 });

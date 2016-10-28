@@ -4,7 +4,7 @@ div(class="mobile_container")
     div(class="hide_journey")
       div(id="journey_planner")
         div(class="section")
-          h2 Your location
+          h2 Your trip
           div(class="journey_plan_section")
           ul
             li
@@ -16,52 +16,37 @@ div(class="mobile_container")
             li  
               p
                 span Arrive 10:15
+                
         div(class="section")
           img(src="/public/images/map_directions.svg")
           
         div(class="section")
+          h2 Insure your journey
           a(class="chunky_button" id="get_route") Get a quote
       
     div(class="hide_route")
       div(id="journey_planner")
         div(class="section")
-          h2 Best route
-          img(style="width: 1em; float: left; margin-right: 2em;" src="/public/images/journey.svg")
-          p
-            span(id="route_identifier") —
-          p
-            span(id="route_distance") —
-          p
-            span(id="route_time") —
-        div(class="section")
-          h2 Insurance quote
-          p(id="quote_amount") —
-        div(class="section") 
-          p Do you want to query this quote?   
-          a(style="color: #000;" class="chunky_button" href="#" id="quote_yes") Yes
+          h2 Your insurance quote
+          p Ref: 20910833h
+          h2(class="quote") £26.50
+          p with QuickCover
+          P valid for 30:00 minutes
+          a(class="chunky_button" href="#" id="quote_yes") Query this quote
+          a(class="chunky_button_dead") Buy
             
     div(class="hide_options")
       div(id="journey_planner")
         div(class="section")
-          h2 Options
-          div(id="road_type" class="option")
-            h3 Road type
-            a(href="#" class="selected") Minor roads
-            a(href="#") Major roads
-          div(id="passengers" class="option")
-            h3 Passengers
-            a(href="#" class="selected") Driver only
-            a(href="#") + Passengers
+          h2 Your quote of £26.50 is due to the following...
+          ul
+            li
+              p It's been raining and the roads are wet. Wet roads increase crashes by 30%
+            li
+              p Your have chosen to travel at a time when the roads are busier. Are the likelihood of being involved in a crash are increased.
+            li
+              p The route you are driving has fast traffic.
+
         div(class="section")
-          h2 Rate
-          p(id="quote_amount_2") —
-        div(class="section")
-          a(class="chunky_button" href="#" id="quote_accept") Accept
-        
-    div(class="hide_quote")
-      div(id="journey_planner")
-        div(class="section")
-          h2 Final quote  
-          p(id="quote_amount_3") —
-          a(class="chunky_button" id="concern_button" href="#") Report a concern
-          p(id="reported_button") Thank you for reporting this
+          a(class="chunky_button_dead") Object
+          a(class="chunky_button_dead") Buy
