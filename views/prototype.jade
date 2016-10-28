@@ -34,29 +34,29 @@ html(lang="en")
             if previousPage
               a(href="/#{previousPage.permalink}") << #{previousPage.title}
             else
-              a(href="/") << Home
+              a(href="/") < Home
       div(id="count")
         p #{currentPage} of #{totalPages}
       div(id="next")
           p
             if nextPage
-              a(href="/#{nextPage.permalink}") #{nextPage.title} >>
+              a(href="/#{nextPage.permalink}") #{nextPage.title} >
             else
-              a(href="/") Home >>
+              a(href="/") Home >
 
   div(id="navigation_mobile")
     div(id="wrapper")
       div(id="previous")
           p
             if previousPage
-              a(href="/#{previousPage.permalink}") <<
+              a(href="/#{previousPage.permalink}") <
             else
-              a(href="/") <<
+              a(href="/") <
       div(id="count")
         p #{currentPage} of #{totalPages}
       div(id="next")
           p
             if nextPage
-              a(href="/#{nextPage.permalink}") >>
+              a(href="/#{nextPage.permalink}") >
             else
-              a(href="/") >>
+              a(href="/") >
