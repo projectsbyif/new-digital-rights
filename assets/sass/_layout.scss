@@ -35,6 +35,15 @@ header {
   }
 }
 
+.mobile_space {
+  width: 100vw;
+  height: 1.5em;
+  bottom: 0;
+  left: 0;
+  background: $color-if-grey;
+  margin-bottom: 0.5em;
+}
+
 #navigation {
   width: 100vw;
   height: 2.5em;
@@ -172,7 +181,7 @@ header {
 
 /* Prototype pages */
 .prototype_canvas {
-  background-color: $color-if-grey;
+  background-color: #FFF;
   color: $color-if-black;
 }
 
@@ -260,7 +269,7 @@ header {
 
 .chunky_button {
   text-align: center;
-  background: #2341C1;
+  background: #FF5E23;
   color: #FFF !important;
   border-radius: 9.25px;
   padding: 0.70em 2em 0.4em 2em;
@@ -620,7 +629,7 @@ header {
       width: 16em;
       height: 28em;
       border: #000 2px solid;
-      background-color: $color-if-grey;
+      background-color: #FFF;
       //overflow-x: scroll;
     }
   }

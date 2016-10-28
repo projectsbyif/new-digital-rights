@@ -25,6 +25,7 @@ html(lang="en")
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.top_text} 
+    div(class="mobile_space")
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
   div(id="navigation")
@@ -42,8 +43,7 @@ html(lang="en")
             if nextPage
               a(href="/#{nextPage.permalink}") #{nextPage.title} >
             else
-              a(href="/") Home >
-
+              a(href="/") Home >          
   div(id="navigation_mobile")
     div(id="wrapper")
       div(id="previous")
