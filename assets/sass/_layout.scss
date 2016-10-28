@@ -13,10 +13,10 @@ header {
     background-size: contain;
     margin: 0 auto;
     border-bottom: 0;
-    height: 54px;
-    width: 40px;
+    height: 55px;
+    width: 41px;
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: calc(50% - 20px);
   }
 
@@ -25,12 +25,13 @@ header {
   }
 
   #title_mobile {
-    display: block;
-    position: absolute;
+    //display: block;
+    //position: absolute;
     text-decoration: none;
-    left: 16px;
-    top: 30px;
+    margin-right: 16px;
+    margin-top: 28px;
     font-size: 18px;
+    float: right;
   }
 }
 

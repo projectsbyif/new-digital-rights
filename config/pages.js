@@ -20,9 +20,9 @@ content = [
     "tagline": "Exposing automated decision making"
   },
   {
-    "title": "Transparent targeting",
-    "top_text": "<p>Advertisers use lots of pieces of information to target their ads. But sometimes you’ll see something that isn’t relevant anymore, like an advert for a new car when you’ve just bought one.</p><p>The GDPR gives people the right to restrict processing. So we’ve imagined an advert that allows you to tell the advertiser some information they have is no longer relevant.</p>",
-    "permalink": "transparent-targeting",
+    "title": "Work with us",
+    "top_text": "<p>The cookie law was an attempt to protect consumers by making them aware about how their information is collected and give them the choice to opt out. So cookie banners became the way most websites comply with that law, but they just don’t work. No-one really understands why they’re there or what agreeing to them means.</p><p>If we don’t start exploring what the General Data Protection Regulation means for people, the same thing that happened with the cookie law will happen again.</p><p>These new rights have the potential to improve how our digital products and services work. If you want to explore them with us, get in touch: work@projectsbyif.com</p>",
+    "permalink": "work-with-us",
     "tagline": "Giving people power over the data advertisers use"
   },
   {
