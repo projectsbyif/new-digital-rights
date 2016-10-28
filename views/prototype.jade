@@ -24,9 +24,7 @@ html(lang="en")
       a(id="title_mobile" href="/") Home
     div(class="prototype_description")
       h1 #{page.title}
-      p !{page.top_text}
-      p Prototypes are interactive if they feature 
-        span(style="color: #2341c1;") blue buttons. 
+      p !{page.top_text} 
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
     div(class="prototype_description bottom")
