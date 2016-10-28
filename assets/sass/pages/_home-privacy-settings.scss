@@ -21,9 +21,19 @@
     }
   }
 
+  .section {
+
+    img {
+      width: 80%;
+    }
+
+  }
+
+
   .screen {
     .preview_area {
       height: 21.5em;
+      text-align: 60%;
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;

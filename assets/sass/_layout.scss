@@ -262,8 +262,8 @@ header {
   margin-top: 0.3em;
   margin-bottom: 0.5em;
   margin-right: 1em;
+  //width: 100%;
   display: block;
-  float: left;
   text-decoration: none;
 }
 
@@ -276,8 +276,8 @@ header {
   margin-top: 0.3em;
   margin-bottom: 0.5em;
   margin-right: 1em;
+  //width: 100%;
   display: block;
-  float: left;
   text-decoration: none;
 
   &.unselected {
@@ -411,6 +411,42 @@ header {
       display: none;
     }
   }
+
+  .chunky_button_dead {
+    text-align: center;
+    background: $color-if-grey;
+    color: #000 !important;
+    border-radius: 9.25px;
+    padding: 0.70em 2em 0.4em 2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    width: 71%;
+    display: block;
+    text-decoration: none;
+  }
+
+  .chunky_button {
+    text-align: center;
+    background: #FF5E23;
+    color: #FFF !important;
+    border-radius: 9.25px;
+    padding: 0.70em 2em 0.4em 2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    width: 71%;
+    display: block;
+    text-decoration: none;
+
+    &.unselected {
+      border: #FFF 2px solid;
+      background: none;
+      opacity: 0.35;
+      color: #FFF !important;
+    }
+  }
+
 
   .mobile_space {
     width: 100vw;

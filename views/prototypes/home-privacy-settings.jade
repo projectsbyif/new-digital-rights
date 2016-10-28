@@ -1,23 +1,21 @@
 div(class="window_container")
   div(class="window_title")
   div(id="property_privacy_control" class="window_content")
-    div(id="blinds_one" class="screen")
-      div(class="preview_area")
-      div(class="config_area")
-        h2 Can street level photos of your property be taken?
-        div(id="blinds_one_selector" class="selector option")
-          a(class="chunky_button" href="#") Yes
-          a(class="chunky_button" href="#") No
-        div
-          a(href="#" class="next chunky_button") Next
-    div(id="blinds_two" class="screen")
-      div(class="preview_area")
-      div(class="config_area")
-        h2 Can satellite photos of your property be taken?
-        div(id="blinds_two_selector" class="selector option")
-          a(class="chunky_button" id="yes_final" href="#") Yes
-          a(class="chunky_button" id="no_final"  href="#") No
-        div
-          p(class="saved_settings") Your settings have been saved
-        div
-          a(id="save_button" href="#" class="chunky_button") Save
+    div(class="section")
+      h2 Wi-Fi set up
+      p Home privacy settings for 47 Drysdale road
+      img(src="/public/images/house.jpg")
+    
+    div(class="section")
+      div(style="float: right;")
+        p Yes
+          span No
+      
+      div
+        p Allow everyone to store images of your house?
+        p Allow non-profits to store images of your house?
+        p Allow governments to store images of your house?
+        
+    div(class="section")
+      a(class="chunky_button_dead" href"") Preview
+      a(class="chunky_button_dead" href"") Save
