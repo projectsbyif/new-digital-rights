@@ -1,37 +1,39 @@
 div(class="window_container")
   div(class="window_title")
   div(id="shopping_import" class="window_content portable_shopping_list")
-    div(class="header")
-      img(src="/public/images/tesco_logo.svg")
     div(class="section")
+      img(src="/public/images/shopping_logo.svg")
       p Quickly populate your shopping basket by pulling in your shopping list from another supermarket. You've chosen to import your favourite shopping list from QuickShop. 
-      a(id="import_shopping" class="chunky_button" href="#") Import from QuickShop
-      
+      a(id="import_shopping" class="chunky_button" href="#") Import
+      a(id="import_shopping" class="chunky_button_dead") Cancel    
   div(id="shopping_list" class="window_content portable_shopping_list")
-    div(class="header")
-      img(src="/public/images/tesco_logo.svg")
     div(class="section")
+      img(src="/public/images/shopping_logo.svg")
+      h2(style="") Your shopping list has been imported
+      
       div(class="shopping")
-      div(id="top_list")
-        p Skimmed milk - 2 litres
-          span £1.50
-        p Kingsmill bread - loaf
-          span £1.32
-        p Bag of rice - 1kg
-          span £1.22
-        p Granny smith apples x5
-          span £1.60
-        p Fig roll biscuits
-          span £40p
-        p Mince meat - lean (500g)
-          span £3.82
-        p Smoked bacon
-          span £1.74
-
+        div
+          img(src="/public/images/shopping_button.svg")
+          p Spaghetti (1kg)
+          p(class="cost") £1.00
+        div
+          img(src="/public/images/shopping_button.svg")
+          p Pasatta sauce
+          p(class="cost") £0.50
+        div
+          img(src="/public/images/shopping_button.svg")
+          p Garlic clove
+          p(class="cost") £0.30
+          
+    div(class="section")
+      div(class="basket")
+        h2 Your basket
+        p Total: £1.80
+        p 3 items
+      
       div(class="results")
-        h2 Total cost
-          span £11.60
-        p(class="chunky_button_dead") Continue shopping
+        p(class="chunky_button_dead") Buy
+        p(class="chunky_button_dead") Continue
 
   div(id="shopping_accept" class="window_content portable_shopping_list")
     div(class="header")

@@ -1,16 +1,54 @@
 .portable_shopping_list {
 
-  img {
-    margin-top: 1em;
-  }
   .section {
-    border-bottom: 0;
     overflow: auto;
-    padding-bottom: 2em;
+
+    img {
+      text-align: left;
+      width: 100px;
+    }
+
+    h2 {
+      text-decoration: underline;
+    }
+
+    .shopping {
+
+      div {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-top: 0.2em;
+
+        &:last-child {
+          padding-bottom: 1em;
+          border-bottom: $color-if-black 1px solid;
+        }
+      }
+
+      img {
+        width: 75px;
+        display: inline;
+        margin-right: 2.5em;
+        float: left;
+      }
+
+      p {
+        display: inline;
+      }
+
+      .cost {
+        float: right;
+        margin-right: 2em;
+      }
+    }
+  }
+
+  .shopping_button {
+    width: 100px;
+
   }
 
   #top_list {
-    border: #000 1.5px solid;
     border-radius: 2px;
 
     p {
@@ -18,7 +56,6 @@
       display: block;
       background: none;
       border: 0;
-      //border-top: #000 1px solid;
       font-family: $default-fonts-regular;
       font-size: 1em;
       padding: 0.5em;
@@ -42,8 +79,18 @@
     }
   }
 
+  .basket {
+    margin-bottom: 1em;
+    border: 0;
+    padding: 1em 1em 1em 1em;
+    border-radius: 15px;
+    background: $color-if-grey;
+    float: left;
+  }
+
   .results {
     margin-bottom: 1em;
+    float: left;
 
     h2 {
       margin-top: 1em;
@@ -63,10 +110,6 @@
         font-size: 1.6em;
       }
 
-      .delivery_time {
-        margin-bottom: 1.25em;
-      }
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -78,7 +121,21 @@
   .portable_shopping_list {
     .section {
       width: 25em;
-      margin: 2em auto;
+      margin: 1em auto;
+
+      h2 {
+        text-decoration: underline;
+      }
+    }
+
+    .basket {
+      margin-bottom: 1em;
+      float: right;
+      border: 0;
+      padding: 1em 1.5em 1em 1.5em;
+      border-radius: 15px;
+      background: $color-if-grey;
+      text-align: right;
     }
 
     .results {
