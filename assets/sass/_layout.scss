@@ -249,9 +249,10 @@ header {
   background: $color-if-grey;
   color: #000 !important;
   border-radius: 9.25px;
-  padding: 0.55em 2em 0.4em 2em;
-  margin-top: 0em;
+  padding: 0.70em 2em 0.4em 2em;
+  margin-top: 0.3em;
   margin-bottom: 0.5em;
+  margin-right: 1em;
   display: block;
   float: left;
   text-decoration: none;
@@ -262,8 +263,8 @@ header {
   background: #2341C1;
   color: #FFF !important;
   border-radius: 9.25px;
-  padding: 0.55em 2em 0.4em 2em;
-  margin-top: 0em;
+  padding: 0.70em 2em 0.4em 2em;
+  margin-top: 0.3em;
   margin-bottom: 0.5em;
   margin-right: 1em;
   display: block;
@@ -526,7 +527,6 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 2em;
   }
 
   .prototype_description {

@@ -2,17 +2,53 @@
 
   .section {
     overflow: auto;
-    padding-bottom: 1em;
 
     img {
       text-align: left;
-      width: 170px;
-      padding-top: 0.5em;
+      width: 100px;
+    }
+
+    h2 {
+      text-decoration: underline;
+    }
+
+    .shopping {
+
+      div {
+        overflow: hidden;
+        white-space: nowrap;
+        padding-top: 0.2em;
+
+        &:last-child {
+          padding-bottom: 1em;
+          border-bottom: $color-if-black 1px solid;
+        }
+      }
+
+      img {
+        width: 75px;
+        display: inline;
+        margin-right: 2.5em;
+        float: left;
+      }
+
+      p {
+        display: inline;
+      }
+
+      .cost {
+        float: right;
+        margin-right: 2em;
+      }
     }
   }
 
+  .shopping_button {
+    width: 100px;
+
+  }
+
   #top_list {
-    border: #000 1.5px solid;
     border-radius: 2px;
 
     p {
@@ -43,8 +79,18 @@
     }
   }
 
+  .basket {
+    margin-bottom: 1em;
+    border: 0;
+    padding: 1em 1em 1em 1em;
+    border-radius: 15px;
+    background: $color-if-grey;
+    float: left;
+  }
+
   .results {
     margin-bottom: 1em;
+    float: left;
 
     h2 {
       margin-top: 1em;
@@ -76,6 +122,20 @@
     .section {
       width: 25em;
       margin: 1em auto;
+
+      h2 {
+        text-decoration: underline;
+      }
+    }
+
+    .basket {
+      margin-bottom: 1em;
+      float: right;
+      border: 0;
+      padding: 1em 1.5em 1em 1.5em;
+      border-radius: 15px;
+      background: $color-if-grey;
+      text-align: right;
     }
 
     .results {
