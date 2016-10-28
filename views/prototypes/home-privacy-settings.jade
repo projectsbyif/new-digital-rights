@@ -5,17 +5,19 @@ div(class="window_container")
       h2 Wi-Fi set up
       p Home privacy settings for 47 Drysdale road
       img(src="/public/images/house.jpg")
+      
     
     div(class="section")
-      div(style="float: right;")
-        p Yes
-          span No
-      
       div
-        p Allow everyone to store images of your house?
-        p Allow non-profits to store images of your house?
-        p Allow governments to store images of your house?
+        input(type="checkbox" text="Allow everyone to store images of your house?") 
+        span(style="margin-left: 1em;") Allow everyone to store images of your house
+      div  
+        input(type="checkbox" checked="checked" text="Allow everyone to store images of your house?") 
+        span(style="margin-left: 1em;") Allow non-proftis to store images of your house
+      div
+        input(type="checkbox" hecked="checked" text="Allow everyone to store images of your house?") 
+        span(style="margin-left: 1em;") Allow governments to store images of your house
         
     div(class="section")
-      a(class="chunky_button_dead" href"") Preview
-      a(class="chunky_button_dead" href"") Save
+      a(style="width: 7em;" class="chunky_button_dead" href"") Preview
+      a(style="width: 7em;" class="chunky_button_dead" href"") Save

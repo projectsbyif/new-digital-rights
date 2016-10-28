@@ -2,14 +2,14 @@ div(class="window_container")
   div(class="window_title")
   div(id="shopping_import" class="window_content portable_shopping_list")
     div(class="section")
-      img(src="/public/images/shopping_logo.svg")
+      img(src="/public/images/shopping_header_head.svg")
       p Quickly populate your shopping basket by pulling in your shopping list from another supermarket. You've chosen to import your favourite shopping list from QuickShop. 
       a(id="import_shopping" class="chunky_button" href="#") Import
       a(id="import_shopping" class="chunky_button_dead") Cancel    
   div(id="shopping_list" class="window_content portable_shopping_list")
     div(class="section")
-      img(src="/public/images/shopping_logo.svg")
-      h2(style="") Your shopping list has been imported
+      img(src="/public/images/shopping_header.svg")
+      //h2(style="") Your shopping list has been imported
       
       div(class="shopping")
         div
@@ -25,13 +25,8 @@ div(class="window_container")
           p Garlic clove
           p(class="cost") £0.30
           
-    div(class="section")
-      div(class="basket")
-        h2 Your basket
-        p Total: £1.80
-        p 3 items
-      
       div(class="results")
+        p Total: £1.80
         p(class="chunky_button_dead") Buy
         p(class="chunky_button_dead") Continue
 

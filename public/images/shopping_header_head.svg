@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="518px" height="110px" viewBox="0 0 518 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 311 640.593 311 640.593 0.021 0 0.021"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(-85.000000, -35.000000)">
+            <path d="M257.6135,115.0459 L249.0715,115.0459 C247.6035,115.0459 246.0185,113.4329 245.5485,111.4629 L242.1845,97.3399 C241.7145,95.3689 240.1295,93.7569 238.6615,93.7569 L165.5205,93.7569 C164.0525,93.7569 162.3315,95.2909 161.6975,97.1669 L156.7985,111.6359 C156.1635,113.5109 154.4435,115.0459 152.9745,115.0459 L143.8985,115.0459 L85.1475,115.0459 L85.1475,141.9409 L601.7205,141.9409 L601.7205,115.0459 L257.6135,115.0459 L257.6135,115.0459 Z" id="Fill-1" fill="#DDDDDD"></path>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-4"></g>
+        </g>
+        <g id="shopping_logo" transform="translate(15.000000, 10.000000)" stroke-width="2" stroke="#000000">
+            <g id="Layer_1">
+                <path d="M39.020979,29.4469697 L5,29.2378788 C4.40559441,29.1681818 3.98601399,28.6454545 3.98601399,28.0530303 L0.13986014,5.99393939 C0.13986014,5.33181818 0.664335664,4.80909091 1.32867133,4.80909091 L42.3426573,4.80909091 C43.006993,4.80909091 43.5314685,5.33181818 43.5314685,5.99393939 L40.3846154,28.2621212 C40.4195804,28.9939394 39.7552448,29.5515152 39.020979,29.4469697 L39.020979,29.4469697 Z" id="Shape" fill="#FFFFFF"></path>
+                <polyline id="Shape" points="50 0 43.5314685 4.94848485 38.6363636 42.3409091 6.29370629 41.9924242"></polyline>
+                <ellipse id="Oval" fill="#FFFFFF" cx="38.3916084" cy="42.0621212" rx="3.88111888" ry="3.86818182"></ellipse>
+                <ellipse id="Oval" fill="#FFFFFF" cx="6.29370629" cy="41.7136364" rx="3.88111888" ry="3.86818182"></ellipse>
+                <path d="M1.74825175,12.8196721 L42.2727273,12.8196721" id="Shape"></path>
+                <path d="M16.2587413,29.3075758 L12.7272727,4.80909091" id="Shape"></path>
+                <path d="M27.6223776,29.3772727 L31.048951,4.80909091" id="Shape"></path>
+                <path d="M2.97202797,21.8688525 L41.3636364,21.8688525" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
