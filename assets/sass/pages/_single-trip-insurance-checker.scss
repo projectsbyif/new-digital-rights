@@ -11,6 +11,8 @@
 
     &:last-child {
       margin-bottom: 2em;
+      padding-bottom: 0.5em;
+      border-bottom: #000 2px solid;
     }
 
     .label {

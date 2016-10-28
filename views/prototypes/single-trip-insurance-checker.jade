@@ -4,16 +4,23 @@ div(class="mobile_container")
     div(class="hide_journey")
       div(id="journey_planner")
         div(class="section")
-          h2 Journey
+          h2 Your location
           div(class="journey_plan_section")
-            p(class="label") A
-            input(type="text" value="Sheffield" disabled="disabled")
-          div(class="journey_plan_section")
-            p(class="label") B
-            input(type="text" value="Manchester" disabled="disabled")
-          div(class="journey_get_route") 
-            a(class="chunky_button" id="get_route" href="#") Get route
-
+          ul
+            li
+              p
+                span SE17 2HP
+            li
+              p
+                span Leaving now
+            li  
+              p
+                span Arrive 10:15
+        div(class="section")
+          img(src="/public/images/map_directions.svg")
+          
+        div(class="section")
+          a(class="chunky_button" id="get_route") Get a quote
       
     div(class="hide_route")
       div(id="journey_planner")

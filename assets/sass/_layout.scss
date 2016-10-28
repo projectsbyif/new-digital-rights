@@ -412,6 +412,16 @@ header {
     }
   }
 
+  .mobile_space {
+    width: 100vw;
+    height: 1.5em;
+    bottom: 0;
+    left: 0;
+    background: $color-if-grey;
+    margin-bottom: 0.5em;
+    display: none;
+  }
+
   #navigation_mobile {
     width: 100vw;
     height: 2.5em;
@@ -536,6 +546,7 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background: $color-if-grey;
   }
 
   .prototype_description {
