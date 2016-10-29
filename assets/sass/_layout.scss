@@ -290,6 +290,41 @@ header {
   }
 }
 
+.mobile_chunky_button_dead {
+  text-align: center;
+  background: $color-if-grey;
+  color: #000 !important;
+  border-radius: 9.25px;
+  padding: 0.70em 2em 0.4em 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  width: 71%;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile_chunky_button {
+  text-align: center;
+  background: #FF5E23;
+  color: #FFF !important;
+  border-radius: 9.25px;
+  padding: 0.70em 2em 0.4em 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  width: 71%;
+  display: block;
+  text-decoration: none;
+
+  &.unselected {
+    border: #FFF 2px solid;
+    background: none;
+    opacity: 0.35;
+    color: #FFF !important;
+  }
+}
+
 /* Prototype nav */
 .prototype_header {
   width: 100vw;
@@ -421,6 +456,42 @@ header {
     border-radius: 9.25px;
     padding: 0.70em 2em 0.4em 2em;
     margin-top: 0.7em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    //width: 50%;
+    display: inline;
+    text-decoration: none;
+    float: right;
+  }
+
+  .chunky_button {
+    text-align: center;
+    background: #FF5E23;
+    color: #FFF !important;
+    border-radius: 9.25px;
+    padding: 0.70em 2em 0.4em 2em;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    //width: 50%;
+    display: inline;
+    text-decoration: none;
+
+    &.unselected {
+      border: #FFF 2px solid;
+      background: none;
+      opacity: 0.35;
+      color: #FFF !important;
+    }
+  }
+
+  .mobile_chunky_button_dead {
+    text-align: center;
+    background: $color-if-grey;
+    color: #000 !important;
+    border-radius: 9.25px;
+    padding: 0.70em 2em 0.4em 2em;
+    margin-top: 0.7em;
     margin-bottom: 0.5em;
     margin-right: 1em;
     width: 71%;
@@ -428,7 +499,7 @@ header {
     text-decoration: none;
   }
 
-  .chunky_button {
+  .mobile_chunky_button {
     text-align: center;
     background: #FF5E23;
     color: #FFF !important;
@@ -448,7 +519,6 @@ header {
       color: #FFF !important;
     }
   }
-
 
   .mobile_space {
     width: 100vw;
