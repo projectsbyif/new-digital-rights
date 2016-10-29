@@ -52,6 +52,7 @@ header {
   left: 0;
   background: #FFF;
   display: none;
+  padding-bottom: 1em;
 
   #wrapper {
     height: 2.5em;
@@ -98,6 +99,7 @@ header {
   left: 0;
   background: #FFF;
   display: block;
+  padding-bottom: 1em;
 
   #wrapper {
     height: 2.5em;
@@ -288,6 +290,41 @@ header {
   }
 }
 
+.mobile_chunky_button_dead {
+  text-align: center;
+  background: $color-if-grey;
+  color: #000 !important;
+  border-radius: 9.25px;
+  padding: 0.70em 2em 0.4em 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  width: 71%;
+  display: block;
+  text-decoration: none;
+}
+
+.mobile_chunky_button {
+  text-align: center;
+  background: #FF5E23;
+  color: #FFF !important;
+  border-radius: 9.25px;
+  padding: 0.70em 2em 0.4em 2em;
+  margin-top: 0.7em;
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+  width: 71%;
+  display: block;
+  text-decoration: none;
+
+  &.unselected {
+    border: #FFF 2px solid;
+    background: none;
+    opacity: 0.35;
+    color: #FFF !important;
+  }
+}
+
 /* Prototype nav */
 .prototype_header {
   width: 100vw;
@@ -419,6 +456,43 @@ header {
     border-radius: 9.25px;
     padding: 0.70em 2em 0.4em 2em;
     margin-top: 0.7em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    //width: 50%;
+    display: inline;
+    text-decoration: none;
+    float: right;
+  }
+
+  .chunky_button {
+    text-align: center;
+    background: #FF5E23;
+    color: #FFF !important;
+    border-radius: 9.25px;
+    padding: 0.70em 2em 0.4em 2em;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    //width: 50%;
+    display: inline;
+    text-decoration: none;
+    float: right;
+
+    &.unselected {
+      border: #FFF 2px solid;
+      background: none;
+      opacity: 0.35;
+      color: #FFF !important;
+    }
+  }
+
+  .mobile_chunky_button_dead {
+    text-align: center;
+    background: $color-if-grey;
+    color: #000 !important;
+    border-radius: 9.25px;
+    padding: 0.70em 2em 0.4em 2em;
+    margin-top: 0.7em;
     margin-bottom: 0.5em;
     margin-right: 1em;
     width: 71%;
@@ -426,7 +500,7 @@ header {
     text-decoration: none;
   }
 
-  .chunky_button {
+  .mobile_chunky_button {
     text-align: center;
     background: #FF5E23;
     color: #FFF !important;
@@ -446,7 +520,6 @@ header {
       color: #FFF !important;
     }
   }
-
 
   .mobile_space {
     width: 100vw;
@@ -469,7 +542,7 @@ header {
 
     #wrapper {
       height: 2.5em;
-      width: 920px;
+      width: 760px;
       margin: 0 auto;
 
       #previous,
@@ -556,7 +629,7 @@ header {
   }
 
   #homepage {
-    width: 920px;
+    width: 760px;
     margin: 0 auto;
 
     h1, h2, p {
@@ -587,7 +660,7 @@ header {
 
   .prototype_description {
     padding: 0;
-    width: 920px;
+    width: 760px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -636,7 +709,7 @@ header {
 
   /* Generic device containers */
   .window_container {
-    width: 920px;
+    width: 760px;
     border: $color-if-black 2px solid;
     border-radius: 5px;
     margin-top: 2em;

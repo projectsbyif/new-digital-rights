@@ -1,11 +1,13 @@
 div(class="window_container")
   div(class="window_title")
+    img(src="/public/images/window_container_quickshop.svg")
   div(id="shopping_import" class="window_content portable_shopping_list")
     div(class="section")
       img(src="/public/images/shopping_header_head.svg")
       p Quickly populate your shopping basket by pulling in your shopping list from another supermarket. You've chosen to import your favourite shopping list from QuickShop. 
-      a(id="import_shopping" class="chunky_button" href="#") Import
-      a(id="import_shopping" class="chunky_button_dead") Cancel    
+    div(class="section")
+      a(id="import_shopping" class="chunky_button" href="#") Import    
+       
   div(id="shopping_list" class="window_content portable_shopping_list")
     div(class="section")
       img(src="/public/images/shopping_header.svg")
@@ -25,15 +27,7 @@ div(class="window_container")
           p Garlic clove
           p(class="cost") £0.30
           
-      div(class="results")
-        p Total: £1.80
-        p(class="chunky_button_dead") Buy
-        p(class="chunky_button_dead") Continue
-
-  div(id="shopping_accept" class="window_content portable_shopping_list")
-    div(class="header")
-      img(src="/public/images/tesco_logo.svg")
     div(class="section")
-      h2 Your shopping is on it's way. 
-      p Thank you for sharing your Asda shopping list with Tesco.  
-            
+      p Total: £1.80
+      a(class="chunky_button_dead") Buy
+      a(class="chunky_button_dead") Continue

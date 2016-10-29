@@ -27,7 +27,7 @@ content = [
   },
   {
     "title": "Guardian for digital identity",
-    "top_text": "<p>The law is clear about what happens to our belongings when we die, but much vaguer when it comes to our digital property. Some companies have started to think about this, but there’s very little public oversight.</p><p>We imagined how a digital public guardian could help. When you die, could their services delete your private messages from Facebook before transferring your account to someone you trust?</p><p>The GDPR states that people will have the right to rectify data, but that could imply quite narrow changes (like changing your address when you move). Organisations need to prepare for more extreme changes of circumstance.</p><i><a>Inspired by Tom Steinberg’s <a>‘Digital Graveyards’</a></i>.",
+    "top_text": "<p>The law is clear about what happens to our belongings when we die, but much vaguer when it comes to our digital property. Some companies have started to think about this, but there’s very little public oversight.</p><p>We imagined how a digital public guardian could help. When you die, could their services delete your private messages from Facebook before transferring your account to someone you trust?</p><p>The GDPR states that people will have the right to rectify data, but that could imply quite narrow changes (like changing your address when you move). Organisations need to prepare for more extreme changes of circumstance.</p>Inspired by Tom Steinberg’s ‘Digital Graveyards’.",
     "permalink": "public-guardian",
     "tagline": "What happens to our data after we die"
   },
