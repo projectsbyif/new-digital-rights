@@ -52,6 +52,7 @@ header {
   left: 0;
   background: #FFF;
   display: none;
+  padding-bottom: 1em;
 
   #wrapper {
     height: 2.5em;
@@ -98,6 +99,7 @@ header {
   left: 0;
   background: #FFF;
   display: block;
+  padding-bottom: 1em;
 
   #wrapper {
     height: 2.5em;
@@ -646,7 +648,7 @@ header {
     .window_title {
       height: 3em;
       width: 100%;
-      background-image: url('/public/images/window_container_buttons.svg');
+      //background-image: url('/public/images/window_container_buttons.svg');
       background-repeat: no-repeat;
       background-position: center left;
       display: block;
