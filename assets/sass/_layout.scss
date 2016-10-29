@@ -471,7 +471,7 @@ header {
 
     #wrapper {
       height: 2.5em;
-      width: 920px;
+      width: 760px;
       margin: 0 auto;
 
       #previous,
@@ -558,7 +558,7 @@ header {
   }
 
   #homepage {
-    width: 920px;
+    width: 760px;
     margin: 0 auto;
 
     h1, h2, p {
@@ -589,7 +589,7 @@ header {
 
   .prototype_description {
     padding: 0;
-    width: 920px;
+    width: 760px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
@@ -638,7 +638,7 @@ header {
 
   /* Generic device containers */
   .window_container {
-    width: 920px;
+    width: 760px;
     border: $color-if-black 2px solid;
     border-radius: 5px;
     margin-top: 2em;
@@ -648,7 +648,7 @@ header {
     .window_title {
       height: 3em;
       width: 100%;
-      //background-image: url('/public/images/window_container_buttons.svg');
+      background-image: url('/public/images/window_container_buttons.svg');
       background-repeat: no-repeat;
       background-position: center left;
       display: block;
