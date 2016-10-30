@@ -19,7 +19,7 @@ div(class="mobile_container")
           
         div(class="section")
           h2 Insure your journey
-          a(class="mobile_chunky_button" id="get_route") Get a quote
+          a(class="mobile_chunky_button" id="get_route" href="#") Get a quote
       
     div(class="hide_route")
       div(id="journey_planner")
@@ -28,7 +28,8 @@ div(class="mobile_container")
           p Ref: 20910833h
           h2(class="quote") £26.50
           p with QuickCover
-          P valid for 30 minutes
+          P valid for 
+            span(id="countdown") 00:00
           a(class="mobile_chunky_button" href="#" id="quote_yes") Query this quote
           a(class="mobile_chunky_button_dead") Buy
             
