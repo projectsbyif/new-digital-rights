@@ -1,11 +1,16 @@
-# Designing for new digital rights
+# New Digital Rights
 
-The General Data Protection Regulation gives people new rights for personal data.
+## About this repository
+This repository contains the code for our [New Digital Rights microsite](https://newdigitalrights.projectsbyif.com). [This project](https://projectsbyif.com/projects/designing-for-new-digital-rights) explores the new possibilities that legislation like GDPR can create for designers of services.
 
-It gives people the right to challenge automated decisions, to restrict how personal data is used, and to move data from service to service.
+## How to use
+0. Install [Node.js](http://nodejs.org).
+1. Clone this repository to your computer.
+2. In Terminal, use `cd` to navigate to where the repository is stored.
+3. Install dependencies with `npm install`.
+4. Start the SASS compiler by running `npm run watch`.
+5. In another Terminal window, start the Node app with `node index`.
+6. In your browswer, navigate to `http://localhost:3000`.
 
-As designers, our job is to look at these new rights and think about what they make possible. If we don’t, then it’s likely that these new rights will just disappear into the small print.
-
-The following clickable prototypes are examples of what could come next.
-
-[Explore the prototypes](https://newdigitalrights.projectsbyif.com/data-access-tracker)
+## How to contribute
+Feedback and contributions are welcome. Create an issue, submit a pull request or get in touch with us on Twitter [@projectsbyif](https://twitter.com/projectsbyif) or email us at [hello@projectsbyif.com](mailto:hello@projectsbyif.com).
