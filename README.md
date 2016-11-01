@@ -1,7 +1,7 @@
 # New Digital Rights
 
 ## About this repository
-This repository contains the code for our [New Digital Rights microsite](https://newdigitalrights.projectsbyif.com). [This project](https://projectsbyif.com/projects/designing-for-new-digital-rights) explores the new possibilities that legislation like GDPR can create for designers of services.
+This repository contains the code for our [New Digital Rights microsite](https://newdigitalrights.projectsbyif.com). It explores the new possibilities that legislation like GDPR can create for designers of services. It is designed and maintained by [IF](https://projectsbyif.com).
 
 ## How to use
 0. Install [Node.js](http://nodejs.org).
