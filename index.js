@@ -48,9 +48,13 @@ for (let index in pages) {
     previousPage = pages[index - 1];
   }
 
-	app.get('/' + page.permalink, function(req, res) {
-		res.render('prototype', { config, page, pages, nextPage, previousPage, currentPage, totalPages });
-	});
+  app.get('/' + page.permalink, function(req, res) {
+  	res.render('prototype', { config, page, pages, nextPage, previousPage, currentPage, totalPages });
+  });
+
+  app.get('/' + page.permalink + '/demo', function(req, res) {
+    res.render('prototype_demo', { config, page, pages, nextPage, previousPage, currentPage, totalPages });
+  });
 }
 
 // SERVER
