@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title #{page.title} &bull; #{config.site_name}
+    meta(name="viewport" charset="utf-8" content="width=device-width" initial-scale="1.0")
+    meta(name="description" content="#{config.site_description}")
+    meta(property="og:url" content="")
+    meta(property="og:title" content="")
+    meta(property="og:description" content="")
+    meta(property="og:image" content="")
+    script(type="text/javascript" src="/public/javascripts/moment.min.js")
+    script(type="text/javascript" src="/public/javascripts/chart.min.js")
+    script(type="text/javascript" src="/public/javascripts/jquery.js")
+    script(type="text/javascript" src="/public/javascripts/jquery-ui.js")
+    script(type="text/javascript" src="/public/javascripts/app.js")
+    script(type="text/javascript" src="/public/javascripts/prototypes/#{page.permalink}.js")
+    link(rel="icon" id="favicon" href="")
+    link(rel="apple-touch-icon-precomposed" href="")
+    link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
+  body
+    div(class="mobile_space")
+    div(class="prototype_canvas")
+      != renderTemplate(page.permalink)
