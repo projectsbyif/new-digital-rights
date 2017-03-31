@@ -1,1 +1,0 @@
-node-sass --include-path scss assets/sass/app.scss public/stylesheets/app.css
