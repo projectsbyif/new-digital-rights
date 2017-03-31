@@ -1,22 +1,31 @@
 {
-  "name": "node-express-template",
+  "name": "new-digital-rights",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "./bin/build-css",
-    "watch": "./bin/watch-css",
+    "start": "node index.js",
+    "postinstall": "gulp deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chart.js": "^2.3.0",
     "express": "^4.13.4",
     "jade": "^1.11.0",
     "jade-dynamic-includes": "^0.2.5",
-    "node-sass": "^3.7.0",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.0",
+    "gulp-util": "^3.0.8"
+  },
+  "engines": {
+    "node": "6.10.1",
+    "npm": "3.10.10"
   }
 }
