@@ -8,6 +8,9 @@ let http = require('http').Server(app);
 let jadeDynamicIncludes = require('jade-dynamic-includes');
 let config = require('./config/config.js');
 let pages = require('./config/pages.js');
+let helmet = require('helmet');
+
+app.use(helmet());
 
 // CONFIG
 jadeDynamicIncludes.initTemplates(__dirname + '/views/prototypes', true);

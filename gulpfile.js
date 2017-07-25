@@ -1,22 +1,23 @@
+// IF standard gulpfile July 2017
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var nodemon = require('gulp-nodemon');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
-var pug = require('gulp-pug');
+var pump = require('pump');
 
 gulp.task('default', ['sass', 'js', 'nodemon', 'watch']);
 gulp.task('deploy', ['sass', 'js']);
 
 gulp.task('watch', function() {
-  gulp.watch('assets/sass/*.scss', ['sass']);
+  gulp.watch('assets/sass/**/*.scss', ['sass']);
   gulp.watch('assets/js/*.js', ['js']);
 });
 
 gulp.task('nodemon', function() {
   nodemon({
     script: 'index.js',
-    ext: 'js md yaml'
+    ext: 'js md yaml json'
   });
 });
 
@@ -27,12 +28,10 @@ gulp.task('sass', function() {
   .pipe(gulp.dest('public/stylesheets'))
 });
 
-gulp.task('js', function() {
-  gulp.src('assets/js/*.js')
-  .pipe(uglify({
-    ext: {
-      min: '.js'
-    }
-  }))
-  .pipe(gulp.dest('public/js'))
+gulp.task('js', function (cb) {
+  pump([
+    gulp.src('assets/js/*.js'),
+    uglify(),
+    gulp.dest('public/js')
+  ], cb);
 });
