@@ -1,0 +1,14 @@
+div(id="contents")
+  div
+    h1 Contents
+    a(id="close_contents" href="#") Close
+    ul(class="contents-list")
+      - var current = page
+      for page in pages
+        li
+          if current && current.title == page.title
+            a(href=page.permalink class="bold") #{page.title}
+            p #{page.tagline}
+          else
+            a(href=page.permalink) #{page.title}
+            p #{page.tagline}

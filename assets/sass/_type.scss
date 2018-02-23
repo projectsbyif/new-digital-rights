@@ -41,12 +41,16 @@ ul {
   }
 }
 
+.bold {
+  font-family: $font-family-bold;
+}
+
 @media screen and (min-width: 720px) {
   body {
     font-size: 22px;
   }
 
   h1 {
-    font-size: 55px;
+    font-size: 45px;
   }
 }

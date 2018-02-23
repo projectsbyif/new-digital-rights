@@ -30,7 +30,6 @@ pages.sort(function(a, b) {
 // Render the app view
 app.get('/', function(req, res) {
   let firstPage = pages[0];
-
 	res.render('index', { config, pages, firstPage });
 });
 

@@ -8,14 +8,16 @@ html(lang="en")
     meta(property="og:title" content="")
     meta(property="og:description" content="")
     meta(property="og:image" content="")
-    script(type="text/javascript" src="/public/javascripts/jquery.js")
-    script(type="text/javascript" src="/public/javascripts/app.js")
+    script(type="text/javascript" src="/public/js/jquery.js")
+    script(type="text/javascript" src="/public/js/app.js")
     link(rel="icon" id="favicon" href="")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
   body
+    a(id="skip_to_content" href="#content") Skip to content
     header
       a(id="logo" href="https://projectsbyif.com") Projects By IF
+      a(id="link_contents" href="#contents") Contents
     div(id="homepage" class="content")
       h1 Designing for new digital rights
       div(id="intro")
@@ -29,9 +31,13 @@ html(lang="en")
         div(style="overflow: auto")
           p(id="show_contents")
             //a(href="#") Show contents
-      div(id="contents")
-        each page in pages
-          div(class="item")
-            h2
-              a(href="/#{page.permalink}") #{page.title}
-            p #{page.tagline}
+    
+      div(class="contents-wrapper")
+        h1 Contents
+        ul(class="contents-list")
+          for page in pages
+            li
+              a(href=page.permalink) #{page.title}
+              p #{page.tagline}
+            
+    include ./includes/contents.jade

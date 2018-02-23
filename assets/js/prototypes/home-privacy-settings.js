@@ -1,5 +1,5 @@
 $(function() {
-  let currentStep = 0;
+  var currentStep = 0;
 
   $('.selector a').not('.next').click(function(e) {
     e.preventDefault();

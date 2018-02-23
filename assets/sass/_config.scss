@@ -1,12 +1,22 @@
 $default-fonts-regular: 'Calibre-Regular', 'Helvetica Neue', 'Arial', sans-serif;
 $default-fonts-bold: 'Circular-Bold', 'Helvetica Neue', 'Arial', sans-serif;
 
+$font-family-body: 'Calibre-Regular', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family-header: 'Circular-Bold', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family-bold: 'Calibre-Semibold', 'Helvetica Neue', 'Arial', sans-serif;
+
 $color-if-black: #212121;
 $color-if-grey: #E0E3E5;
 $color-if-blue: #2341C1;
 $color-if-orange: #ff5e23;
 
 $default-spacing: 1em;
+$default-spacing-small: 20px;
+$default-spacing-big: 40px;
+
+// $height-nav: 60px;
+// $height-header: 70px;
+$desktop-column-width: 710px;
 
 @mixin background-button($size) {
   background-size: $size;
