@@ -99,6 +99,8 @@ ul.contents-appendices {
 
 ul.contents-list {
   list-style-type: none;
+  margin-bottom: 0;
+
   p {
     padding: 0 !important;
   }
@@ -124,6 +126,10 @@ ul.contents-list {
 
     &:last-child {
       margin-bottom: 0;
+
+      p {
+        margin-bottom: 0 !important;
+      }
     }
   }
 }
