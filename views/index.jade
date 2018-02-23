@@ -31,5 +31,13 @@ html(lang="en")
         div(style="overflow: auto")
           p(id="show_contents")
             //a(href="#") Show contents
+    
+      div(class="contents-wrapper")
+        h1 Contents
+        ul(class="contents-list")
+          for page in pages
+            li
+              a(href=page.permalink) #{page.title}
+              p #{page.tagline}
             
     include ./includes/contents.jade

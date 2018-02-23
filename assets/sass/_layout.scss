@@ -8,7 +8,7 @@
 
 header {
   width:100vw;
-  height:51px;
+  height:71px;
   border-bottom:1px solid #f1f0ee;
   background:#FFF;
   margin-bottom: 1.6em;
@@ -35,8 +35,9 @@ header {
   #title_mobile {
     font-family: "Circular-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-decoration: none;
-    margin-left: 16px;
-    margin-top: 28px;
+    position: absolute;
+    left: 16px;
+    top: 28px;
     font-size: 13px;
     letter-spacing: 1px;
     display: block;
@@ -808,6 +809,12 @@ header {
 
   #navigation a span {
     display: inline;
+  }
+
+  .contents-wrapper {
+    h1 {
+      text-align: left !important;
+    }
   }
 
   header {

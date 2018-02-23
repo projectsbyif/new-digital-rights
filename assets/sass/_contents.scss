@@ -6,7 +6,7 @@
   text-indent: -9999px;
   position: absolute;
   right: 20px;
-  top: 14px;
+  top: 11px;
   background-image: url('/public/images/menu.svg');
   background-position: center right;
   background-repeat: no-repeat;
@@ -99,6 +99,9 @@ ul.contents-appendices {
 
 ul.contents-list {
   list-style-type: none;
+  p {
+    padding: 0 !important;
+  }
 
   li {
     margin-left: 0;
