@@ -41,6 +41,10 @@ ul {
   }
 }
 
+.bold {
+  font-family: $font-family-bold;
+}
+
 @media screen and (min-width: 720px) {
   body {
     font-size: 22px;

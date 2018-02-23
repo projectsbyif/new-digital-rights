@@ -11,7 +11,7 @@ gulp.task('deploy', ['sass', 'js']);
 
 gulp.task('watch', function() {
   gulp.watch('assets/sass/**/*.scss', ['sass']);
-  gulp.watch('assets/js/*.js', ['js']);
+  gulp.watch('assets/js/*/*.js', ['js']);
 });
 
 gulp.task('nodemon', function() {
@@ -30,7 +30,7 @@ gulp.task('sass', function() {
 
 gulp.task('js', function (cb) {
   pump([
-    gulp.src('assets/js/*.js'),
+    gulp.src('assets/js/*/*.js'),
     uglify(),
     gulp.dest('public/js')
   ], cb);

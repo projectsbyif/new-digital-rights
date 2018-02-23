@@ -1,0 +1,142 @@
+#link_contents {
+  width: 50px;
+  height: 50px;
+  display: block;
+  color:#323232;
+  text-indent: -9999px;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  background-image: url('/public/images/menu.svg');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: 22px;
+  font-family: "Circular-Bold", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#contents h1,
+.contents-wrapper h1 {
+  font-family: "Circular-Bold", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#contents {
+  padding: 30px;
+  width: calc(100vw - 60px);
+  min-height: 100vh;
+  height: 100%;
+  background-color: #EDF0F2;
+  z-index: 9999;
+
+  h1 {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: rgba(0,0,0,0.1) 1px solid;
+  }
+
+  h2 {
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+
+  &.hideable {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.contents-list {
+    .content_label {
+      background: none;
+    }
+  }
+
+  ul.contents-appendices {
+    font-size: 0.9em;
+  }
+
+  #close_contents {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://s3-eu-west-1.amazonaws.com/projectsbyif.com/shared/icon_close_dark.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 25px;
+    right: 21px;
+    display: none;
+  }
+}
+
+.contents-wrapper {
+  background-color: #EDF0F2;
+  padding: $default-spacing-small;
+  margin-top: $default-spacing-small;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: $default-spacing-small;
+  }
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+ul.contents-list,
+ul.contents-appendices {
+  a:hover {
+    color: #474747;
+  }
+}
+
+ul.contents-list {
+  list-style-type: none;
+
+  li {
+    margin-left: 0;
+    margin-bottom: 15px;
+
+    .content_sublabel {
+      font-family: "Circular-Bold", "Helvetica Neue", "Arial", sans-serif;
+      font-size: 0.65em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #999;
+    }
+
+    &.seperator {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      height: 1px;
+      background: rgba(0,0,0,0.1);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul.contents-appendices {
+  margin-top: 15px;
+  list-style-type: none;
+  border-top: rgba(0,0,0,0.1) 1px solid;
+  padding-top: 20px;
+
+  li {
+    margin-left: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

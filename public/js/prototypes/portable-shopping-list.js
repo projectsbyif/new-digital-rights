@@ -1,0 +1,1 @@
+$(function(){$("#import_shopping").click(function(n){n.preventDefault(),$("#shopping_import").fadeOut(250,function(){$("#shopping_list").fadeIn(500)})}),$("#checkout").click(function(n){n.preventDefault(),$("#shopping_list").fadeOut(250,function(){$("#shopping_accept").fadeIn(500)})})});

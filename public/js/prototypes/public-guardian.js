@@ -1,0 +1,1 @@
+$(function(){$("#button_save").click(function(i){i.preventDefault(),$("#digital_will").fadeOut(250,function(){$("#digital_will_confirmation").fadeIn(250)})})});

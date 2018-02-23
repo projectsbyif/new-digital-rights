@@ -8,9 +8,9 @@ html(lang="en")
     meta(property="og:title" content="")
     meta(property="og:description" content="")
     meta(property="og:image" content="")
-    script(type="text/javascript" src="/public/javascripts/jquery.js")
-    script(type="text/javascript" src="/public/javascripts/app.js")
-    script(type="text/javascript" src="/public/javascripts/prototypes/#{page.permalink}.js")
+    script(type="text/javascript" src="/public/js/jquery.js")
+    script(type="text/javascript" src="/public/js/app.js")
+    script(type="text/javascript" src="/public/js/prototypes/#{page.permalink}.js")
     link(rel="icon" id="favicon" href="")
     link(rel="apple-touch-icon-precomposed" href="")
     link(type="text/css" rel="stylesheet" href="/public/stylesheets/app.css")
@@ -19,11 +19,11 @@ html(lang="en")
       a(id="logo" href="https://projectsbyif.com") Projects By IF
       a(id="title" href="/") #{config.site_name}
       a(id="title_mobile" href="/") RIGHTS
+      a(id="link_contents" href="#contents") Contents
     div(class="prototype_description")
       h1 #{page.title}
       p !{page.top_text} 
       p 
-    div(class="mobile_space")
     div(class="prototype_canvas")
       != renderTemplate(page.permalink)
   div(id="navigation")
@@ -31,30 +31,23 @@ html(lang="en")
       div(id="previous")
           p
             if previousPage
-              a(href="/#{previousPage.permalink}") < #{previousPage.title}
+              a(href="/#{previousPage.permalink}") 
+                | < 
+                span #{previousPage.title}
             else
-              a(href="/") < Home
+              a(href="/") 
+                | < 
+                span Home
       div(id="count")
         p #{currentPage} of #{totalPages}
       div(id="next")
           p
             if nextPage
-              a(href="/#{nextPage.permalink}") #{nextPage.title} >
+              a(href="/#{nextPage.permalink}")
+                span #{nextPage.title} 
+                | >
             else
-              a(href="/") Home >          
-  div(id="navigation_mobile")
-    div(id="wrapper")
-      div(id="previous")
-          p
-            if previousPage
-              a(href="/#{previousPage.permalink}") <
-            else
-              a(href="/") <
-      div(id="count")
-        p #{currentPage} of #{totalPages}
-      div(id="next")
-          p
-            if nextPage
-              a(href="/#{nextPage.permalink}") >
-            else
-              a(href="/") >
+              a(href="/") 
+                span Home 
+                | >          
+  include ./includes/contents.jade
