@@ -13,12 +13,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "gulp": "^3.9.1",
-    "gulp-cli": "^1.2.2",
-    "gulp-nodemon": "^2.2.1",
+    "gulp": "^4.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
     "helmet": "^3.6.1",
     "jade": "^1.11.0",
     "jade-dynamic-includes": "^0.2.5",
@@ -26,7 +23,7 @@
     "pump": "^1.0.2"
   },
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.10.10"
+    "node": "8.9.4",
+    "npm": "6.0.0"
   }
 }
