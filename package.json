@@ -15,12 +15,12 @@
     "express": "^4.13.4",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.0",
-    "helmet": "^3.6.1",
+    "gulp-uglify": "^3.0.1",
+    "helmet": "^3.13.0",
     "jade": "^1.11.0",
     "jade-dynamic-includes": "^0.2.5",
-    "nodemon": "^1.9.2",
-    "pump": "^1.0.2"
+    "nodemon": "^1.18.4",
+    "pump": "^3.0.0"
   },
   "engines": {
     "node": "8.9.4",
