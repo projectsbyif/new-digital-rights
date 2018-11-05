@@ -37,3 +37,11 @@ jspm_packages
 .node_repl_history
 
 public/css/app.css
+public/data-access-tracker
+public/data-minimisation
+public/home-privacy-settings
+public/portable-shopping-list
+public/public-guardian
+public/single-trip-insurance-checker
+public/work-with-us
+public/index.html
