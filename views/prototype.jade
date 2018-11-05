@@ -22,21 +22,21 @@ html(lang="en")
       a(id="link_contents" href="#contents") Contents
     div(class="prototype_description")
       h1 #{page.title}
-      p !{page.top_text} 
-      p 
+      p !{page.top_text}
+      p
     div(class="prototype_canvas")
-      != renderTemplate(page.permalink)
+      block content
   div(id="navigation")
     div(id="wrapper")
       div(id="previous")
           p
             if previousPage
-              a(href="/#{previousPage.permalink}") 
-                | < 
+              a(href="/#{previousPage.permalink}")
+                | <
                 span #{previousPage.title}
             else
-              a(href="/") 
-                | < 
+              a(href="/")
+                | <
                 span Home
       div(id="count")
         p #{currentPage} of #{totalPages}
@@ -44,10 +44,10 @@ html(lang="en")
           p
             if nextPage
               a(href="/#{nextPage.permalink}")
-                span #{nextPage.title} 
+                span #{nextPage.title}
                 | >
             else
-              a(href="/") 
-                span Home 
-                | >          
+              a(href="/")
+                span Home
+                | >
   include ./includes/contents.jade

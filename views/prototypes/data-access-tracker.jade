@@ -1,36 +1,39 @@
-div(class="window_container")
-  div(class="window_content")
-    div(class="email_header")
-      p
-        span(class="label") From:
-        span(class="value") QuickRent Ltd.
-      p
-        span(class="label") Subject:
-        span(class="value") Your rental agreement update
-    div(id="activity_log")
-      div(id="header" class="section")
-        img(src="/public/images/quickrent_logo.svg")
-        
-      div(id="property" class="section")
-        img(src="/public/images/easyrent_building.jpg")
-        p(class="bold") 63 Claremount Road
-        p £1,500 per month
-      div(id="latest" class="section")
-        h2 Recent access to your bank statements
-        p(class="activity") Viewed by the Assessor at QuickRent, to check affordability
-        p(class="timestamp") 32 minutes ago
-        p(class="activity") Viewed by the Estate Agent at QuickRent, to confirm your identity
-        p(class="timestamp") 2 hours ago
-        p(class="activity") Viewed by the Accounts Manager at QuickRent, to confirm receipt
-        p(class="timestamp") 9 hours ago
+extends ../prototype.jade
+
+block content
+  div(class="window_container")
+    div(class="window_content")
+      div(class="email_header")
         p
-        //  a(href="#") Report a problem
-      div(id="summary" class="section")
-        h2 How QuickRent use your bank statements
-        ul
-          li
-            p QuickRent need this to check if you can afford rent payments.
-          li
-            p It will only be accessible by the accounts department and your agent.
-          li
-            p Your statements will be kept until the affordability check has been completed. This usually takes 48 hours.
+          span(class="label") From:
+          span(class="value") QuickRent Ltd.
+        p
+          span(class="label") Subject:
+          span(class="value") Your rental agreement update
+      div(id="activity_log")
+        div(id="header" class="section")
+          img(src="/images/quickrent_logo.svg")
+
+        div(id="property" class="section")
+          img(src="/images/easyrent_building.jpg")
+          p(class="bold") 63 Claremount Road
+          p £1,500 per month
+        div(id="latest" class="section")
+          h2 Recent access to your bank statements
+          p(class="activity") Viewed by the Assessor at QuickRent, to check affordability
+          p(class="timestamp") 32 minutes ago
+          p(class="activity") Viewed by the Estate Agent at QuickRent, to confirm your identity
+          p(class="timestamp") 2 hours ago
+          p(class="activity") Viewed by the Accounts Manager at QuickRent, to confirm receipt
+          p(class="timestamp") 9 hours ago
+          p
+          //  a(href="#") Report a problem
+        div(id="summary" class="section")
+          h2 How QuickRent use your bank statements
+          ul
+            li
+              p QuickRent need this to check if you can afford rent payments.
+            li
+              p It will only be accessible by the accounts department and your agent.
+            li
+              p Your statements will be kept until the affordability check has been completed. This usually takes 48 hours.

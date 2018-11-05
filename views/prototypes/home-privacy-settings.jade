@@ -1,27 +1,30 @@
-div(class="window_container")
-  div(class="window_title")
-    img(src="/public/images/window_container_privacy.svg")
-  div(id="property_privacy_control" class="window_content")
-    div(class="section")
-      h2 Wi-Fi set up
-      p Home privacy settings for 47 Drysdale road
-      img(src="/public/images/house.jpg")
-      
-    
-    div(class="section")
-      div
-        img(class="tick" src="/public/images/tick_blue.svg")
-        span(style="margin-left: 1em;") Allow images to be taken of your house and used for research purposes
-      div  
-        img(class="tick" src="/public/images/tick.svg")
-        span(style="margin-left: 1em;") Allow images to be taken of your house and used by the local council
-      div
-        img(class="tick" src="/public/images/tick.svg")
-        span(style="margin-left: 1em;") Allow images to be taken of your house and used for any purpose
-      div
-        img(class="tick" src="/public/images/tick.svg")
-        span(style="margin-left: 1em;") Do not allow any images of your house to be used for any purpose
-              
-    div(class="section")
-      a(class="chunky_button_dead" href"") Preview
-      a(class="chunky_button_dead" href"") Save
+extends ../prototype.jade
+
+block content
+  div(class="window_container")
+    div(class="window_title")
+      img(src="/images/window_container_privacy.svg")
+    div(id="property_privacy_control" class="window_content")
+      div(class="section")
+        h2 Wi-Fi set up
+        p Home privacy settings for 47 Drysdale road
+        img(src="/images/house.jpg")
+
+
+      div(class="section")
+        div
+          img(class="tick" src="/images/tick_blue.svg")
+          span(style="margin-left: 1em;") Allow images to be taken of your house and used for research purposes
+        div
+          img(class="tick" src="/images/tick.svg")
+          span(style="margin-left: 1em;") Allow images to be taken of your house and used by the local council
+        div
+          img(class="tick" src="/images/tick.svg")
+          span(style="margin-left: 1em;") Allow images to be taken of your house and used for any purpose
+        div
+          img(class="tick" src="/images/tick.svg")
+          span(style="margin-left: 1em;") Do not allow any images of your house to be used for any purpose
+
+      div(class="section")
+        a(class="chunky_button_dead" href"") Preview
+        a(class="chunky_button_dead" href"") Save
