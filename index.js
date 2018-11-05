@@ -1,23 +1,10 @@
 "use strict";
 
 // REQUIRES
-let express = require('express');
-let path = require('path');
-let app = express();
-let http = require('http').Server(app);
-let jadeDynamicIncludes = require('jade-dynamic-includes');
+const jade = require('jade');
 let config = require('./config/config.js');
 let pages = require('./config/pages.js');
-let helmet = require('helmet');
-
-app.use(helmet());
-
-// CONFIG
-jadeDynamicIncludes.initTemplates(__dirname + '/views/prototypes', true);
-app.set('port', process.env.PORT || 3000);
-app.set('view engine', 'jade');
-app.use('/public', express.static(path.join(__dirname, 'public')));
-app.use(jadeDynamicIncludes.attachTemplatesToRequest());
+const fs = require('fs');
 
 // Sort pages alphabetically
 pages.sort(function(a, b) {
@@ -27,11 +14,6 @@ pages.sort(function(a, b) {
 });
 
 // ROUTES
-// Render the app view
-app.get('/', function(req, res) {
-  let firstPage = pages[0];
-	res.render('index', { config, pages, firstPage });
-});
 
 // Render routes for each page
 for (let index in pages) {
@@ -50,16 +32,24 @@ for (let index in pages) {
     previousPage = pages[index - 1];
   }
 
-  app.get('/' + page.permalink, function(req, res) {
-  	res.render('prototype', { config, page, pages, nextPage, previousPage, currentPage, totalPages });
-  });
+  if(!fs.existsSync('public/' + page.permalink)) {
+    fs.mkdirSync('public/' + page.permalink);
+  }
 
-  app.get('/' + page.permalink + '/demo', function(req, res) {
-    res.render('prototype_demo', { config, page, pages, nextPage, previousPage, currentPage, totalPages });
-  });
+  fs.writeFileSync('public/' + page.permalink + '/index.html', jade.renderFile('views/prototypes/' + page.permalink + '.jade', {
+    config: config,
+    page: page,
+    pages: pages,
+    nextPage: nextPage,
+    previousPage: previousPage,
+    currentPage: currentPage,
+    totalPages: totalPages,
+    firstPage: pages[0],
+  }))
 }
 
-// SERVER
-http.listen(app.get('port'), function() {
-	console.log("Server started on :" + app.get('port'));
-});
+fs.writeFileSync('public/index.html', jade.renderFile('views/index.jade', {
+  config: config,
+  pages: pages,
+  firstPage: pages[0]
+}))
