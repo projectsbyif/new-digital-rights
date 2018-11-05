@@ -8,11 +8,11 @@ html(lang="en")
     meta(property="og:title" content="")
     meta(property="og:description" content="")
     meta(property="og:image" content="")
-    script(type="text/javascript" src="/public/js/jquery.js")
-    script(type="text/javascript" src="/public/js/app.js")
+    script(type="text/javascript" src="/js/jquery.js")
+    script(type="text/javascript" src="/js/app.js")
     link(rel="icon" id="favicon" href="")
     link(rel="apple-touch-icon-precomposed" href="")
-    link(type="text/css" rel="stylesheet" href="/public/css/app.css")
+    link(type="text/css" rel="stylesheet" href="/css/app.css")
   body
     a(id="skip_to_content" href="#content") Skip to content
     header
@@ -31,7 +31,7 @@ html(lang="en")
         div(style="overflow: auto")
           p(id="show_contents")
             //a(href="#") Show contents
-    
+
       div(class="contents-wrapper")
         h1 Contents
         ul(class="contents-list")
@@ -39,5 +39,5 @@ html(lang="en")
             li
               a(href=page.permalink) #{page.title}
               p #{page.tagline}
-            
+
     include ./includes/contents.jade

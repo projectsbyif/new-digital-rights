@@ -13,24 +13,24 @@ $(function() {
     if ($(this).parent().attr('id') === "blinds_one_selector") {
       if ($(this).text() === "Yes") {
         $('#blinds_one .preview_area').css({
-          'background-image': "url('/public/images/house.jpg')"
+          'background-image': "url('/images/house.jpg')"
         });
         $('.next').fadeIn(250)
       } else if ($(this).text() === "No") {
         $('#blinds_one .preview_area').css({
-          'background-image': "url('/public/images/house_blur.jpg')"
+          'background-image': "url('/images/house_blur.jpg')"
         });
         $('.next').fadeIn(250)
       }
     } else if ($(this).parent().attr('id') === "blinds_two_selector") {
       if ($(this).text() === "Yes") {
         $('#blinds_two .preview_area').css({
-          'background-image': "url('/public/images/aerial.jpg')"
+          'background-image': "url('/images/aerial.jpg')"
         });
         $('.next_save').fadeIn(250)
       } else if ($(this).text() === "No") {
         $('#blinds_two .preview_area').css({
-          'background-image': "url('/public/images/aerial_blur.jpg')"
+          'background-image': "url('/images/aerial_blur.jpg')"
         });
         $('.next_save').fadeIn(250)
       }

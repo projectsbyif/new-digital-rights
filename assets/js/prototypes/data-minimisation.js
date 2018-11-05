@@ -3,7 +3,7 @@ $(function() {
     e.preventDefault();
 
     $('#map').css({
-      'background-image': "url('/public/images/brighton-filtered.jpg')"
+      'background-image': "url('/images/brighton-filtered.jpg')"
     });
 
     $('.decision_text').replaceWith("<p>Detailed location data from your trip has been removed.");
