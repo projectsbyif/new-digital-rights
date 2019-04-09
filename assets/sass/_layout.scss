@@ -16,7 +16,7 @@ header {
   #logo {
     display: block;
     text-indent: -9999px;
-    background-image: url('/public/images/if-logo.svg');
+    background-image: url('/images/if-logo.svg');
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
@@ -332,7 +332,7 @@ header {
   #logo-light {
     display:block;
     text-indent:-9999px;
-    background-image:url('/public/images/if-logo.svg');
+    background-image:url('/images/if-logo.svg');
     background-repeat:no-repeat;
     background-size:contain;
     margin:0 auto;
@@ -347,7 +347,7 @@ header {
 
 #show_prototype_menu_mobile {
   @include background-button(75% 75%);
-  background-image: url('/public/images/icon_menu_light.svg');
+  background-image: url('/images/icon_menu_light.svg');
   width: 1.5em;
   height: 1.5em;
   position: absolute;
@@ -392,7 +392,7 @@ header {
     top: 1em;
     right: 1em;
     text-indent: -9999px;
-    background-image: url('/public/images/icon_close_light.svg');
+    background-image: url('/images/icon_close_light.svg');
     @include background-button(75% 75%);
   }
 }
@@ -415,7 +415,7 @@ header {
     #logo {
       display: block;
       text-indent: -9999px;
-      background-image: url('/public/images/if-logo.svg');
+      background-image: url('/images/if-logo.svg');
       background-repeat: no-repeat;
       background-size: contain;
       margin: 0 auto;
@@ -662,7 +662,7 @@ header {
     .window_title {
       height: 3em;
       width: 100%;
-      background-image: url('/public/images/window_container_buttons.svg');
+      background-image: url('/images/window_container_buttons.svg');
       background-repeat: no-repeat;
       background-position: center left;
       display: block;

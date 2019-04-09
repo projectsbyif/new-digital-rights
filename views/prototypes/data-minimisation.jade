@@ -1,9 +1,12 @@
-div(class="mobile_container")
-  div(id="dynamic_data_minimisation" class="mobile_content")
-    div(style="background: #FFF;" class="header")
-      h1 Your trip to Brighton
-    div(id="map")
-    div(class="section minimisation")
-      p(class="decision_text") Would you like to remove detailed location data from your trip?
-        a(href="#" id="list_click_yes" class="mobile_chunky_button") Yes
-        a(id="list_click_no" class="mobile_chunky_button_dead") No
+extends ../prototype.jade
+
+block content
+  div(class="mobile_container")
+    div(id="dynamic_data_minimisation" class="mobile_content")
+      div(style="background: #FFF;" class="header")
+        h1 Your trip to Brighton
+      div(id="map")
+      div(class="section minimisation")
+        p(class="decision_text") Would you like to remove detailed location data from your trip?
+          a(href="#" id="list_click_yes" class="mobile_chunky_button") Yes
+          a(id="list_click_no" class="mobile_chunky_button_dead") No
